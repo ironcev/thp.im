@@ -1,11 +1,19 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" type="text/css" rel="stylesheet">
+    <link href="{{ "/assets/css/reset.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
+    <link href="{{ "/assets/css/global.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ "/assets/scripts/scrollUp.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/assets/scripts/functions.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 </head>

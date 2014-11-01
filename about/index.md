@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About
 permalink: /about/
 description: About humble programming, creativity, diacritics, and some other things hidden behind the blog called The Humble Programmer.

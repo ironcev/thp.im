@@ -1,9 +1,25 @@
 # Site settings
 title: The Humble Programmer
-email: igor@thehumbleprogrammer.com
+email: ironcev@hotmail.com
 description: >
 baseurl: ""
-url: "http://thehumbleprogrammer.com" # the base hostname & protocol for your site
+url: "http://thehumbleprogrammer.com"
 
 # Build settings
 markdown: kramdown
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Igor Rončević"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Igor Rončević"

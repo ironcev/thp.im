@@ -4,6 +4,7 @@ email: ironcev@hotmail.com
 description: >
 baseurl: ""
 url: "http://thehumbleprogrammer.com"
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
@@ -14,7 +15,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "default"
+      layout: "post"
       author: "Igor Rončević"
   -
     scope:

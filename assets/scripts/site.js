@@ -37,4 +37,10 @@ $(function () {
         window.open(this.href);
         return false;
     });
+    
+    // Syntax highlighting.
+    $("pre").each(function () {
+        $(this).attr("class", "prettyprint");
+    });
+    prettyPrint();
 });

@@ -99,10 +99,19 @@ a:active                                        { text-decoration: none; color: 
 .content blockquote                             { border: 1px dashed; font-style: italic; padding: 0 1em; }
 
 /**************** Prettyprint ******************/
-pre.prettyprint                                 { background-color: #f9f9f9!important; border: 1px dashed #d2d2d2!important; border-radius: 0.25em!important; font-family: monospace!important; font-size: 16px!important; padding: 1em!important; line-height:18px; }
-pre                                             { background: none repeat scroll 0 0 #f0f0f0!important; overflow: auto!important; width: auto!important; }
+pre.prettyprint                         { background-color: #f9f9f9!important; border: 1px dashed #d2d2d2!important; border-radius: 0.25em!important; font-family: monospace!important; font-size: 16px!important; padding: 1em!important; line-height:18px; }
+pre                                              { background: none repeat scroll 0 0 #f0f0f0!important; overflow: auto!important; width: auto!important; }
 .kwd                                            { color: #00008B!important; }
 .typ                                            { color: #2B91AF!important; }
+.str                                            { color: #080!important;}
+.com                                            { color: #800!important; }
+.lit                                           { color: #066!important; }
+.pun                                          { color: #000!important; }
+.pln                                          { color: #000!important; }
+.tag                                            { color: #008!important;}
+.atn                                            { color: #606!important;}
+.atv                                            { color: #080!important; }
+.dec                                            { color: #606!important; }
 p code, ul code                                 { background: none repeat scroll 0 0 #f8f8f8; border: 1px dashed #d2d2d2; border-radius: 0.25em; font-family: monospace; font-size: 0.85em; padding: 0.05em 0.2em; position: relative; top: -0.09em; white-space: nowrap; }
 
 .content ul                                     { font-size:24px; padding-left:40px; display: block; list-style-type: disc; margin: 20px 0; line-height:30px;  }

@@ -89,9 +89,9 @@ Username and password are both set to *test*. In order to connect to SQL CE chan
          value="<strong>SqlCe</strong>"/&gt;</code>
 </pre>
 
-Let's shortly explain the settings. SQL CE supports so called DataDirectories. That means we don't have to specify the entire path to an .sdf file in the connection string. Path can be specified as *|DataDirectory|\DatabaseName.sdf*. In case of ASP.NET the default data directory is the *App_Data* directory of the web site. This is where our database will be created by the FunnelWeb after we log in to the blog for the first time.
+Let's shortly explain the settings. SQL CE supports so called DataDirectories. That means we don't have to specify the entire path to an .sdf file in the connection string. Path can be specified as *&#x7C;DataDirectory&#x7C;\DatabaseName.sdf*. In case of ASP.NET the default data directory is the *App_Data* directory of the web site. This is where our database will be created by the FunnelWeb after we log in to the blog for the first time.
 
-There is no need to specify the database schema and the provider has to be set to SqlCe. Strong suggestion is to change the username and password.
+There is no need to specify the database schema and the provider has to be set to *SqlCe*. Strong suggestion is to change the username and password.
 
 ###Step 4: Creating the Virtual Directory
 Once the blog is build and properly configured we can deploy it. Since we just want to try out the blog engine on our local machine, creating virtual directory will be sufficient. Here are the deployment steps:

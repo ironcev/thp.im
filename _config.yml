@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: true
+disqusShortname: thehumbleprogrammer
 
 # Build settings
 markdown: kramdown

@@ -9,14 +9,24 @@
     <meta name="language" content="english">
     <meta name="author" content="{{ page.author }}">
 
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" type="text/css" rel="stylesheet">
     <link href="{{ '/assets/css/reset.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
     <link href="{{ '/assets/css/global.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
     <link href="{{ '/assets/css/default.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    {% comment %}TODO-IG: Find or define best Jekyll practices for handling different configurations (offline, debug). {% endcomment %}
+    
+    {% if site.offlineMode %}
+    {% else %}
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" type="text/css" rel="stylesheet">
+    {% endif %}
 
+    {% if site.offlineMode %}
+    <script src="{{ '/assets/scripts/offlineMode/jquery-1.7.min.js' | prepend: site.baseurl }}"></script>
+    {% else %}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{{ '/assets/scripts/jquery.scrollup.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ '/assets/scripts/prettify.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+    {% endif%}
+    <script src="{{ '/assets/scripts/jquery.scrollup.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/scripts/prettify.js' | prepend: site.baseurl }}"></script>
 </head>

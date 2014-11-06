@@ -19,6 +19,7 @@ defaults:
       layout: "post"
       author: "Igor Rončević"
       showComments: true
+      showSocialSharing: true
   -
     scope:
       path: ""
@@ -27,3 +28,4 @@ defaults:
       layout: "page"
       author: "Igor Rončević"
       showComments: false
+      showSocialSharing: false

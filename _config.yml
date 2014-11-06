@@ -7,7 +7,6 @@ url: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: true
 disqusShortname: thehumbleprogrammer
-
 # Build settings
 markdown: kramdown
 # Defaults
@@ -19,6 +18,7 @@ defaults:
     values:
       layout: "post"
       author: "Igor Rončević"
+      showComments: true
   -
     scope:
       path: ""
@@ -26,3 +26,4 @@ defaults:
     values:
       layout: "page"
       author: "Igor Rončević"
+      showComments: false

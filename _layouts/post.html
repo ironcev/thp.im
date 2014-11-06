@@ -14,5 +14,7 @@ layout: default
     <div class="content">
         {{ content }}
     </div>
+    {% if page.showComments %}
     <div id="disqus_thread"></div>
+    {% endif %}
 </div>

@@ -20,6 +20,7 @@ defaults:
       author: "Igor Rončević"
       showComments: true
       showSocialSharing: true
+      hasCode: true
   -
     scope:
       path: ""
@@ -29,3 +30,4 @@ defaults:
       author: "Igor Rončević"
       showComments: false
       showSocialSharing: false
+      hasCode: false

@@ -1,4 +1,12 @@
 <script src="{{ "/assets/scripts/site.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+{% if page.hasCode %}
+<script>
+    $("pre").each(function () {
+        $(this).attr("class", "prettyprint");
+    });
+    prettyPrint();
+</script>
+{% endif %}
 {% if page.showComments %}
 <script type="text/javascript">
     window.disqus_shortname = '{{ site.disqusShortname }}';

@@ -28,5 +28,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     {% endif%}
     <script src="{{ '/assets/scripts/jquery.scrollup.js' | prepend: site.baseurl }}"></script>
+    {% if page.hasCode %}
     <script src="{{ '/assets/scripts/prettify.js' | prepend: site.baseurl }}"></script>
+    {% endif %}
 </head>

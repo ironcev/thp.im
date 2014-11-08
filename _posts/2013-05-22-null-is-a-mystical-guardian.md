@@ -4,6 +4,7 @@ subtitle: When null reaches the surface
 description: Demystifying the mystical nature of null; or what can happen when null reaches the surface of your application.
 keywords: null
 tags: null fun
+hasCode: false
 ---
 ##Willkommen Null
 "What is this – null?" my good friend Čazim asked me when I helped him to create his profile on the Austrian Labor Agency web site.

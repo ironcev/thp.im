@@ -63,4 +63,4 @@ Null goes for cabbage.
 
 ![Null goes for cabbage](https://dl.dropboxusercontent.com/u/110510589/null-is-a-mystical-guardian/Null_goes_for_cabbage.png)
 
-After all this, how can anyone say that [null is evil](/option-idiom)?
+After all this, how can anyone say that [null is evil]({% post_url 2013-05-15-option-idiom %})?

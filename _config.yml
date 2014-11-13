@@ -5,7 +5,7 @@ description: >
 baseurl: ""
 url: "http://thehumbleprogrammer.com"
 permalink: /:title/
-offlineMode: true
+offlineMode: false
 disqusShortname: thehumbleprogrammer
 # Build settings
 markdown: kramdown

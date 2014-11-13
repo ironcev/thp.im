@@ -99,7 +99,7 @@ a:active                                        { text-decoration: none; color: 
 .content blockquote                             { border: 1px dashed; font-style: italic; padding: 0 1em; }
 
 /**************** Prettyprint ******************/
-pre.prettyprint                         { background-color: #f9f9f9!important; border: 1px dashed #d2d2d2!important; border-radius: 0.25em!important; font-family: monospace!important; font-size: 16px!important; padding: 1em!important; line-height:18px; }
+pre.prettyprint                         { background-color: #f9f9f9!important; border: 1px dashed #d2d2d2!important; border-radius: 0.25em!important; font-family: monospace!important; font-size: 16px!important; padding: 1em!important; line-height:18px; margin-top:1em!important; margin-bottom:1em!important; }
 pre                                              { background: none repeat scroll 0 0 #f0f0f0!important; overflow: auto!important; width: auto!important; }
 .kwd                                            { color: #00008B!important; }
 .typ                                            { color: #2B91AF!important; }
@@ -120,7 +120,7 @@ p code, ul code                                 { background: none repeat scroll
 /******************** Scroll Up ****************/
 #scrollUp                                       { background: url(../images/spritesheet.png) no-repeat scroll -346px -4px; bottom: 20px; height: 40px; right: 20px; width: 40px; text-indent: -999em; display: block; }
 
-/******************** Publisch *****************/
+/******************** Publish *****************/
 .publish                                        { font-size:16px; text-align:center; margin: 0 0 2em; padding-top:10px;}
 
 

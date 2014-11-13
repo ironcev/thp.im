@@ -40,7 +40,7 @@ a:active                                        { text-decoration: none; color: 
 .nav ul li a.feed                               { background: #e7e7e7 url(../images/spritesheet.png) no-repeat -166px -8px; }
 .nav ul li a.feed:hover                         { background: #888888 url(../images/spritesheet.png) no-repeat -166px -8px; }
 
-/****************** navigation *****************/
+/****************** navigation social icons *****************/
 .socialIcons                                    { margin: 0px; padding: 0px; display: block; }
 .socialIcons ul li                              { margin-bottom: 7px; width: 32px; height:32px; }
 .socialIcons ul li a                            { text-indent: -999em; display: block; margin: 0px; padding: 0px; height: 32px; width: 32px; border-radius:2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
@@ -72,6 +72,9 @@ a:active                                        { text-decoration: none; color: 
 .contentBox .intro                              { padding:0px; margin:0px; }
 .contentBox .intro h1                           { text-align:center; font-size:65px; line-height:85px; margin-bottom:5px;}
 .contentBox .intro p                            { text-align:center; font-size:24px; margin-bottom:8px;}
+.contentBox .intro p a,
+.contentBox .intro p a:visited              { border-bottom: 1px dotted; text-decoration:none; }
+.contentBox .intro p a:hover                { border-bottom: 1px solid; text-decoration:none; }
 .contentBox .intro ul                           { text-align:center;}
 .contentBox .intro ul li                        { display: inline; margin:8px; line-height:28px;}
 .contentBox .intro ul li a, 

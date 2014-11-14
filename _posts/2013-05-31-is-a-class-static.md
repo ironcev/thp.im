@@ -1,6 +1,6 @@
 ---
 title: Is a Class Static
-subtitle: 'How to determine (<a class="senza-parole" href="/tags/senza-parole">without words</a>) if a class is <code>static</code>'
+subtitle: 'Checking if a class is <code>static</code> explained <a class="senza-parole" href="/tags/senza-parole">without words</a>'
 description: This blog post explains without words how to determine via reflection if a .NET class is static. Plain and simple.
 keywords: static class
 tags: senza-parole reflection csharp

@@ -1,7 +1,7 @@
 ---
 title: Option Idiom
-subtitle: Option idiom goes C#
-description: What is option idiom and how to implement it and properly use it in C#.
+subtitle: What is the option idiom and how to implement and use it in C#
+description: This blog post explains what is the Option Idiom and how to implement it and properly use it in C#.
 keywords: option idiom
 tags: csharp fsharp null swissknife
 ---

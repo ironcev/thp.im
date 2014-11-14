@@ -1,7 +1,7 @@
 ---
-title: Changing the Default Location of NuGet Packages
+title: Location of NuGet Packages
 subtitle: 'Changing the default location of NuGet packages explained <a class="senza-parole" href="/tags/senza-parole">without words</a>'
-description: This blog post explains without words how to change the location of NuGet packages by using the NuGet configuration file. Plain and simple.
+description: This blog post explains without words how to change the default location of NuGet packages by using the NuGet configuration file.
 keywords: NuGet package location
 tags: senza-parole nuget
 ---

@@ -1,7 +1,7 @@
 ---
-title: How to Set Up a Local Development Web Site
-subtitle: 'Setting up a local development web site explained <a class="senza-parole" href="/tags/senza-parole">without words</a>'
-description: This blog post explains without words how to set up a web site on a local IIS. The web site is used for development purposes.
+title: Setting Up a Local Development Web Site
+subtitle: 'Setting up a local development IIS web site explained <a class="senza-parole" href="/tags/senza-parole">without words</a>'
+description: This blog post explains without words how to set up a web site on a local IIS. The web site can than be used for development purposes.
 keywords: development web site
 tags: senza-parole iis
 hasCode: false

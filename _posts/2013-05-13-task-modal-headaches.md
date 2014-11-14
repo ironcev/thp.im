@@ -1,7 +1,7 @@
 ---
 title: Task Modal Headaches
-subtitle: Handling task-modal dialogs and message boxes in a WPF application
-description: How to handle task-modal dialogs and message boxes in a WPF application when all application windows run within the same process.
+subtitle: How to properly handle task-modal dialogs and message boxes in a WPF application
+description: How to properly handle task-modal dialogs and message boxes in a WPF application when all application windows run within the same process.
 keywords: task-modal dialogs
 tags: wpf winforms
 ---

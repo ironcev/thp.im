@@ -1,6 +1,6 @@
 ---
 title: FunnelWeb on SQL CE
-subtitle: How to run FunnelWeb blog engine on Microsoft SQL Server Compact
+subtitle: 'How to run the <a href="http://www.funnelweblog.com">FunnelWeb</a> blog engine on Microsoft SQL Server Compact'
 description: Step-by-step instructions on how to run FunnelWeb blog engine on Microsoft SQL Server Compact (SQL CE).
 keywords: FunnelWeb Microsoft SQL Server Compact SQL CE
 tags: funnelweb step-by-step

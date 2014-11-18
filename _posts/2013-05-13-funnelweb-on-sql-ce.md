@@ -3,7 +3,7 @@ title: FunnelWeb on SQL CE
 subtitle: 'How to run the <a href="http://www.funnelweblog.com">FunnelWeb</a> blog engine on Microsoft SQL Server Compact'
 description: Step-by-step instructions on how to run FunnelWeb blog engine on Microsoft SQL Server Compact (SQL CE).
 keywords: FunnelWeb Microsoft SQL Server Compact SQL CE
-tags: funnelweb step-by-step
+tags: funnelweb step-by-step this-blog
 ---
 ##What is FunnelWeb?
 [FunnelWeb](http://www.funnelweblog.com/) is a simple, intuitive, and easy to use blog engine, exactly the one I was looking for when starting this blog. It's built "by developers for developers". Its creators like to call it "the blog engine of real developers".
@@ -37,25 +37,25 @@ FunnelWeb uses [Mercurial](http://mercurial.selenic.com/) source control system.
   2. Clone the FunnelWeb release repository.  
 First create a local directory in which the repository will be cloned. For the rest of this tutorial I will assume that the name of the directory is *C:\FunnelWebRepository*. Right mouse click on that directory. In the TortoiseHg menu choose the *TortoiseHg ► Clone...* option.
 
-![Cloning the Mercurial repository](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/Cloning_the_Mercurial_repository.png)
+![Cloning the Mercurial repository](/resources/funnelweb-on-sql-ce/cloning-the-mercurial-repository.png)
     
 The Clone dialog will appear. Set the source to [https://bitbucket.org/FunnelWeb/release](https://bitbucket.org/FunnelWeb/release) and click the Clone button.
     
-![TortoiseHg's Clone dialog for cloning the Mercurial repository](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/TortoiseHg_Clone_dialog_for_cloning_the_Mercurial_repository.png)
+![TortoiseHg's Clone dialog for cloning the Mercurial repository](/resources/funnelweb-on-sql-ce/tortoisehg-clone-dialog-for-cloning-the-mercurial-repository.png)
     
 Wait until all chunks are downloaded. If no error occurs your repository should look similar to this:
     
-![Cloned FunnelWeb repository](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/Cloned_FunnelWeb_repository.png)
+![Cloned FunnelWeb repository](/resources/funnelweb-on-sql-ce/cloned-funnelweb-repository.png)
 
 ###Step 2: Building the Web Site
 To build the web site, simply execute the *build.bat* file. Console window will appear showing the output of each build step. Wait until the Done message appears.
 If everything goes well, there should be no error messages at the end. Note that the build process also runs unit tests. Some of those tests will try to connect to the database and will fail. Don't worry if that happens. The following output shows an error in unit test execution but should still be considered as successful build:
 
-![Successful build of the FunnelWeb web site](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/Successful_build_of_the_FunnelWeb_web_site.png)
+![Successful build of the FunnelWeb web site](/resources/funnelweb-on-sql-ce/successful-build-of-the-funnelweb-website.png)
 
 After the successful build your *c:\FunnelWebRepository\build\Published* directory should look like this:
 
-![The FunnelWeb's Published directory](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/FunnelWeb_Published_directory.png)
+![The FunnelWeb's Published directory](/resources/funnelweb-on-sql-ce/funnelweb-s-published-directory.png)
 
 ###Step 3: Updating the Configuration File
 Rename *My.config.sample* to *My.config*. *My.config* file contains database connection settings. Default configuration instructs FunnelWeb to connect to SQL Server Express database:
@@ -102,24 +102,24 @@ Create a directory which will contain the web site. For the rest of this tutoria
   2. [Create virtual directory in IIS](http://msdn.microsoft.com/en-us/library/bb763173\(v=vs.100\).aspx) that corresponds to *C:\FunnelWebBlog*.   
 I will use FunnelWebBlog as alias. After creating the virtual directory, [convert it to application](http://msdn.microsoft.com/en-us/library/bb763173\(v=vs.90\).aspx) and set the application pool to the ASP.NET v4.0:
 
-![Converting the IIS virtual directory to application](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/Converting_the_IIS_virtual_directory_to_application.png)
-    
+![Converting the IIS virtual directory to application](/resources/funnelweb-on-sql-ce/converting-iis-virtual-directory-to-application.png)
+
   3. Give ASP.NET account write permissions to the *Files* directory.   
 *Files* directory will be used by the blog engine to store uploaded files. Therefore, ASP.NET account must have write permissions on this directory. On IIS 7 ASP.NET [runs under virtual account assigned to the application pool](http://learn.iis.net/page.aspx/624/application-pool-identities/). Enter IIS AppPool\ASP.NET v4.0 as account name:
 
-![Giving the ASP.NET account write permissions to the files directory](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/Giving_the_ASP_NET_account_write_permissions_to_the_files_directory.png)
-    
+![Giving the ASP.NET account write permissions to the files directory](/resources/funnelweb-on-sql-ce/giving-asp-net-account-write-permissions-to-files-directory.png)
+
   4. Give ASP.NET account write permissions to the *My.config* file.   
 Once the blog is up and running the *My.config* file doesn't have to be changed manually any more (for example, in case we want to change the database provider). It can be changed using the dedicated administration page within the blog itself. Therefore the ASP.NET account must have permissions to write to the *My.config* file.
 
 ###Step 5: Creating the SQL CE Database
 We are now ready to start our blog. The SQL CE database will be created by the blog engine itself after we log in for the first time. Open the blog web site in your web browser. (If you gave the blog the same alias I did, simply click on this link: [http://localhost/funnelwebblog](http://localhost/funnelwebblog).) The following message will appear, giving us the false impression that something went wrong:
 
-![The FunnelWeb database issue at login](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/FunnelWeb_database_issue_at_login.png)
+![The FunnelWeb database issue at login](/resources/funnelweb-on-sql-ce/funnelweb-database-issue-at-login.png)
 
 However, everything is fine. At this moment FunnelWeb already created the *App_Data* directory in the background and is just waiting for us to log in using the credentials we specified in the *My.config* file. Enter the credentials and click on the Submit button. The following page will apear showing us that everything went well:
 
-![FunnelWeb Upgrader](https://dl.dropboxusercontent.com/u/110510589/funnelweb-on-sql-ce/FunnelWeb_Upgrader.png)
+![FunnelWeb Upgrader](/resources/funnelweb-on-sql-ce/funnelweb-upgrader.png)
 
 In the background, our database file – *FunnelWeb.sdf* – is created and stored to the *App_Data* directory. Below the Save and Test button, there is a list of scripts that will be run against the database. Run the scripts by clicking on the upgrade button. After all scripts are ran, the blog will be fully functional and ready to use.
 

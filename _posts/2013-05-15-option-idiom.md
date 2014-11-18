@@ -1,6 +1,6 @@
 ---
 title: Option Idiom
-subtitle: What is the option idiom and how to implement and use it in C#
+subtitle: What is the option idiom and how to implement it and use it in C#
 description: This blog post explains what is the Option Idiom and how to implement it and properly use it in C#.
 keywords: option idiom
 tags: csharp fsharp null swissknife
@@ -14,7 +14,7 @@ Yes, **null is evil**. It never sleeps. It waits patiently until your concentrat
 
 You can save some F1 keystrokes by using tools like [ReSharper](http://www.jetbrains.com/resharper/) that will friendly warn you of the beast in the bushes waiting for its next prey:
 
-![Possible null assignment to entity marked with NotNull attribute](https://dl.dropboxusercontent.com/u/110510589/option-idiom/ReSharper_message_Possible_null_assignment_to_entity_marked_with_NotNull_attribute.png)
+![ReSharper - Possible null assignment to entity marked with NotNull attribute](/resources/option-idiom/resharper-message-possible-null-assignment-to-entity-marked-with-notnull-attribute.png)
 
 As I will demonstrate later in this article, these friendly warnings can lead to a false sense of safety.
 
@@ -52,7 +52,7 @@ My fanatical approach also didn't increase at all the visibility of potential nu
 
 Even when inside IDE, we still have to hover over the property with the mouse and wait a bit until the comment appears.
 
-![This property can be null](https://dl.dropboxusercontent.com/u/110510589/option-idiom/This_property_can_be_null.png)
+![This property can be null](/resources/option-idiom/this-property-can-be-null.png)
 
 After few such crusades I finally laid the weapon down.
 
@@ -92,7 +92,7 @@ Although being a much better approach than the one I took, I somehow never liked
     
 The response from the ReSharper engine was great:
 
-![Possible System.NullReferenceException](https://dl.dropboxusercontent.com/u/110510589/option-idiom/ReSharper_message_Possible_System.NullReferenceException.png)
+![ReSharper - Possible System.NullReferenceException](/resources/option-idiom/resharper-message-possible-system-nullreferenceexception.png)
 
 I was in heaven until I realized that, yes, there are developers that actually do not use ReSharper, and, yes, there are bosses not willing paying for it.
 
@@ -142,7 +142,7 @@ The `keepIfPositive()` method accepts an integer as the parameter and returns an
 
 The returned value cannot be used directly in expressions where integer is normally allowed:
 
-![The type int option does not match the type int](https://dl.dropboxusercontent.com/u/110510589/option-idiom/The_type_int_option_does_not_match_the_type_int.png)
+![F# - The type int option does not match the type int](/resources/option-idiom/fsharp-the-type-int-option-does-not-match-the-type-int.png)
 
 Here the semantics are similar to that of `Nullable<T>`. The underlying value has to be explicitly accessed via the `Value` property:
 
@@ -173,7 +173,7 @@ As I said earlier, a possible null reference is a beast in the bushes of your co
 
 Still, when it comes to dealing with possible non-existing objects, in all my projects, I stick to the consistent usage of the `Option<T>` and the `Nullable<T>`. It helps the users of my classes and me of course, to clearly see that certain object, be that of reference or value type, may or may not be there. Consistent usage means following the guidelines given below. The guidelines are valid both for methods and properties. For the sake of brevity, the given examples show only how to apply them to methods.
 
-##Return Nullable&lt;T&gt; Instead of a Special Value Object
+###Return Nullable&lt;T&gt; Instead of a Special Value Object
 If a method returns a potentially non-existing object of a value type, it should return `Nullable<T>` of that type and not the type itself. In other words, instead of returning a special object of the type that represents non-existence the nullable without value is returned.
 Too often I've seen code similar to this one:
 

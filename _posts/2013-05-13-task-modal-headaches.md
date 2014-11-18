@@ -11,9 +11,9 @@ If you are not aware of this, try it on your own. Start several "instances" of M
 
 ##Dissecting .NET Inconsistencies
 I thought that writing a WPF application that mimics the described behavior will be a trivial task. Creating a single instance application was [trivial indeed](http://www.switchonthecode.com/tutorials/wpf-writing-a-single-instance-application). But after digging deeper into WPF dialogs and message boxes I noticed some **inconsistencies** in their behavior **when it comes to modality**. Even bigger inconsistencies become obvious if we add WinForms to the whole story.
-I've created a [sample project](https://github.com/ironcev/HumbleXamples/tree/master/TaskModalHeadaches) to demonstrate these inconsistencies. [Download the project](https://dl.dropboxusercontent.com/u/110510589/task-modal-headaches/TaskModalHeadaches.zip) and build it using the *#Build.bat* file. Running the *A_01_OpenApplicationWindows.bat* will open five application windows in the same process, each of them looking like this:
+I've created a [sample project](https://github.com/ironcev/HumbleXamples/tree/master/TaskModalHeadaches) to demonstrate these inconsistencies. [Download the project](/resources/task-modal-headaches/TaskModalHeadaches.zip) and build it using the *#Build.bat* file. Running the *A_01_OpenApplicationWindows.bat* will open five application windows in the same process, each of them looking like this:
 
-![The application window](https://dl.dropboxusercontent.com/u/110510589/task-modal-headaches/Application_window.png)
+![Task modal headaches application window](/resources/task-modal-headaches/task-model-headaches-application-window.png)
 
 Play with the application a bit and observe on your own how each particular modal window behaves. Read the messages in the dialogs and message boxes. They contain additional interesting tips I don't cover in this blog post.
 
@@ -65,13 +65,13 @@ The "without any additional effort" part of the pragmatic solution is not hundre
 
 I was curious how Word covers this case. Try it on your own. Start one or more instances of Word and open Save As dialog in one of it. Now try to open an additional instance by using Windows Start Menu. The new instance will not open. The already opened modal dialog will be brought to front. However, if you try to open some existing document by double-clicking on it you will get the following message:
 
-![The command cannot be performed because a dialog box is open](https://dl.dropboxusercontent.com/u/110510589/task-modal-headaches/Microsoft_Word_The_command_cannot_be_performed_because_a_dialog_box_is_open.png)
+![Microsoft Word - The command cannot be performed because a dialog box is open](/resources/task-modal-headaches/microsoft-word-the-command-cannot-be-performed-because-a-dialog-box-is-open.png)
 
 Is this what you actually expected? It would be interesting to see what usability experts have to say about this. But let us not open the topic of usability right now. Let's just stick to our initial requirement - mimic the same behavior.
 
 A simple solution is to have **centralized point through which all the dialogs are open**. We can then use that central point to count how many open dialogs we have (keep in mind that a modal dialog can open another one modal dialog). Centralizing the dialog handling has another long-term benefit. It will allow us to easily replace our pragmatic solution one day if eventually needed. Such replacement would then be localized and would not affect client code. Covering some additional problems in situations that we are not aware of at the moment will also be simplified if we centralize dialog handling.
 
-The *TaskModalDialogsWithSpecialHandling* project contained in the [sample project](https://dl.dropboxusercontent.com/u/110510589/task-modal-headaches/TaskModalHeadaches.zip) shows how this could be done. The `TaskModalDialogHandler` class represents the centralized point through which WPF dialogs and standard WinForms dialogs are open:
+The *TaskModalDialogsWithSpecialHandling* project contained in the [sample project](/resources/task-modal-headaches/TaskModalHeadaches.zip) shows how this could be done. The `TaskModalDialogHandler` class represents the centralized point through which WPF dialogs and standard WinForms dialogs are open:
 
     public static class TaskModalDialogHandler
     {
@@ -113,7 +113,7 @@ The *TaskModalDialogsWithSpecialHandling* project contained in the [sample proje
 
 In addition, usage of the `TaskModalMessageBox` class (available in the same project) ensures that the message boxes will be properly displayed. Run the *B_01_OpenApplicationWindows.bat* and open any of the dialogs. Then run the *B_02_OpenAdditionalApplicationWindow.bat* in order to open an additional window. You will get the following message:
 
-![New application window cannot be open because a dialog box is open](https://dl.dropboxusercontent.com/u/110510589/task-modal-headaches/New_application_window_cannot_be_open_because_a_dialog_box_is_open.png)
+![New application window cannot be open because a dialog box is open](/resources/task-modal-headaches/new-application-window-cannot-be-open-because-a-dialog-box-is-open.png)
 
 ##Open Questions
 The pragmatic solution based on the centralized handling of modal dialogs and message boxes is a good starting point toward Word-like behavior. A few questions nevertheless remain open. They should be addressed carefully before using this approach I discussed. The questions are:

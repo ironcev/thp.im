@@ -7,4 +7,4 @@ tags: senza-parole css
 ---
     background-position: 75% 50%
 
-![The meaning of the CSS 'background-position' when it is defined in percentages](https://dl.dropboxusercontent.com/u/110510589/css-background-position/Meaning_of_the_CSS_background_position_when_it_is_defined_in_percentages.png)
+![The meaning of the CSS 'background-position' when it is defined in percentages](/resources/css-background-position/meaning-of-the-css-background-position-when-it-is-defined-in-percentages.png)

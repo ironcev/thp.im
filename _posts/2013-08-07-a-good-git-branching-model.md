@@ -6,4 +6,4 @@ keywords: Git branching model
 tags: senza-parole git
 hasCode: false
 ---
-<a href="http://nvie.com/posts/a-successful-git-branching-model/"><img src="https://dl.dropboxusercontent.com/u/110510589/git-branching-model/Git_branching_model.png"></a>
+<a href="http://nvie.com/posts/a-successful-git-branching-model/"><img src="/resources/a-good-git-branching-model/a-good-git-branching-model.png"></a>

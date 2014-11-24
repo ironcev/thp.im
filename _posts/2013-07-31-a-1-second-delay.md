@@ -6,7 +6,7 @@ keywords: web site performance
 tags: quote performance
 hasCode: false
 ---
-<a href="https://devcentral.f5.com/blogs/us/performance-versus-presentation"><img src="https://dl.dropboxusercontent.com/u/110510589/a-1-second-delay/A_1_Second_Delay_by_Aberdeen_Group.png" alt="A 1 Second Delay"></a>
+<a href="https://devcentral.f5.com/blogs/us/performance-versus-presentation"><img src="/resources/a-1-second-delay/a-1-second-delay-by-aberdeen-group.png" alt="A 1 Second Delay"></a>
 
 > [...] at some point it becomes more valuable to focus on performance over presentation.
 <br/><br/>

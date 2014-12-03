@@ -18,4 +18,4 @@ My name is Igor Rončević.
 Those two marks above the "c"-s in my last name *are not accents*. They denote two full blown letters of the [Croatian alphabet](http://en.wikipedia.org/wiki/Croatian_alphabet): "[č](http://en.wikipedia.org/wiki/Č)" and "[ć](http://en.wikipedia.org/wiki/Ć)". Back in the 90s when I was starting my programming endeavor, "č" and "ć" (along with other Croatian diacritics) were probably a major cause of sick leaves among software developers. Displaying them properly on the screen required programming skills, patience, and nerves of steel. Printing them out was considered to be mission impossible. It looks like [they still occasionally cause headaches](http://stackoverflow.com/questions/1516259/croatian-diacritic-signs-in-mysql-db-utf-8).
 
 ##Me
-<a href="http://about.me/ironcev"><img src="About_Igor_Roncevic.jpg" title="Click to visit my about.me page." alt="About me" style="margin-bottom:2em"></a>
+<a href="http://about.me/ironcev"><img src="igor-roncevic.jpg" title="Click to visit my about.me page." alt="About me" style="margin-bottom:2em"></a>

@@ -8,15 +8,15 @@ tags: stack-trace-art stacktraceangelo fun art
 ##In Its Essence
 Stack Trace Art is, in its essence, the art of throwing an exception that creates a beautiful drawing on the caller's stack trace. Before you dive deeper into its origins and the question of its purpose, enjoy first some of the exceptions being thrown and their drawings being drawn.
 
-![Лулу и как се прави дъга Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/Lulu_I_Kak_Se_Pravi_Daga_Exception_Stack_Trace_Art.png)
+![Лулу и как се прави дъга Exception](/resources/stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png)
 
-![Crossed Fingers Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/Crossed_Fingers_Exception_Stack_Trace_Art.png)
+![Crossed Fingers Exception](/resources/stack-trace-art/crossed-fingers-exception-stack-trace-art.png)
 
-![Nested Om Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/Nested_Om_Exception_Stack_Trace_Art.png)
+![Nested Om Exception](/resources/stack-trace-art/nested-om-exception-stack-trace-art.png)
 
-![The Burning Heart of Desire Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/The_Burning_Heart_of_Desire_Exception_Stack_Trace_Art.png)
+![The Burning Heart of Desire Exception](/resources/stack-trace-art/the-burning-heart-of-desire-exception-stack-trace-art.png)
 
-![The Cat in the Sac Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/The_Cat_in_the_Sac_Exception_Stack_Trace_Art.png)
+![The Cat in the Sac Exception](/resources/stack-trace-art/the-cat-in-the-sac-exception-stack-trace-art.png)
 
 ##Pozdrav
 "Pozdrav" is Croatian word for "Greeting". Nowadays it's widely used as a greeting itself. You can hear people on the street saying "Pozdrav!" to each other. It's quite often to start your email with "Pozdrav!". Strange, isn't it? You usually don't greet people with "Greeting!". You will say "Hi!" or "Hello!" or maybe even "Greeting**s**!", but not "Greeting!".
@@ -65,7 +65,7 @@ Using it I quickly turned [this ASCII art](http://asciiworld.com/-Cats-.html):
 </pre>
 into the [cat in the sac](http://www.youtube.com/watch?v=tPAJomPCdZs) exception that leaves the following stack trace:
 
-![The Cat in the Sac Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/The_Cat_in_the_Sac_Exception_Stack_Trace_Art.png)
+![The Cat in the Sac Exception](/resources/stack-trace-art/the-cat-in-the-sac-exception-stack-trace-art.png)
 
 Just a few minutes before our Scrum review meeting I intentionally injected the unhandled exception into the code of the application that my team was working on. The application crashed miserably of course. Surprised by the crash, my colleagues immediately opened the log file, but just to experience an even bigger surprise. Smiling cat is the last thing a .NET developer would expect to see in the stack trace.
 
@@ -80,15 +80,15 @@ My answer was simple: "Stack Trace Art has no purpose." It is an art. There is n
 
 Still, I don't insist on keeping it fully purposeless. You can use it, for example, to break a potentially boring programmer's daily routine. Trust me; it could be some of your colleagues might believe that Space Invaders did attack their program, with no persuasions required:
 
-![Space Invaders Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/Space_Invaders_Exception_Stack_Trace_Art.png)
+![Space Invaders Exception](/resources/stack-trace-art/space-invaders-exception-stack-trace-art.png)
 
 Like every other art, the Stack Trace Art can be used to convey feelings. Injecting the burning heart of desire into the code of that French girl is a good way to show what you feel about her:
 
-![The Burning Heart of Desire Exception](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/The_Burning_Heart_of_Desire_Exception_Stack_Trace_Art.png)
+![The Burning Heart of Desire Exception](/resources/stack-trace-art/the-burning-heart-of-desire-exception-stack-trace-art.png)
 
 The Stack Trace Art can be used to convey opinions and preferences. What stops you from sharing one of your favorite Bulgarian poems with your team members:
 
-![Lulu i patuvaneto](https://dl.dropboxusercontent.com/u/110510589/stack-trace-art/Lulu_i_patuvaneto_Exception_Stack_Trace_Art.png)
+![Lulu i patuvaneto](/resources/stack-trace-art/lulu-i-patuvaneto-exception-stack-trace-art.png)
 
 In plain and simple words, Stack Trace Art is all about expressing and communicating yourself to other programmers in a very unique way, which only another programmer can understand.
 

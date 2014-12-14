@@ -1,5 +1,5 @@
 <head>
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.title | strip_html }} | {{ site.title }}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -9,10 +9,10 @@
     <meta name="language" content="english">
     <meta name="author" content="{{ page.author }}">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
-    <link href="{{ '/assets/css/reset.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
-    <link href="{{ '/assets/css/global.css' | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="shortcut icon" href="{{ site.url }}{{ "/favicon.ico" }}" type="image/x-icon">
+    <link href="{{ '/assets/css/reset.css' }}" type="text/css" rel="stylesheet">
+    <link href="{{ '/assets/css/global.css' }}" type="text/css" rel="stylesheet">
     
     {% comment %}TODO-IG: Find or define best Jekyll practices for handling different configurations (offline, debug). {% endcomment %}
     

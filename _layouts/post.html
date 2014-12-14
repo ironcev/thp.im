@@ -11,9 +11,11 @@ layout: default
         {% endfor %}
         </ul>
     </div>
+    {% include social-sharing.html %}
     <div class="content">
         {{ content }}
     </div>
+    {% include social-sharing.html %}
     <div class="publish">Published on {{ page.date | date:"%B %d, %Y" }}</div>
     {% if page.showComments %}
     <div id="disqus_thread"></div>

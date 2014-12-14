@@ -41,8 +41,9 @@ a:active                                        { text-decoration: none; color: 
 .nav ul li a.feed:hover                         { background: #888888 url(../images/spritesheet.png) no-repeat -166px -8px; }
 
 /****************** navigation social icons *****************/
-.socialIcons                                    { margin: 0px; padding: 0px; display: block; }
-.socialIcons ul li                              { margin-bottom: 7px; width: 32px; height:32px; }
+.socialIcons                                    { margin-left: auto; margin-right: auto; width: 117px; padding: 0.7em 0px 0px 0px; display: block; } /* width = 3 * 32 + 3 * 7 */
+.socialIcons ul                                 { height:32px; }
+.socialIcons ul li                              { display:inline; float:left; margin-left:7px; width: 32px; height:32px; }
 .socialIcons ul li a                            { text-indent: -999em; display: block; margin: 0px; padding: 0px; height: 32px; width: 32px; border-radius:2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
 .socialIcons ul li a.facebook                   { background: #3a589b url(../images/spritesheet.png) no-repeat -225px -8px; }
 .socialIcons ul li a.facebook:hover             { background: #888888 url(../images/spritesheet.png) no-repeat -225px -8px; }
@@ -82,7 +83,7 @@ a:active                                        { text-decoration: none; color: 
 .contentBox .intro ul li a:hover                { border-bottom: 1px solid; }
 
 /**************** Content box ******************/
-.content                                        { padding:0px; margin-top:40px; }
+.content                                        { padding:0px; }
 .content h2, .content h3, .content h4, 
 .content h5, .content h6                        { border-bottom: 1px dotted #dddddd; text-align: center; font-weight: bold;  margin: 0.5em 1em 0.3em; }
 
@@ -136,9 +137,6 @@ p code, ul code                                 { background: none repeat scroll
 .nav                                            { float:left; margin-bottom:0px;}
 .nav ul li                                      { float:left; margin-bottom:0px; margin-right:7px;}
 
-.socialIcons                                    { float:right; padding-right:10px}
-.socialIcons li                                 { display:inline; float:left; margin-left:7px;}
-
 .contentList ul li a                            { font-size:27px;}
 
 .contentBox .intro h1                           { font-size:50px;}
@@ -191,7 +189,6 @@ pre.prettyprint                                 { font-size:14px!important;}
 .contentList ul li a                            { font-size:18px; line-height:26px;}
 
 .nav ul li                                      { margin-right:4px;}
-.socialIcons ul li                              { margin-left:4px;}
 
 .tags-list li a, .tags-list li a:visited        { font-size:18px; margin-bottom:4px;}
 

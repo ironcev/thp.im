@@ -1,9 +1,9 @@
 {% if page.showSocialSharing %}
 <div class="socialIcons">
     <ul>
-        <li><a href="#" class="twitter" title="Twitter">Share on Twitter</a></li>
-        <li><a href="#" class="googlePlus" title="Google Plus">Share on Google Plus</a></li>
-        <li><a href="#" class="facebook" title="Facebook">Share on Facebook</a></li>
+        <li><a rel="nofollow" data-text="{{ page.subtitle | strip_html }}" data-url="{{ site.url }}{{ page.url }}" href="http://www.twitter.com/intent/tweet?text={0}&url={1}" class="twitter" title="Share on Twitter">Share on Twitter</a></li>
+        <li><a rel="nofollow" href="#" class="googlePlus" title="Share on Google Plus">Share on Google Plus</a></li>
+        <li><a rel="nofollow" href="#" class="facebook" title="Share on Facebook">Share on Facebook</a></li>
     </ul>
 </div>
 {% endif %}

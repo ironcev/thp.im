@@ -1,4 +1,13 @@
 $(function () {
+    function stringFormat() {
+        var input = arguments[0];
+        for (var i = 0; i < arguments.length - 1; i++) {
+            var reg = new RegExp("\\{" + i + "\\}", "gm");
+            input = input.replace(reg, arguments[i + 1]);
+        }
+        return input;
+    };
+
     $.scrollUp({
         scrollName: 'scrollUp',
         topDistance: '300', 
@@ -9,7 +18,7 @@ $(function () {
         scrollText: 'Scroll to top',
         activeOverlay: false,
     });
-  
+
     // Piwik.
     var _paq = _paq || [];
     _paq.push(["setCookieDomain", "*.thehumbleprogrammer.com"]);
@@ -23,18 +32,33 @@ $(function () {
         var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript';
         g.defer = true; g.async = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
     })();
-    
+
     // Open external links in a new window.
     $.expr[':'].external = function (obj) {
         return !(obj.href == "")
             && !obj.href.match(/^mailto\:/)
-            && !(obj.hostname == location.hostname);
+            && !(obj.hostname == location.hostname)
+            && !$(obj).hasClass("twitter");
     };
-    
+
     $("a:external").addClass("new-window");
         
-    $('a.new-window').click(function () {
+    $("a.new-window").click(function () {
         window.open(this.href);
         return false;
+    });
+
+    // Share on Twitter.
+    $(".twitter").click(function (event) {
+        var anchor$ = $(event.currentTarget);
+        var width = 600, height = 600;
+        var url = stringFormat(anchor$.attr("href"),
+                               encodeURIComponent(anchor$.attr("data-text")),
+                               encodeURIComponent(anchor$.attr("data-url")));
+        var left = (window.screen.width / 2) - (width / 2);
+        var top = (window.screen.height / 2) - (height / 2);
+        window.open(url, "",
+                    stringFormat('toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width={0},height={1},top={2},left={3}', width, height, top, left));
+        event.preventDefault();
     });
 });

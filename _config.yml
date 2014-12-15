@@ -2,6 +2,7 @@
 title: The Humble Programmer
 email: ironcev@hotmail.com
 url: "http://thehumbleprogrammer.com"
+shorturl: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: false
 disqusShortname: thehumbleprogrammer

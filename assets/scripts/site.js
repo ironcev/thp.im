@@ -38,7 +38,8 @@ $(function () {
         return !(obj.href == "")
             && !obj.href.match(/^mailto\:/)
             && !(obj.hostname == location.hostname)
-            && !$(obj).hasClass("twitter");
+            && !$(obj).hasClass("twitter")
+            && !$(obj).hasClass("googlePlus");
     };
 
     $("a:external").addClass("new-window");
@@ -48,13 +49,13 @@ $(function () {
         return false;
     });
 
-    // Share on Twitter.
-    $(".twitter").click(function (event) {
-        var anchor$ = $(event.currentTarget);
+    // Share on Twitter and Google Plus.
+    $(".twitter, .googlePlus").click(function (event) {
+        var anchor = $(event.currentTarget);
         var width = 600, height = 600;
-        var url = stringFormat(anchor$.attr("href"),
-                               encodeURIComponent(anchor$.attr("data-text")),
-                               encodeURIComponent(anchor$.attr("data-url")));
+        var url = stringFormat(anchor.attr("href"),
+                               encodeURIComponent(anchor.attr("data-text")),
+                               encodeURIComponent(anchor.attr("data-url")));
         var left = (window.screen.width / 2) - (width / 2);
         var top = (window.screen.height / 2) - (height / 2);
         window.open(url, "",

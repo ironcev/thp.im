@@ -4,6 +4,8 @@ subtitle: An artist wannabe discovers his own art
 description: What is the Stack Trace Art and how one artist wannabe discovered it. Its origins and in addition some fresh pieces of the finest Stack Trace Art.
 keywords: stack-trace art
 tags: stack-trace-art stacktraceangelo fun art
+twitter:
+  text: 'A new art form is born - Stack Trace Art! #stacktraceart'
 ---
 ##In Its Essence
 Stack Trace Art is, in its essence, the art of throwing an exception that creates a beautiful drawing on the caller's stack trace. Before you dive deeper into its origins and the question of its purpose, enjoy first some of the exceptions being thrown and their drawings being drawn.

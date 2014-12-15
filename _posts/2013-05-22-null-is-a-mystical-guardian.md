@@ -5,6 +5,8 @@ description: Demystifying the mystical nature of null. This blog posts shows wha
 keywords: null
 tags: null fun
 hasCode: false
+twitter:
+  text: 'Explore the mystical personality of ''null'''
 ---
 ##Willkommen Null
 "What is this – null?" my good friend Čazim asked me when I helped him to create his profile on the Austrian Labor Agency web site.

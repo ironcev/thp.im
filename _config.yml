@@ -1,7 +1,6 @@
 # Site settings
 title: The Humble Programmer
 email: ironcev@hotmail.com
-baseurl: ""
 url: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: false

@@ -1,9 +1,27 @@
 {% if page.showSocialSharing %}
 <div class="socialIcons">
     <ul>
-        <li><a rel="nofollow" data-text="{{ page.twitter.text | default: page.subtitle | strip_html }}" data-url="{{ site.shorturl }}{{ page.url }}" href="http://www.twitter.com/intent/tweet?text={0}&url={1}" class="twitter" title="Share on Twitter">Share on Twitter</a></li>
-        <li><a rel="nofollow" data-text="" data-url="{{ site.url }}{{ page.url }}" href="https://plus.google.com/share?url={1}{0}" class="googlePlus" title="Share on Google Plus">Share on Google Plus</a></li>
-        <li><a rel="nofollow" href="#" class="facebook" title="Share on Facebook">Share on Facebook</a></li>
+        <li><a rel="nofollow" class="twitter" title="Share on Twitter"
+               data-href="?text={0}&url={1}"
+               data-text="{{ page.twitter.text | default: page.subtitle | strip_html }}"
+               data-url="{{ site.shorturl }}{{ page.url }}"
+               href="http://www.twitter.com/intent/tweet">
+               Share on Twitter</a></li>
+               
+        <li><a rel="nofollow" class="googlePlus" title="Share on Google Plus"
+               data-href="?url={1}{0}"
+               data-text=""
+               data-url="{{ site.url }}{{ page.url }}"
+               href="https://plus.google.com/share" >
+               Share on Google Plus</a></li>
+        <li><a rel="nofollow" class="facebook" title="Share on Facebook"
+               data-href="?app_id=923091607704110&link={0}&picture={1}&description={2}&name=TODO&redirect_uri="
+               data-heading="{{ page.facebook.heading | default: page.title | strip_html }}"
+               data-description="{{ page.facebook.description | default: page.subtitle | strip_html }}"
+               data-picture="{{ page.facebook.picture }}"
+               data-link="{{ site.url }}{{ page.url }}"
+               href="https://www.facebook.com/dialog/feed" >
+               Share on Facebook</a></li>
     </ul>
 </div>
 {% endif %}

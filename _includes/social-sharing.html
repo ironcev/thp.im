@@ -14,14 +14,16 @@
                data-url="{{ site.url }}{{ page.url }}"
                href="https://plus.google.com/share" >
                Share on Google Plus</a></li>
+               
         <li><a rel="nofollow" class="facebook" title="Share on Facebook"
-               data-href="?app_id=923091607704110&link={0}&picture={1}&description={2}&name=TODO&redirect_uri="
-               data-heading="{{ page.facebook.heading | default: page.title | strip_html }}"
+               data-href="?app_id=923091607704110&link={0}&picture={1}&description={2}&name={3}&redirect_uri={{ site.url }}/close-window.html"
+               data-name="{{ page.facebook.name | default: page.title | strip_html }}"
                data-description="{{ page.facebook.description | default: page.subtitle | strip_html }}"
-               data-picture="{{ page.facebook.picture }}"
+               data-picture="{{ site.url }}/resources/{{ page.facebook.picture }}"
                data-link="{{ site.url }}{{ page.url }}"
                href="https://www.facebook.com/dialog/feed" >
                Share on Facebook</a></li>
     </ul>
 </div>
+
 {% endif %}

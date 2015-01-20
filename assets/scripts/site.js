@@ -71,7 +71,8 @@ $(function () {
         var url = stringFormat(anchor.attr("href") + anchor.attr("data-href"),
                                encodeURIComponent(anchor.attr("data-link")),
                                encodeURIComponent(anchor.attr("data-picture")),
-                               encodeURIComponent(anchor.attr("data-description")));
+                               encodeURIComponent(anchor.attr("data-description")),
+                               encodeURIComponent(anchor.attr("data-name")));
         var left = (window.screen.width / 2) - (width / 2);
         var top = (window.screen.height / 2) - (height / 2);
         window.open(url, "",

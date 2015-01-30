@@ -118,7 +118,7 @@ If we slightly change the implementation there will be no warning any more, alth
 
 Somehow I felt that I had lost the battle yet again.
 
-#Striking the Root of Evil
+##Striking the Root of Evil
 And so, while I was hacking at the leaves of evil; one of my colleagues, Stefan Preuer struck the root itself. Being a huge fan of C#, I somehow didn't want to admit that the problem lies in the language itself. Null references are legal citizens in C#. On the other side, **there is no built-in language concept for clearly expressing that "the value of a reference type is definitely there" or "the value of a reference type might or might not be there"**. Interestingly, that concept does exist for value types. The `Nullable<T>` allows us to express that **"the value of a value type might or might not be there"**.
 
 Stefan went beyond C# and tried to find an inspiration in functional languages.

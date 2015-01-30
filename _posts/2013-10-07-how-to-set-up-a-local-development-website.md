@@ -5,6 +5,8 @@ description: This blog post explains without words how to set up a website on a 
 keywords: development website
 tags: senza-parole iis
 hasCode: false
+facebook:
+  picture: 'how-to-set-up-a-local-development-website/add-a-new-website-in-iis.png'
 ---
 ![Run text editor as administrator](/resources/how-to-set-up-a-local-development-website/run-text-editor-as-administrator.png)
 

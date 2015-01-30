@@ -67,10 +67,10 @@ $(function () {
     // Share on Facebook.
     $(".facebook").click(function (event) {
         var anchor = $(event.currentTarget);
-        var width = 600, height = 600;
+        var width = 800, height = 600;
         var url = stringFormat(anchor.attr("href") + anchor.attr("data-href"),
                                encodeURIComponent(anchor.attr("data-link")),
-                               encodeURIComponent(anchor.attr("data-picture")),
+                               anchor.attr("data-has-picture").length >0 ? encodeURIComponent(anchor.attr("data-picture")) : "",
                                encodeURIComponent(anchor.attr("data-description")),
                                encodeURIComponent(anchor.attr("data-name")));
         var left = (window.screen.width / 2) - (width / 2);

@@ -5,6 +5,8 @@ description: IIS Express' words of wisdom on the topic of data and error. Nonsen
 keywords: data error
 tags: iis nonsense fun quote
 hasCode: false
+facebook:
+  picture: 'the-data-is-the-error/iis-express-nonsense-message-the-data-is-the-error.png'
 ---
 ![The data is the error](/resources/the-data-is-the-error/iis-express-nonsense-message-the-data-is-the-error.png)
 

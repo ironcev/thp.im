@@ -7,6 +7,9 @@ tags: null fun
 hasCode: false
 twitter:
   text: 'Explore the mystical personality of ''null'''
+facebook:
+  picture: 'null-is-a-mystical-guardian/null-requires-strength.png'
+  description: When null reaches the surface of your application
 ---
 ##Willkommen Null
 "What is this – null?" my good friend Čazim asked me when I helped him to create his profile on the Austrian Labor Agency web site.

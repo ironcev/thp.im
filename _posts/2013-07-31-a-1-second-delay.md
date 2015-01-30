@@ -5,6 +5,8 @@ description: This blog post quotes three good reasons to focus on performance of
 keywords: web site performance
 tags: quote performance
 hasCode: false
+facebook:
+  picture: 'a-1-second-delay/a-1-second-delay-by-aberdeen-group.png'
 ---
 <a href="https://devcentral.f5.com/blogs/us/performance-versus-presentation"><img src="/resources/a-1-second-delay/a-1-second-delay-by-aberdeen-group.png" alt="A 1 Second Delay"></a>
 

@@ -4,6 +4,8 @@ subtitle: 'The meaning of the CSS <code>background-position</code> defined in pe
 description: This blog post explains without words the meaning of the CSS 'background-position' when it is defined in percentages. Plain and simple.
 keywords: CSS background-position
 tags: senza-parole css
+facebook:
+  picture: 'css-background-position/meaning-of-the-css-background-position-when-it-is-defined-in-percentages.png'
 ---
     background-position: 75% 50%
 

@@ -5,5 +5,7 @@ description: This blog post explains without words one possible Git branching mo
 keywords: Git branching model
 tags: senza-parole git
 hasCode: false
+facebook:
+  picture: 'a-good-git-branching-model/a-good-git-branching-model.png'
 ---
 <a href="http://nvie.com/posts/a-successful-git-branching-model/"><img src="/resources/a-good-git-branching-model/a-good-git-branching-model.png"></a>

@@ -57,6 +57,23 @@ And here is where my search for *The Invisible Character* began. "If I could onl
 
 (Oh, by the way, copy-paste the above code to your C# IDE of choice and compile it. Of course it will compile! No need to ask :-))
 
+<script type="text/javascript">
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
+{
+    document.write
+    ("<p class='warning'>I see that you use Firefox. Unfortunately Firefox does not render <em>The Invisible Character</em> properly. I'll report that to the Firefox team. Meanwhile, if you want to get a feeling how the above code look like, you can try to open this page in some other browser. I tested it in Chrome or Internet Explorer and they both render <em>The Invisible Character</em> properly. Basically, what you should get is something like this (I just replaced <em>The Invisible Character</em> from the code above with spaces):</p>");
+    
+    document.write
+    ("<pre><code>public class Cvrči cvrči cvrčak na čvoru crne smrče\n" +
+     "{\n" +
+     "    public void कोशिश करने वालों की() { }\n" +
+     "    public void Лулу и пътуването() { }\n" +
+     "    public void De la capăt() { }\n" +
+     "    public void Herz schlägt auch im Eis() { }\n" +
+     "}</code></pre>");
+}
+</script>
+
 ###The Quest for *The Invisible Character*
 I crossed my fingers hoping that such character exists and quickly turned the [C# Identifier documentation](https://msdn.microsoft.com/en-us/library/aa664670(v=vs.71).aspx) into the (roughly) following piece of code:
 
@@ -76,7 +93,8 @@ I crossed my fingers hoping that such character exists and quickly turned the [C
 
     public bool IsValidCSharpIdentifierCharacter(char character)
     {
-        return validCharacterCategories.Contains(char.GetUnicodeCategory(character));
+        return validCharacterCategories
+               .Contains(char.GetUnicodeCategory(character));
     }
 
 (You can [see the concrete implementation on GitHub](https://github.com/ironcev/stackTraceangelo/blob/9c58768e14bf4ccaf65aa4b74c8b5ca70b558a18/Source/ProofOfConcept/Core/StackTraceArtGenerator.cs). Be aware of the "Intentionally Bad Code" warning though ;-))

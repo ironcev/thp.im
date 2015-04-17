@@ -29,7 +29,7 @@ For the impatient ones among you, here is a summary:
 
 Pretty messy, isn't it?
 
-In addition, I tried to hack [WPF message box](http://msdn.microsoft.com/en-us/library/system.windows.messagebox.aspx) in order to make it modal for all windows. All the dialog opening reminded me of the "hello, world " sample from the [Charles Petzold's Programming Windows, 5th Edition](http://www.amazon.com/Programming-Windows&reg;-Edition-Microsoft-Series/dp/157231995X/ref=sr_1_1?ie=UTF8&qid=1348300696&sr=8-1&keywords=Charles+Petzold+Programming+Windows,+5th+Edition):
+In addition, I tried to hack [WPF message box](http://msdn.microsoft.com/en-us/library/system.windows.messagebox.aspx) in order to make it modal for all windows. All this dialog opening reminded me of the "hello, world" sample from the [Charles Petzold's Programming Windows, 5th Edition](http://www.amazon.com/Programming-Windows&reg;-Edition-Microsoft-Series/dp/157231995X/ref=sr_1_1?ie=UTF8&qid=1348300696&sr=8-1&keywords=Charles+Petzold+Programming+Windows,+5th+Edition):
 
     int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
                         PSTR szCmdLine, int iCmdShow)

@@ -51,11 +51,11 @@ Let's explain them shortly.
 
 Symptom fixes look alienated in the code. In one way or another, they always somehow stick out. They do not belong to the solution of the original problem that the code tries to solve. They are an artificial addition, put to the code to circumvent the situation that causes buggy behaviour. Out of my experience, they are too often not properly commented at all. No wonder that this is the case. The "proper" comment would sound like: "Don't remove this or everything will crash!" This kind of a comment would imply that the fix is actually a symptom fix, but the person who apply it usually do not consider it as such, and therefore omits the warning comment.
 
-Sooner or later some other programmer will start changing the same code and ask the obvious question "Why is this line of code here? It doesn't look that we need it." I was that other programmer several times. Once the fix is unintentionally removed it's merely a matter of luck how fast the bug will reappear again. If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honour to tell you that, well... your best intentions to clean-up the code have removed a symptom fix.
+Sooner or later some other programmer will start changing the same code and ask the obvious question "Why is this line of code here? It doesn't look that we need it." I was that other programmer several times. Once the fix is unintentionally removed it's merely a matter of luck how fast the bug will reappear again. If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honour to tell you that, well... your best intentions to clean-up the code have actually removed a symptom fix and reintroduced the bug.
 
 ###The Law #2: A symptom fix will mutate and spread
 
-Since the symptom is fixed and not the cause, the probability is high that the bug will appear in other places that use the buggy code. This often results in other programmers writing fixes for the same bug all over again. Let me quote Steve here:
+Since the symptom is fixed and not the cause, the probability is high that the bug will appear in other places that use the buggy code. This often results in other programmers writing fixes for the same bug all over again. Let me quote Steve again:
 
 > Other times, I've tracked a bug to it source and then thought, "Wait, this can't be right; if it is, this function over here would be broken too, and it's not." I'm sure you can guess why this other function worked. It worked because somebody had used a local fix for a more general bug.
 <br/><br/>
@@ -71,8 +71,8 @@ A one-to-rule-them-all symptom fix is an antipode of the root-cause fix. What ma
 
 ##Example, please!
 
-I hope this theoretical overview of The Three Laws makes sense to you. Still, there is nothing like a good concrete example. It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
+I hope this theoretical overview of The Three Laws makes sense to you. Still, there is nothing like a good concrete example :-) It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
 
-In my next post I will shortly explain the `Split<T>()` method and use it afterwards in three separate posts to demonstrate each of the laws in detail.
+[My next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix. I will use this symptom fix afterwards in three separate posts to demonstrate each of the laws in detail.
 
 I hope as well that this article will motivate you to always always dig as deep as needed to find the cause of a bug before eventually fixing any of its symptoms.

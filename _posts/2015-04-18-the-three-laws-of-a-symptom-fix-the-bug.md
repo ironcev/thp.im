@@ -8,7 +8,7 @@ tags: bugs swissknife
 ##Illustrating the Laws
 In [my last post]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}) on The Three Laws of a Symptom Fix I [promised to shortly explain]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#example-please) the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method and the bug behind its original implementation. This bug turned out to be a perfect example for demonstrating *The Thee Laws* and I will use it in my upcoming posts for the demonstration purpose.
 
-Note that **The Thee Laws are universal**. They do not depend on the nature of a particular bug. I'll use the concrete bug shown below just to illustrate them on a tangible example.
+Note that **The Thee Laws are universal**. They do not depend on the nature of a particular bug. They are also programming-language and platform agnostic. I'll use the concrete bug shown below just to illustrate them on a tangible example.
 
 ##The `Split<T>()` Method
 Let's see first what the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method is doing and how it was implemented. That will help us to easily follow the examples that will be given in the upcoming posts.
@@ -67,4 +67,8 @@ Once `ToArray()` is called the `Split()` will operate on the in-memory array and
 
 A perfect symptom fix which will serve as a perfect illustration of [The Three Laws of a Symptom Fix]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-three-laws)!
 
-In the upcoming posts I'll use this symptom fix to give tangible examples for all the three laws.
+Here is the list of additional blog posts that use this symptom fix as a base for tangible examples of each of *The Laws*:
+
+- [The Three Laws of a Symptom Fix - Removal and Reappearance]({% post_url 2015-04-23-the-three-laws-of-a-symptom-fix-removal-and-reappearance %})
+- The Three Laws of a Symptom Fix - Mutation and Spreading (still to be written)
+- The Three Laws of a Symptom Fix - One to Rule Them All (still to be written)

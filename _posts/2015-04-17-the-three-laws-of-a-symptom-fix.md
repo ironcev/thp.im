@@ -69,10 +69,16 @@ Ah, if I would get a penny for every global try-catch I saw, that tries to swall
 
 A one-to-rule-them-all symptom fix is an antipode of the root-cause fix. What makes it dangerous is the fact that it has the same end-effect as the root-cause fix. It makes all appearances of the bug to disappear. The difference is that the root-cause fix fixes the problem, and the one-to-rule-them-all symptom fix efficiently hides it. This hiding could lead to more problems.  Also, depending on the approach used in implementing the one-to-rule-them-all, its unintentional removal could lead to a disaster.
 
-##Example, please!
+##Examples, please!
 
 I hope this theoretical overview of The Three Laws makes sense to you. Still, there is nothing like a good concrete example :-) It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
 
-[My next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix. I will use this symptom fix afterwards in three separate posts to demonstrate each of the laws in detail.
+[My next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix.
 
-I hope as well that this article will motivate you to always always dig as deep as needed to find the cause of a bug before eventually fixing any of its symptoms.
+I use this symptom fix afterwards in three separate posts to demonstrate each of the laws in detail:
+
+- [The Three Laws of a Symptom Fix - Removal and Reappearance]({% post_url 2015-04-23-the-three-laws-of-a-symptom-fix-removal-and-reappearance %})
+- The Three Laws of a Symptom Fix - Mutation and Spreading (still to be written)
+- The Three Laws of a Symptom Fix - One to Rule Them All (still to be written)
+
+All together these posts form a blog series on the topic of symptom fixes and their consequences. I hope that this series will motivate you to always dig as deep as needed to find the cause of a bug before eventually fixing any of its symptoms.

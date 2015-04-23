@@ -6,7 +6,7 @@ keywords: symptom fix
 tags: bugs swissknife
 ---
 ##Illustrating the Laws
-In [my last post]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}) on The Three Laws of a Symptom Fix I [promised to shortly explain]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#example-please) the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method and the bug behind its original implementation. This bug turned out to be a perfect example for demonstrating *The Thee Laws* and I will use it in my upcoming posts for the demonstration purpose.
+In [my last post]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}) on The Three Laws of a Symptom Fix I [promised to shortly explain]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#examples-please) the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method and the bug behind its original implementation. This bug turned out to be a perfect example for demonstrating *The Thee Laws* and I will use it in my upcoming posts for the demonstration purpose.
 
 Note that **The Thee Laws are universal**. They do not depend on the nature of a particular bug. They are also programming-language and platform agnostic. I'll use the concrete bug shown below just to illustrate them on a tangible example.
 

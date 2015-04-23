@@ -1,6 +1,6 @@
 ---
 title: The Three Laws of a Symptom Fix - Removal and Reappearance
-subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-law-1-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear">First Law of a Symptom Fix</a>, illustrated on a concrete example'
+subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-first-law-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear">First Law of a Symptom Fix</a>, illustrated on a concrete example'
 description: This blog post illustrates The First Law of a Symptom Fix on a concrete example.
 keywords: symptom fix
 tags: bugs
@@ -23,7 +23,7 @@ The three posts just attempt to illustrate them on tangible examples. The exampl
 
 So, why would anyone remove a symptom fix from the code? What is so different about symptom fixes that makes them good candidates for removal from the code?
 
-Let me quote [what I already wrote]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-law-1-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear):
+Let me quote [what I already wrote]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-first-law-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear):
 
 > Symptom fixes look alienated in the code. In one way or another, they always somehow stick out. They do not belong to the solution of the original problem that the code tries to solve. They are an artificial addition, put to the code to circumvent the situation that causes buggy behaviour.
 
@@ -61,7 +61,7 @@ But out of my experience, the code that has that appeal of "being in wrong place
 To put it simple, there is a good probability that someone will once remove the symptom fix, in this case, the `ToArray()` call.
 
 ##The Reappearance
-What happens afterwards, once when the symptom fix has been unintentionally removed? That depends on many factors. To [quote myself again]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-law-1-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear):
+What happens afterwards, once when the symptom fix has been unintentionally removed? That depends on many factors. To [quote myself again]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-first-law-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear):
 
 > If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honour to tell you that, well... your best intentions to clean-up the code have actually removed a symptom fix and reintroduced the bug.
 

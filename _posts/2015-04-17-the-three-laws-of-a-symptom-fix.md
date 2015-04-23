@@ -47,13 +47,13 @@ And so here they are, The Three Laws of a Symptom Fix:
 
 Let's explain them shortly.
 
-###The Law #1: A symptom fix will be unintentionally removed and the bug will reappear
+###The First Law: A symptom fix will be unintentionally removed and the bug will reappear
 
 Symptom fixes look alienated in the code. In one way or another, they always somehow stick out. They do not belong to the solution of the original problem that the code tries to solve. They are an artificial addition, put to the code to circumvent the situation that causes buggy behaviour. Out of my experience, they are too often not properly commented at all. No wonder that this is the case. The "proper" comment would sound like: "Don't remove this or everything will crash!" This kind of a comment would imply that the fix is actually a symptom fix, but the person who apply it usually do not consider it as such, and therefore omits the warning comment.
 
 Sooner or later some other programmer will start changing the same code and ask the obvious question "Why is this line of code here? It doesn't look that we need it." I was that other programmer several times. Once the fix is unintentionally removed it's merely a matter of luck how fast the bug will reappear again. If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honour to tell you that, well... your best intentions to clean-up the code have actually removed a symptom fix and reintroduced the bug.
 
-###The Law #2: A symptom fix will mutate and spread
+###The Second Law: A symptom fix will mutate and spread
 
 Since the symptom is fixed and not the cause, the probability is high that the bug will appear in other places that use the buggy code. This often results in other programmers writing fixes for the same bug all over again. Let me quote Steve again:
 
@@ -63,7 +63,7 @@ Steve Maguire, <a href="http://www.amazon.com/Writing-Solid-Code-Microsoft-Progr
 
 Writing symptom fixes for the common bug all over again is what I call *spreading a symptom fix*. Those spread fixes will of course not always look the same. Depending on the nature of the underlying bug, they could come in various forms and could significantly differ from each other. That's why I call them *mutations of a symptom fix*.
 
-###The Law #3: The one-to-rule-them-all symptom fix will appear, being more dangerous than all individual symptom fixes
+###The Third Law: The one-to-rule-them-all symptom fix will appear, being more dangerous than all individual symptom fixes
 
 Ah, if I would get a penny for every global try-catch I saw, that tries to swallow "that situation that shouldn't happened"... I'm sure you know what I'm talking about.
 

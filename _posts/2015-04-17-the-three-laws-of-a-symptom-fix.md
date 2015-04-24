@@ -3,8 +3,12 @@ title: The Three Laws of a Symptom Fix
 subtitle: Three inevitable consequences of fixing a symptom and not the cause of a bug
 description: This blog post presents three inevitable consequences of fixing a symptom and not the cause of a bug.
 keywords: symptom fix
-tags: bugs
+tags: bugs blog-post-series
 ---
+<p class='alert alert-info'>
+This is the first post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+</p>
+
 ##The Temptation
 
 <blockquote>

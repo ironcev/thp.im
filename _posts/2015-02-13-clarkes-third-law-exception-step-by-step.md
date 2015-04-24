@@ -21,7 +21,7 @@ In my [previous post](/his-majesty-hangul-the-filler) I revealed the secret behi
 if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
 {
     document.write
-    ("<p class='warning'>I see that you use Firefox. Unfortunately Firefox does not render the Hangul Filler properly. I'll report that to the Firefox team. Meanwhile, if you want to get a feeling how the code in this post looks like, open this web page in some other browser. I tested the page in Chrome and Internet Explorer and they both render the Hangul Filler properly. Basically, the code given above should look like this (I just replaced Hangul Fillers with spaces):</p>");
+    ("<p class='alert alert-danger'>I see that you use Firefox. Unfortunately Firefox does not render the Hangul Filler properly. I'll report that to the Firefox team. Meanwhile, if you want to get a feeling how the code in this post looks like, open this web page in some other browser. I tested the page in Chrome and Internet Explorer and they both render the Hangul Filler properly. Basically, the code given above should look like this (I just replaced Hangul Fillers with spaces):</p>");
     
     document.write
     ("<pre><code>public class This is a perfectly valid class name\n" +

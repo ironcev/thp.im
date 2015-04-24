@@ -5,6 +5,10 @@ description: This blog post explains the bug in the Split() extension method. Th
 keywords: symptom fix
 tags: bugs swissknife
 ---
+<p class='alert alert-info'>
+This is the second post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+</p>
+
 ##Illustrating the Laws
 In [my last post]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}) on The Three Laws of a Symptom Fix I [promised to shortly explain]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#examples-please) the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method and the bug behind its original implementation. This bug turned out to be a perfect example for demonstrating *The Thee Laws* and I will use it in my upcoming posts for the demonstration purpose.
 

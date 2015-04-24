@@ -61,7 +61,7 @@ And here is where my search for *The Invisible Character* began. "If I could onl
 if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
 {
     document.write
-    ("<p class='warning'>I see that you use Firefox. Unfortunately Firefox does not render <em>The Invisible Character</em> properly. I'll report that to the Firefox team. Meanwhile, if you want to get a feeling how the above code looks like, open this web page in some other browser. I tested the page in Chrome and Internet Explorer and they both render <em>The Invisible Character</em> properly. Basically, the code given above should look like this (I just replaced <em>The Invisible Character</em> with spaces):</p>");
+    ("<p class='alert alert-danger'>I see that you use Firefox. Unfortunately Firefox does not render <em>The Invisible Character</em> properly. I'll report that to the Firefox team. Meanwhile, if you want to get a feeling how the above code looks like, open this web page in some other browser. I tested the page in Chrome and Internet Explorer and they both render <em>The Invisible Character</em> properly. Basically, the code given above should look like this (I just replaced <em>The Invisible Character</em> with spaces):</p>");
     
     document.write
     ("<pre><code>public class Cvrči cvrči cvrčak na čvoru crne smrče\n" +

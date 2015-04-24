@@ -5,18 +5,9 @@ description: This blog post illustrates The First Law of a Symptom Fix on a conc
 keywords: symptom fix
 tags: bugs
 ---
-##The Three Laws of a Symptom Fix?
-*The Three Laws of a Symptom Fix* represent three inevitable consequences of fixing a symptom and not the cause of a bug. I formulated them based on my own experience with symptom fixes. I believe though, that any programmer who ever witnessed a symptom fix (and who of us didn't!) shares the very same experience.
-
-My [post on The Three Laws of a Symptom Fix]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}) shortly [explains each of the laws]({% post_url 2015-04-17-the-three-laws-of-a-symptom-fix %}#the-three-laws). The post also presents a concrete case of a symptom fix that motivated me to write more about *The Three Laws*.
-
-In [my last post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) I discussed that case – a bug in the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method. I find this bug to be a perfect example for demonstrating *The Thee Laws*. So I decided to use it in three additional blog posts for the demonstration purpose. Each of the posts will give a concrete example of one of *The Laws* coming into force.
-
-In this post, I will use [the bug in the `Split<T>()` extension method]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) to illustrate *The First Law of a Symptom Fix*
-
-Note that **The Thee Laws are universal**. They do not depend on the nature of a particular bug. They are also programming-language and platform agnostic.
-
-The three posts just attempt to illustrate them on tangible examples. The examples could be seen as simplified, but still I believe that they show pretty well the essence of each of *The Laws*.
+<p class='alert alert-info'>
+This is the third post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+</p>
 
 ##The First Law of a Symptom Fix
 > A symptom fix will be unintentionally removed and the bug will reappear.

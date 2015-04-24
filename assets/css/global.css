@@ -127,6 +127,8 @@ p code, ul code                                 { background: none repeat scroll
 /******************** Publish *****************/
 .publish                                        { font-size:16px; text-align:center; margin: 0 0 2em; padding-top:10px;}
 /******************** Warnings *****************/
+
+/*
 .warning {
     background-image: linear-gradient(to bottom, #f2dede 0px, #e7c3c3 100%);
     background-repeat: repeat-x;
@@ -138,6 +140,43 @@ p code, ul code                                 { background: none repeat scroll
     color: #a94442;
     border-radius: 4px;
     padding: 15px;
+}
+*/
+.alert {
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: none;
+    border-radius: 4px 4px 4px 4px;
+    box-sizing: border-box;
+    padding: 15px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+}
+
+.alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #3C763D;
+}
+
+.alert-info {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #31708F;
+}
+
+.alert-warning {
+    background-color: #FCF8E3;
+    border-color: #FAEBCC;
+    color: #8A6D3B;
+}
+
+.alert-danger {
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+    color: #A94442;
 }
 
 /***************** RESPONSIVE ******************/

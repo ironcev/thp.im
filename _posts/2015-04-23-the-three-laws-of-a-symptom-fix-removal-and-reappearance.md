@@ -33,11 +33,11 @@ So, this is the code that caused one of its clients to crash:
 
     public BannersViewModel(IEnumerable<Banner> banners,
                             IEnumerable<BannerCategory> bannerCategories,
-                            IEnumerable<SomeOtherBusinessEntity> someOtherBusinessEntities)
+                            IEnumerable<SomeBusinessEntity> someBusinessEntities)
     {
         Banners = banners;
         BannerCategories = bannerCategories;
-        SomeOtherBusinessEntities = someOtherBusinessEntities;
+        SomeBusinessEntities = someBusinessEntities;
     }
 
 And this is the version with the symptom fix.
@@ -45,11 +45,11 @@ And this is the version with the symptom fix.
 <pre>
 <code>public BannersViewModel(IEnumerable&lt;Banner&gt; banners,
                         IEnumerable&lt;BannerCategory&gt; bannerCategories,
-                        IEnumerable&lt;SomeOtherBusinessEntity&gt; someOtherBusinessEntities)
+                        IEnumerable&lt;SomeBusinessEntity&gt; someBusinessEntities)
 {
     Banners = banners;
     BannerCategories = bannerCategories<strong>.ToArray()</strong>;
-    SomeOtherBusinessEntities = someOtherBusinessEntities;
+    SomeBusinessEntities = someBusinessEntities;
 }</code>
 </pre>
 

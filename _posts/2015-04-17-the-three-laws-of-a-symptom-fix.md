@@ -47,9 +47,9 @@ And so here they are, The Three Laws of a Symptom Fix:
 
 - **A symptom fix will be unintentionally removed and the bug will reappear.**
 - **A symptom fix will mutate and spread.**
-- **The one-to-rule-them-all symptom fix will appear, being more dangerous than all individual symptom fixes.**
+- **The one-to-rule-them-all symptom fix will appear, being more dangerous than any of the individual symptom fixes.**
 
-Let's explain them shortly.
+Let's explain *The Three Laws* shortly.
 
 ###The First Law: A symptom fix will be unintentionally removed and the bug will reappear
 
@@ -67,15 +67,15 @@ Steve Maguire, <a href="http://www.amazon.com/Writing-Solid-Code-Microsoft-Progr
 
 Writing symptom fixes for the common bug all over again is what I call *spreading a symptom fix*. Those spread fixes will of course not always look the same. Depending on the nature of the underlying bug, they could come in various forms and could significantly differ from each other. That's why I call them *mutations of a symptom fix*.
 
-###The Third Law: The one-to-rule-them-all symptom fix will appear, being more dangerous than all individual symptom fixes
+###The Third Law: The one-to-rule-them-all symptom fix will appear, being more dangerous than any of the individual symptom fixes
 
-Ah, if I would get a penny for every global try-catch I saw, that tries to swallow "that situation that shouldn't happened"... I'm sure you know what I'm talking about.
+Ah, if I would get a penny for every global try-catch I saw, that tried to swallow "that situation that shouldn't happened"... I'm sure you know what I'm talking about.
 
 A one-to-rule-them-all symptom fix is an antipode of the root-cause fix. What makes it dangerous is the fact that it has the same end-effect as the root-cause fix. It makes all appearances of the bug to disappear. The difference is that the root-cause fix fixes the problem, and the one-to-rule-them-all symptom fix efficiently hides it. This hiding could lead to more problems.  Also, depending on the approach used in implementing the one-to-rule-them-all, its unintentional removal could lead to a disaster.
 
 ##Examples, please!
 
-I hope this theoretical overview of The Three Laws makes sense to you. Still, there is nothing like a good concrete example :-) It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
+I hope this theoretical overview of *The Three Laws* makes sense to you. Still, there is nothing like a good concrete example :-) It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
 
 [My next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix.
 

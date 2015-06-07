@@ -6,7 +6,7 @@ keywords: symptom fix
 tags: bugs swissknife
 ---
 <p class='alert alert-info'>
-This is the second post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+This is the second post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
 </p>
 
 ##Illustrating the Laws
@@ -74,5 +74,5 @@ A perfect symptom fix which will serve as a perfect illustration of [The Three L
 Here is the list of additional blog posts that use this symptom fix as a base for tangible examples of each of *The Laws*:
 
 - [The Three Laws of a Symptom Fix - Removal and Reappearance]({% post_url 2015-04-23-the-three-laws-of-a-symptom-fix-removal-and-reappearance %})
-- The Three Laws of a Symptom Fix - Mutation and Spreading (still to be written)
+- [The Three Laws of a Symptom Fix - Mutation and Spreading]({% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-mutation-and-spreading %})
 - The Three Laws of a Symptom Fix - One to Rule Them All (still to be written)

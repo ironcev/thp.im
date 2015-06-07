@@ -14,7 +14,7 @@ Since there was a lot to say on the subject I decided to write a blog post serie
 
 - In the ["Removal and Reappearance"]({% post_url 2015-04-23-the-three-laws-of-a-symptom-fix-removal-and-reappearance %}) post, I use the mentioned bug in the `Split<T>()` extension method to illustrate *The First Law of a Symptom Fix*.
 
-- The ["Mutation and Spreading"]({% post_url 2015-04-24-the-three-laws-of-a-symptom-fix-mutation-and-spreading %}) post uses the same bug to illustrate the *The Second Law of a Symptom Fix*.
+- The ["Mutation and Spreading"]({% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-mutation-and-spreading %}) post uses the same bug to illustrate the *The Second Law of a Symptom Fix*.
 
 - The "One to Rule Them All" post (still to be written) uses it to illustrate the *The Third Law of a Symptom Fix*.
 

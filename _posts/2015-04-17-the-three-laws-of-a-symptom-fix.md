@@ -6,7 +6,7 @@ keywords: symptom fix
 tags: bugs blog-post-series
 ---
 <p class='alert alert-info'>
-This is the first post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+This is the first post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
 </p>
 
 ##The Temptation
@@ -77,12 +77,12 @@ A one-to-rule-them-all symptom fix is an antipode of the root-cause fix. What ma
 
 I hope this theoretical overview of *The Three Laws* makes sense to you. Still, there is nothing like a good concrete example :-) It happened by chance that my five-stroke symptom fix of the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method can serve as a perfect example to demonstrate all three laws.
 
-[My next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix.
+My [next post]({% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) shortly explains the bug in the `Split<T>()` method and its symptom fix.
 
 I use this symptom fix afterwards in three separate posts to demonstrate each of the laws in detail:
 
 - [The Three Laws of a Symptom Fix - Removal and Reappearance]({% post_url 2015-04-23-the-three-laws-of-a-symptom-fix-removal-and-reappearance %})
-- The Three Laws of a Symptom Fix - Mutation and Spreading (still to be written)
+- [The Three Laws of a Symptom Fix - Mutation and Spreading]({% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-mutation-and-spreading %})
 - The Three Laws of a Symptom Fix - One to Rule Them All (still to be written)
 
 All together these posts form a blog series on the topic of symptom fixes and their consequences. I hope that this series will motivate you to always dig as deep as needed to find the cause of a bug before eventually fixing any of its symptoms.

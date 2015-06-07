@@ -6,7 +6,7 @@ keywords: symptom fix
 tags: bugs
 ---
 <p class='alert alert-info'>
-This is the third post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-04-25-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+This is the third post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
 </p>
 
 ##The First Law of a Symptom Fix
@@ -63,4 +63,4 @@ If the programmer who "fixed" the original crash didn't add a check that ensures
 If the UI itself is not covered with automated tests and the problematic usage appears somewhere out of the main application use cases or even worse appears only when certain conditions are met - the reintroduced could easily remain unnoticed by programmers and testers.
 
 ##To Be Continued...
-I hope that the example, although simplified, was illustrative enough. In my next post I'll use the same bug to demonstrate *The Second Law of a Symptom Fix*.
+I hope that the example, although simplified, was illustrative enough. In my [next post]({% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-mutation-and-spreading %}) I use the same bug to demonstrate *The Second Law of a Symptom Fix*.

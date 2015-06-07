@@ -15,7 +15,7 @@ This is the forth post in my <em>The Three Laws of a Symptom Fix</em> blog post 
 ###Spreading
 Spreading of a symptom fix is a natural consequence of the fact that the root cause of the bug is not removed. Because of that, the probability is high that the bug will appear in other places that use the buggy code. How often this will happen depends on many factors. The most relevant one is, of course, on how many places the buggy code is called, directly or indirectly.
 
-Spreading simply means introducing new symptom fixes for the same bug on different places in code. As simple as that.
+Spreading simply means introducing new symptom fixes for the same bug in different places in code. As simple as that.
 
 ###Mutation
 Mutation is a more interesting phenomenon. Once a symptom fix starts spreading, there is no guarantee that all symptom fixes for the same bug will actually look the same. Depending on the nature of the underlying bug, they could come in various forms and could significantly differ from each other.
@@ -38,7 +38,7 @@ Although almost the same, these two symptom fixes still differ from each other. 
 
 In this case, it is easy to guess that both approaches actually try to solve a common problem. But we can easily imagine a more complex symptom fix that mutates significantly from those two. In the case of the the [`Split<T>()`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Collections/CollectionExtensions.cs) extension method, one could come to a conclusion that the `Split<T>()` method itself should be avoided, because it, well, obviously makes problems if called with `someQueryable`.
 
-In that case, the spectrum of possible mutations grows tremendously. Depending on the programmer's skills, personal code writing preferences and many other factors, we could face mutations that could hardly be recognized as correlated.
+In that case, the spectrum of possible mutations grows tremendously. Depending on the programmer's skills, personal code writing preferences and many other factors, we could face mutations that could hardly be recognized as correlated with each other.
 
 To illustrate this, let's put the `Split<T>()` method into the context in which it is usually called.
 
@@ -131,7 +131,7 @@ Below are three out of *many* possible solutions:
 If the replacement of the `Split<T>()` method with one of those "monster" solutions is not backed by a comment saying that the `Split<T>()` cannot be used with `products`, it would be almost impossible to correlate any of those mutations with our initial simple symptom fix.
 
 ##The Consequence
-*The Second Law of a Symptom Fix* has its consequence. **Symptom fixes will often remain in code even after the root cause bug is fixed.** Spreading and mutations are obvious reasons for that. The removal of the eventual symptom fixes can be done by the person who fixes the root bug or by those who are aware that the root bug is fixed. Depending how widespread the symptom fixes are, it can be that they will be "out of reach" of those who are aware that they can be removed. E.g. if the bug is in a public library, the creators of the library cannot know all the usages of the fixed code. But even if the root bug appears in proprietary code, uncommented mutations like those three shown above make it impossible to detect all of the symptom fixes.
+*The Second Law of a Symptom Fix* has its consequence. **Symptom fixes will often remain in code even after the root cause bug is fixed.** Spreading and mutations are obvious reasons for that. The removal of eventual symptom fixes can be done by the person who fixes the root bug or by those who are aware that the root bug is fixed. Depending how widespread the symptom fixes are, it can be that they will be "out of reach" of those who are aware that they can be removed. E.g. if the bug is in a public library, the creators of the library cannot know all the usages of the fixed code. But even if the root bug appears in proprietary code, uncommented mutations like those three shown above make it impossible to detect all of the symptom fixes.
 
 In our concrete example, if someone aware of the bug fix in the `Split<T>()` method tries to remove the introduced symptom fixes, she will easily remove the first two kinds of mutations. This can be done simply by searching for the usage of the `Split<T>()` method. The other three mutations on the other hand can be discovered only through cumbersome and time demanding manual analysis of the code, which often does not pay off.
 

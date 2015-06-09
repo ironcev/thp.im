@@ -6,7 +6,7 @@ keywords: symptom fix
 tags: bugs swissknife
 ---
 <p class='alert alert-info'>
-This is the second post in my <em>The Three Laws of a Symptom Fix</em> blog post series. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-overview %}">here</a>.
+This is the second post in the blog post series called <em>The Three Laws of a Symptom Fix</em>. The series talks about the consequences of fixing a symptom and not the cause of a bug. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-the-overview %}">here</a>.
 </p>
 
 ##Illustrating the Laws

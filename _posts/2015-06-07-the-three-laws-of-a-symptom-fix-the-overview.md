@@ -1,10 +1,10 @@
 ---
-title: The Three Laws of a Symptom Fix - Overview
-subtitle: 'Overview of <em>The Three Laws of a Symptom Fix</em> blog post series'
-description: This blog post gives an overview of all the posts published under the "The Three Laws of a Symptom Fix" blog post series.
+title: The Three Laws of a Symptom Fix - The Overview
+subtitle:
+description: This blog post gives the overview of all the posts published under the "The Three Laws of a Symptom Fix" blog post series.
 keywords: symptom fix
 ---
-**The Three Laws of a Symptom Fix represent three inevitable consequences of fixing a symptom and not the cause of a bug.** I formulated them based on my own experience with symptom fixes. I believe though, that any programmer who ever witnessed a symptom fix (and who of us didn't!) shares the very same experience.
+**The Three Laws of a Symptom Fix represent three inevitable consequences of fixing a symptom and not the cause of a bug.** I formulated them based on my own experience with numerous symptom fixes that I either wrote myself or witnessed. I'm sure though, that any programmer who ever wrote or witnessed a symptom fix (and who of us didn't!) shares the very same experience.
 
 Since there was a lot to say on the subject I decided to write a blog post series about it. Here is a short overview of it:
 

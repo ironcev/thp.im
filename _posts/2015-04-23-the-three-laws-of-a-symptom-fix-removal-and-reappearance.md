@@ -3,7 +3,7 @@ title: The Three Laws of a Symptom Fix - Removal and Reappearance
 subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-first-law-a-symptom-fix-will-be-unintentionally-removed-and-the-bug-will-reappear">First Law of a Symptom Fix</a>, illustrated on a concrete example'
 description: This blog post illustrates The First Law of a Symptom Fix on a concrete example.
 keywords: symptom fix
-tags: bugs
+tags: bugs symptom-fix symptom-fix-series-part
 ---
 <p class='alert alert-info'>
 This is the third post in the blog post series called <em>The Three Laws of a Symptom Fix</em>. The series talks about the consequences of fixing a symptom and not the cause of a bug. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-the-overview %}">here</a>.

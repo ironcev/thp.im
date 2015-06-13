@@ -21,6 +21,7 @@ a:active                                        { text-decoration: none; color: 
 .color-7, .color-7 a                            { color:#839098!important;}
 .color-8, .color-8 a                            { color:#5481e6!important;}
 .color-9, .color-9 a                            { color:#525252!important;}
+.symptom-fix-series-part, .symptom-fix-series-part a { color:#913ccd!important;}
 
 /****************** topWrapper *****************/
 .container                                      { width: 100%; margin: 0px auto; max-width:750px; padding-top:77px; }

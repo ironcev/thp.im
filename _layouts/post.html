@@ -7,7 +7,9 @@ layout: default
         <p>{{ page.subtitle }}</p>
         <ul>
         {% for tag in page.tags %}
-            <li class="{{ tag }}"><a href="{{ tag | prepend: '/tags/' }}">{{ tag }}</a></li>
+            {% unless tag contains '-series-part' %}
+                <li class="{{ tag }}"><a href="{{ tag | prepend: '/tags/' }}">{{ tag }}</a></li>
+            {% endunless %}
         {% endfor %}
         </ul>
     </div>

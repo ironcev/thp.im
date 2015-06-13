@@ -14,7 +14,9 @@ keywords: The Humble Programmer tags
     {% assign allTags = allTags | strip | split:' ' | sort %}
     <ul>
     {% for tag in allTags %}
-        <li class="{{ tag }}"><a href="{{ tag | prepend:'/tags/' }}">{{ tag }}</a></li>
+        {% unless tag contains '-series-part' %}
+            <li class="{{ tag }}"><a href="{{ tag | prepend:'/tags/' }}">{{ tag }}</a></li>
+        {% endunless %}
     {% endfor %}
     </ul>
 </div>

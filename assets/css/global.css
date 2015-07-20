@@ -1,4 +1,4 @@
-﻿/*************** essential elements ************/
+/*************** essential elements ************/
 html                                            { overflow-y: scroll; }
 html,
 body                                            { font-family: 'Lora',Serif; color: #000000; height: 100%; width: 100%; }
@@ -127,22 +127,8 @@ p code, ul code                                 { background: none repeat scroll
 
 /******************** Publish *****************/
 .publish                                        { font-size:16px; text-align:center; margin: 0 0 2em; padding-top:10px;}
-/******************** Warnings *****************/
 
-/*
-.warning {
-    background-image: linear-gradient(to bottom, #f2dede 0px, #e7c3c3 100%);
-    background-repeat: repeat-x;
-    border-color: #dca7a7;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442;
-    border-radius: 4px;
-    padding: 15px;
-}
-*/
+/******************** Alerts *****************/
 .alert {
     border-style: solid;
     border-width: 1px;
@@ -180,6 +166,9 @@ p code, ul code                                 { background: none repeat scroll
     color: #A94442;
 }
 
+/***************** Youtube ******************/
+iframe.youtube { width: 680px; max-width: 680px; height: 383px; display: block; margin-left: auto; margin-right: auto}
+
 /***************** RESPONSIVE ******************/
 @media only screen and (max-width : 1024px) { 
 
@@ -207,7 +196,11 @@ p code, ul code                                 { background: none repeat scroll
 
 pre.prettyprint                                 { font-size:14px!important;}
 
-.tags-list li a, .tags-list li a:visited        { font-size:26px; margin-bottom:8px;}
+.tags-list li a, .tags-list li a:visited        { font-size:26px; margin-bottom:8px;}    
+}
+
+@media only screen and (max-width : 640px) { 
+    iframe.youtube { width: 560px; max-width: 560px; height: 315px }
 }
 
 @media only screen and (max-width : 480px) { 
@@ -232,6 +225,11 @@ pre.prettyprint                                 { font-size:14px!important;}
 
 .publish                                        { font-size:14px;}
 
+iframe.youtube { width: 400px; max-width: 400px; height: 225px }
+}
+
+@media only screen and (max-width : 360px) {     
+  iframe.youtube { width: 280px; max-width: 280px; height: 158px }     
 }
 
 @media only screen and (max-width : 320px) { 
@@ -263,5 +261,5 @@ pre.prettyprint                                 { font-size:14px!important;}
 .content ul                                     { font-size:14px; line-height:20px; padding-left:25px; }
 .content ol                                     { font-size:14px; line-height:20px; padding-left:25px;}
 
-
+iframe.youtube { width: 280px; max-width: 280px; height: 158px }
 }

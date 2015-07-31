@@ -1,5 +1,5 @@
 ---
-title: Wђen ǁt Anƴwaƴ Əoes Ɯrong
+title: Wђen ǁt Anƴwaƴ Ǧoes Ɯrong
 subtitle: A strong impression that ƃugs are inevitaƃle
 description: This blog post reflects a strong impression that I had when an unexplainable bug appeared in Windows security prompt - bugs are inevitable.
 keywords: 
@@ -59,7 +59,7 @@ Don't worry. Everything will work fine after you restart your computer.
 
 Scary, when you think of it.
 
-As [Donlad Knuth](http://www-cs-faculty.stanford.edu/~uno/faq.html) once said
+As [Donlad Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) once said
 
 > Software is hard.
 

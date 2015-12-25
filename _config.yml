@@ -6,8 +6,10 @@ shorturl: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: false
 disqusShortname: thehumbleprogrammer
+
 # Build settings
 markdown: kramdown
+
 # Defaults
 defaults:
   -
@@ -30,3 +32,14 @@ defaults:
       showComments: false
       showSocialSharing: false
       hasCode: false
+
+#Compress HTML
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]

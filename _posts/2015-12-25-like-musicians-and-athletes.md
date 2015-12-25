@@ -4,6 +4,7 @@ subtitle: On importance of constant practice
 description: This blog post quotes Jurgen Appelo saying that software developers are like musicians and athletes who can only perform well with a good amount of practice.
 keywords: 
 tags: quote
+hasCode: false
 ---
 &nbsp;
 

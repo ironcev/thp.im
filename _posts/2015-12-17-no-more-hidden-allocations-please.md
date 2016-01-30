@@ -456,6 +456,4 @@ Is it really that easy? Especially if we want to support code contracts as well?
 
 What do you think? All suggestions are welcome!
 
-<p class='alert alert-info'>
-All the source code used in this post is available on GitHub. Download it <a href="https://github.com/ironcev/HumbleXamples/tree/master/NoMoreHiddenAllocationsPlease">here</a>.
-</p>
+{% hx_src NoMoreHiddenAllocationsPlease %}

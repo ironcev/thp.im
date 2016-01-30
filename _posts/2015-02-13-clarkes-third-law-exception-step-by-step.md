@@ -178,3 +178,5 @@ Essentially what it does is calling the last method in the class which than call
 To be very honest with you, this is the first Stack Trace Art class that I manually wrote. As I [explained in my previous post](/his-majesty-hangul-the-filler#putting-it-all-together), as soon as I discovered the Hangul Filler I wrote a prototype version of the first Stack Trace Art Editor, called [stackTraceangelo](https://github.com/ironcev/stackTraceangelo). It is primitive and bad written (yeah, all those "Intentionally Bad Code" warnings are there with a good reason!) but it [helped me to create those first pieces of the Stack Trace Art](/stack-trace-art) and to have a lot of fun and joy while creating them.
 
 I plan to write a post on how *stackTraceangelo* works and how to use it to create your own Stack Trace Art. Stay tuned :-)
+
+{% hx_src ClarkesThirdLawExceptionStepByStep %}

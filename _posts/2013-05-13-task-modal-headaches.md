@@ -130,3 +130,5 @@ Will that dialog automatically be task-modal?
 How can we know at all that the dialog is currently open?
 - How do we enforce exclusive usage of the `TaskModalDialogHandler` class?   
 Just saying to developers "You have to use this instead of calling `ShowDialog()` directly." is not enough. Sooner or later, someone will forget that rule and bypass the `TaskModalDialogHandler` class. How can we **statically check that all dialogs and message boxes used in the application are open exclusively through the handler**?
+
+{% hx_src TaskModalHeadaches %}

@@ -283,3 +283,5 @@ if (entryAssembly.IsNone)
 
 ##Conclusion, If Any
 The problem of null references is a problem of the C# language itself. Every "solution" within the language will be a workaround. Using `Option<T>` is the best workaround I stumbled across so far. So yes, it is a workaround. Just like the whole bunch of other [null handling strategies](http://www.markhneedham.com/blog/2008/08/16/null-handling-strategies/) that can be found out there. If you have any better solution to this problem, please suggest it in the comment box below. I'll be glad to hear from you.
+
+{% hx_src OptionIdiom %}

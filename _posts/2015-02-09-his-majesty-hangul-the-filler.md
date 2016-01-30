@@ -147,3 +147,5 @@ In one of my upcoming posts I'll explain how *stackTraceangelo* works.
 
 ##Contribute!
 If you like the Stack Trace Art and believe that it is the best thing in the history of art since van Gogh's [Almond blossom](https://www.google.com/culturalinstitute/asset-viewer/almond-blossom/dAFXSL9sZ1ulDw?projectId=art-project) - than contribue to it! There are a plenty of things that you can do. Add a support for another target language to stackTraceangelo. Contribute to [the gallery](https://github.com/ironcev/stackTraceangelo/tree/master/Source/ArtGallery) by creating your own Stack Trace Art. Or simply [star the project on GitHub](https://github.com/ironcev/stackTraceangelo) to show your support. Thanks!
+
+{% hx_src HisMajestyHangulTheFiller %}

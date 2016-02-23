@@ -93,13 +93,13 @@ The *storm scenery* comes from the last few paragraphs of [Kim Stanley Robinson]
 
 The scenery fits perfectly to the storm I head in my head when I read that short grammarless email. I walked my room for at least twenty minutes sketching that perfect, generic, pluggable whatever exporting system. I lied to myself that I need not more than one hour to implement it. Maybe two. Three at most, testing included.
 
-And the turn at the very end of the novel fits equally perfectly with my turn at the end of those frantic twenty minutes. After loosing precious time in sketching the solution for *The Foreseen* - something that nobody needs or asked for - **I found courage not to implement it**. I sat down and in just couple of minutes wrote The Only Right Thing to Write. Same as the novel's hero at the end of the novel.
+And the turn at the very end of the novel fits equally perfectly with my turn at the end of those frantic twenty minutes. After loosing precious time in sketching the solution for *The Foreseen* - something that nobody needs or asked for - **I found courage not to implement it**. I sat down and in just a couple of minutes wrote The Only Right Thing to Write. Same as the novel's hero at the end of the novel.
 
 I won over myself.
 
 ##Deleted Scenes From The Cutting Room Floor
 [Martin Fowler](http://martinfowler.com/aboutMe.html) wrote a [good article on YAGNI](http://martinfowler.com/bliki/Yagni.html).
 
-[You Arent Gonna Need It](http://c2.com/cgi/wiki?YouArentGonnaNeedIt) on [c2.com](http://c2.com) is the perfect place to get some more information and views, as well as links to numerous related topics.
+[You Arent Gonna Need It](http://c2.com/cgi/wiki?YouArentGonnaNeedIt) on [c2.com](http://c2.com) is a perfect place to get some more information and views, as well as links to numerous related topics.
 
 But after all, that's all theory :-) Mastering YAGNI is, at least for me, a constant exercise in self-control. It is not easy at all to say "No!" to all those cool features that one *might* need one day.

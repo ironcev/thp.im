@@ -3,7 +3,7 @@ title: "No More Hidden Allocations, Please!"
 subtitle: "A story of a terrible low level performance and badly designed API. With a happy end and a lot of IL instructions in between :-)"
 description: "This blog post shows several situations in which unintended allocation of objects can occur, harming the low level performance of the code: implicit type conversions, eager evaluations of not used method parameters, closures and boxing."
 keywords: 
-tags: swissknife performance api-design
+tags: swissknife performance api-design il
 ---
 ##The `Argument` Class
 The [`Argument`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Diagnostics/Contracts/Argument.cs) class was one of the first types I added to [SwissKnife](https://github.com/ironcev/swissknife). It turns the following cumbersome-to-write code:
@@ -82,7 +82,7 @@ Let's take a look what happens behind the scene when we call `IsNotNull()` in it
 translates into the following IL code:
 
 <pre><code>ldarg.2
-ldstr      "key"
+ldstr      "value"
 <strong>call       valuetype Option`1&lt;!0&gt; valuetype Option`1&lt;string&gt;::op_Implicit(!0)</strong>
 call       void Argument::IsNotNull(string, valuetype Option`1&lt;string&gt;)
 </code></pre>

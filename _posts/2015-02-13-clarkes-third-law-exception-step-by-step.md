@@ -83,7 +83,7 @@ The clients code will look a bit strange, but that's how it is when invisibility
     new ㅤ().ArthurㅤCㅤClarkeㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
 
 ###Step 2: Remove the Lines and Line Numbers
-A simple preprocessor trick will help us here. Simply put the `#line 1 ""` preprocessor directive above every line of code that actually does something. This will remove the lines and put the line number everywhere to 1. Hmmm, at the same time this move will make every decent C# compiler suspicious. You will get plenty of CS1709 compiler warnings - Filename specified for preprocessor directive is empty. In order to calm our compiler down, we will simply [silence this compiler warning](/how-to-silence-csharp-compiler-warnings).
+A simple preprocessor trick will help us here. Simply put the `#line 1 ""` preprocessor directive above every line of code that actually does something. This will remove the lines and put the line number everywhere to 1. Hmmm, at the same time this move will make every decent C# compiler suspicious. You will get plenty of CS1709 compiler warnings - Filename specified for preprocessor directive is empty. In order to calm our compiler down, we will simply silence this compiler warning by adding `#pragma warning disable 1709`.
 
     #pragma warning disable 1709
     #line 1 ""

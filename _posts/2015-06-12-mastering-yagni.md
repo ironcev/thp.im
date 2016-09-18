@@ -3,7 +3,7 @@ title: Mastering YAGNI
 subtitle: "Rare are the moments when I'm really proud of my self-control"
 description: 'A post about the temptation I had, to develop way more than it was requested and way more than our customers will ever need.'
 keywords: YAGNI
-tags: practices, yagni
+tags: practices yagni
 ---
 &nbsp;
 

@@ -14,12 +14,14 @@ hasCode: false
 
 &nbsp;
 
-Usually I don't comment on quotes. They speak well for themselves. But this one could easily be misunderstood ;-)
+:-) One could easily misunderstood this quote.
 
-So let me state it clearly - I read [MSDN Magazine](https://msdn.microsoft.com/en-us/magazine/default.aspx) on a regular basis. It has awesome, high quality articles on various topics. I would recommend it to every programmer who uses Microsoft technology stack. Period.
+[MSDN Magazine](https://msdn.microsoft.com/en-us/magazine/) is know for its high quality articles on various topics. I read it on a regular basis and would recommend it to every programmer who uses Microsoft technology stack.
 
 Why then the quote?
 
-Well, I've just stumbled upon it while reading [that old article](http://www.joelonsoftware.com/articles/APIWar.html) of Joel Spolsky. I liked how he formulated it. It made me laugh :-) I see a lot of truth in it. It reminded me on all those not so old technologies we were bombed with and suddenly no one seems to talk about them any more.
+Well, I've just stumbled upon it while reading [that old article](http://www.joelonsoftware.com/articles/APIWar.html) of Joel Spolsky. I liked how Joel formulated it. It made me laugh :-) I see a lot of truth in it. It reminded me on all those technologies we were bombed with and suddenly no one seems to talk about them any more.
 
-For me, the message behind the quote is - [cum grano salis](http://en.wikipedia.org/wiki/Grain_of_salt). Always take things with a grain of salt. No matter if it is a convincing MSDN article or a strongly opinionated blog post of an influencer. Otherwise, you could easily shoot yourself in the foot.
+For me, the message behind the quote is - [cum grano salis](http://en.wikipedia.org/wiki/Grain_of_salt). Always take things with a grain of salt. No matter if it is a convincing MSDN article or a strongly opinionated blog post of an influencer.
+
+Otherwise, you could easily shoot yourself in the foot.

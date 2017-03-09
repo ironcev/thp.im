@@ -82,7 +82,7 @@ Remotely connected to the database machine I went directly to the predictable *C
 
 And then, while clicking on the backup file, with a corner of my eye I saw something that literally made my jaw drop. Right next to the file name, there was a fact that my brain actively refused to believe in. "No! No! No! This cannot be! This is a joke! This cannot be real! This is not happening!" The backup was scheduled around lunch time, when the database traffic was low. My colleagues called me just before the lunch time. **The backup was triggered literally couple of seconds after my update script destroyed the data and it finished by the time I connected to the database machine. That single *bak* file I was looking at, a file not older then a minute, contained perfectly safe and at the same time perfectly corrupted version of our Most Precious Table.**
 
-To shorten the story, it turned out that the colleague who was creating the backup infrastructure did his job far better then I was doing mine. The *C:\Backup* was just a pick-up folder (of course; after all, what is the point of keeping the database backup on the same hard drive where the database is?). The backup files were uploaded to other network locations, where several previous versions were kept in safety.
+To shorten the story, it turned out that the colleague who was creating the backup infrastructure did his job better then I was doing mine. The *C:\Backup* was just a pick-up folder (of course; after all, what is the point of keeping the database backup on the same hard drive where the database is?). The backup files were uploaded to other network locations, where several previous versions were kept in safety.
 
 Our customers lost six hours of their work that day. No one tried to put the blame on me. But even if somebody did try, what would it change?
 
@@ -201,26 +201,34 @@ The solution Nathan proposes and promotes in his [Lambda Architecture](https://e
 
 If any of this sounds exaggerated and unconvincing at first sight, I strongly recommend to you to read the Nathan's book ["Big Data - Principles and best practices of scalable real-time data systems"](https://www.manning.com/books/big-data). And other way around, even if his reasoning sounds logical and clear, the book is anyway a great read.
 
-##More Humans
-Out of curiosity, after I finished writing the post, I searched Internet for the phrase "SQL Server Management Studio rollback".
+##Brothers In Arms
+"Human", [said Dr. Luis in Arrival](https://www.youtube.com/watch?v=PkYh9e-fvbA). "I'm human. I'm hu..."
 
-![Search for SQL Server Management Studio rollback](/resources/i-am-only-human-after-all/search-for-sql-server-management-studio-rollback.jpg)
+![Arrival (2016) - I'm human](/resources/i-am-only-human-after-all/arrival-movie-2016-i-am-human-scene.jpg)
 
-It was hard not to laugh over some of the search results. Here are my top three, all taken from [StackExchange sites](https://stackexchange.com).
+I was wandering how comes that aliens didn't learn at least a bit of English on their own before meeting Dr. Luis. It shouldn't be that hard for a superior race of their kind. But let's trust the movie and accept the fact that Dr. Luis herself taught them that she is a human. I assume they quickly figured out that the rest of us are humans as well.
 
-How about mistakenly deleting 2 million rows?
+Did any of those humans, of us - I asked myself in the middle of writing this blog post - did any of us made the same mistake I did? Destroyed its customer's data by running a slightly wrong update in the SQL Server Management Studio?
+
+I knew that there are for sure plenty of us who did that. To find my brothers in arms I asked [The Duck](https://duckduckgo.com) to [Go for "SQL Server Management Studio rollback"](https://duckduckgo.com/?q=SQL+Server+Management+Studio+rollback&t=h_&ia=qa).
+
+![DuckDuckGo search for SQL Server Management Studio rollback](/resources/i-am-only-human-after-all/search-for-sql-server-management-studio-rollback.jpg)
+
+I can't say that I was happy finding out that I wasn't the only human out there doing mistakes.
+
+On of us humans mistakenly deleted two million rows from a table.
 
 <a href="http://dba.stackexchange.com/questions/995/how-do-i-get-back-some-deleted-records"><img src="/resources/i-am-only-human-after-all/i-mistakenly-deleted-around-2000000-records-from-a-remote-sql-server-2008-table.jpg" alt="I mistakenly deleted around 2,000,000 records from a remote SQL Server 2008 table."></a>
 
-Luckily, [million isn't exactly a big number these days](https://www.youtube.com/watch?v=jTmXHvGZiSY). Still, I like the [general advice given in one of the answers](http://dba.stackexchange.com/a/996):
+We can argue that in the era of Big Data and Web Scale and Petabytes [million isn't exactly a big number](https://www.youtube.com/watch?v=jTmXHvGZiSY). But I'm sure my brother in arms was "*a little freaked out*", at least as much as I was and I appreciate [the general advice given to him](http://dba.stackexchange.com/a/996) in the answer to his question.
 
 ![If you think you've deleted 2 million records, you're probably a little freaked out right now](/resources/i-am-only-human-after-all/if-you-think-you-ve-deleted-2-million-records-you-re-probably-a-little-freaked-out-right-now.jpg)
 
-And how about giving everyone the same last name and moving everyone to the same city at once?
+And another one of us gave everyone the same last name and at the same time moved everyone to the same city.
 
 <a href="http://dba.stackexchange.com/questions/66616/how-to-rollback-after-wrong-update-statement-in-sql-server-2008r2"><img src="/resources/i-am-only-human-after-all/how-to-rollback-after-wrong-update-statement-in-sql-server-2008.jpg" alt="I have wrongly updated Lastname, City columns in all the rows."></a>
 
-Apparently, forgetting the `WHERE` clause in updates is something *'one'* could always do.
+Apparently, forgetting the `WHERE` clause in updates is something *'one'* (of us) could always do.
 
 <a href="http://stackoverflow.com/questions/12105751/how-to-rollback-an-implicit-ssms-transaction-statement-with-go-at-the-end"><img src="/resources/i-am-only-human-after-all/how-to-rollback-an-implicit-ssms-transaction.jpg" alt="How to rollback an implicit SSMS transaction?"></a>
 

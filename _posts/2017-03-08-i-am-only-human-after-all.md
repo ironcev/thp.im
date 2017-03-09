@@ -202,7 +202,7 @@ The solution Nathan proposes and promotes in his [Lambda Architecture](https://e
 If any of this sounds exaggerated and unconvincing at first sight, I strongly recommend to you to read the Nathan's book ["Big Data - Principles and best practices of scalable real-time data systems"](https://www.manning.com/books/big-data). And other way around, even if his reasoning sounds logical and clear, the book is anyway a great read.
 
 ##Brothers In Arms
-"Human", [said Dr. Luis in Arrival](https://www.youtube.com/watch?v=PkYh9e-fvbA). "I'm human. I'm hu..."
+"Human", [said Dr. Louise in Arrival](https://www.youtube.com/watch?v=PkYh9e-fvbA). "I'm human. I'm hu..."
 
 ![Arrival (2016) - I'm human](/resources/i-am-only-human-after-all/arrival-movie-2016-i-am-human-scene.jpg)
 

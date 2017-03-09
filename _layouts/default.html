@@ -5,9 +5,21 @@ layout: compress
 <html>
   {% include head.html %}
   <body>
-    <div class="container">
-    {% include navigation.html %}
-    {{ content }}
+    <div id="st-container" class="st-container">
+
+        {% include navigation.html %}
+
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="container">
+                    <div id="st-trigger-effects" class="column">
+                        <a href="#" class="button" data-effect="st-effect-1"><img src="/assets/images/menuIcon.png"></a>
+                    </div>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
     </div>
     {% include footer.html %}
   </body>

@@ -5,8 +5,6 @@ description: 'A post about the temptation I had, to develop way more than it was
 keywords: YAGNI
 tags: practices yagni
 ---
-&nbsp;
-
 > "You aren't gonna need it" (acronym: YAGNI) is a principle of extreme programming (XP) that states a programmer should not add functionality until deemed necessary.<br/>[...] "Always implement things when you actually **need** them, never when you just **foresee** that you need them."
 <br/>
 <br/>

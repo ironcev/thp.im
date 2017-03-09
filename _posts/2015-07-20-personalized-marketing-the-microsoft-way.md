@@ -6,8 +6,6 @@ keywords: personalized marketing
 tags: marketing microsoft nonsense fun
 hasCode: false
 ---
-&nbsp;
-
 > In the quest to deliver outstanding brand experiences across channels, we believe that **personalisation offers the greatest opportunity to transform what customers currently get**.
 <br/>
 <br/>

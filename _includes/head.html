@@ -10,7 +10,7 @@
     <meta name="author" content="{{ page.author }}">
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link href="{{ '/assets/css/site.min.css?v=1' }}" type="text/css" rel="stylesheet">
+    <link href="/assets/css/site.min.css?v=2" type="text/css" rel="stylesheet">
     
     {% comment %}TODO-IG: Find or define best Jekyll practices for handling different configurations (offline, debug). {% endcomment %}
     
@@ -24,8 +24,4 @@
     {% else %}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     {% endif%}
-
-    {% if page.hasCode %}
-    <script src="{{ '/assets/scripts/prettify.js' }}"></script>
-    {% endif %}
 </head>

@@ -5,8 +5,6 @@ description: This blog post reflects a strong impression that I had when few thi
 keywords: 
 tags: impression performance
 ---
-&nbsp;
-
 >640 k ought to be enough for anyone.<br/><br/>
 >([Misattributed to](https://en.wikiquote.org/wiki/Bill_Gates#Misattributed)) Bill Gates, 1981
 

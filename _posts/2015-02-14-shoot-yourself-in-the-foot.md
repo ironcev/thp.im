@@ -6,15 +6,13 @@ keywords: MSDN Magazine
 tags: quote
 hasCode: false
 ---
-&nbsp;
-
 > [...] the MSDN Magazine [...] the developer's magazine full of exciting articles about all the different ways you can shoot yourself in the foot by using esoteric combinations of Microsoft products in your own software.
 <br/><br/>
 >[Joel Spolsky](http://www.joelonsoftware.com/AboutMe.html), [How Microsoft Lost the API War](http://www.joelonsoftware.com/articles/APIWar.html)
 
-&nbsp;
+:-)
 
-:-) One could easily misunderstood this quote.
+One could easily misunderstood this quote.
 
 [MSDN Magazine](https://msdn.microsoft.com/en-us/magazine/) is know for its high quality articles on various topics. I read it on a regular basis and would recommend it to every programmer who uses Microsoft technology stack.
 

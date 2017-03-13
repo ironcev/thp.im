@@ -2,7 +2,6 @@
 title: Shoot Yourself in the Foot
 subtitle: On taking things with a grain of salt
 description: This blog post quotes an old opinion about the MSDN Magazine. It reminds you to always take things with a grain of salt.
-keywords: MSDN Magazine
 tags: quote
 hasCode: false
 ---

@@ -2,7 +2,6 @@
 title: I Am Only Human After All
 subtitle: Thoughts and quotes on human-fault tolerance.
 description: 
-keywords: 
 tags: software-architecture human-fault-tolerance
 ---
 ##The Car and the Bridge and the Human

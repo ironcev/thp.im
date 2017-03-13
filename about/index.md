@@ -2,7 +2,6 @@
 title: About
 permalink: /about/
 description: About humble programming, creativity, diacritics, and some other things hidden behind the blog called The Humble Programmer.
-keywords: humble programming, creativity, diacritics, Igor Rončević
 ---
 ##Humble programming
 [The Humble Programmer](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD03xx/EWD340.html) by [E. W. Dijkstra](http://www.cs.utexas.edu/users/EWD/welcome.html) is my favorite article about programming ever. I read it dozens of times and I'll read it dozens of times again. It is old, written back in 1972. It is (too) long. It talks about things like EDSAC, LISP, ALGOL, and PL/1. Still, between the lines of every paragraph there is that everlasting inspiring message I decided to be the name of this blog:

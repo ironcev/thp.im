@@ -2,7 +2,6 @@
 title: Null is a Mystical Guardian
 subtitle: 'When <code>null</code> reaches the surface of your application'
 description: Demystifying the mystical nature of null. This blog posts shows what can happen when null reaches the surface of your application.
-keywords: null
 tags: null fun
 hasCode: false
 twitter:

@@ -2,8 +2,8 @@
 title: Shakespeare in the Castle Wolfenstein
 subtitle: A strong impression on utilizing the "unlimited" resources of nowadays computers
 description: This blog post reflects a strong impression that I had when few things, namely installing Wolfenstein 3D and Atom and downloading The Complete Works of William Shakespeare, made me think about how we utilize the "unlimited" resources of our computers. As programmers, we can do a much better job in keeping all those gigabytes of RAM and terabytes of hard drives sufficient enough for all the programs we are writing.
-keywords: 
 tags: impression performance
+hasCode: false
 ---
 >640 k ought to be enough for anyone.<br/><br/>
 >([Misattributed to](https://en.wikiquote.org/wiki/Bill_Gates#Misattributed)) Bill Gates, 1981

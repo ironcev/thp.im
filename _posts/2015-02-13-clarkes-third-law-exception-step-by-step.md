@@ -2,7 +2,6 @@
 title: Clarke's Third Law Exception - Step by Step
 subtitle: 'Turning the Clarke''s third law into a <a href="/stack-trace-art">Stack Trace Art</a> exception one step at the time'
 description: This blog post explains step by step how to manually write a Stack Trace Art class that throws a Stack Trace Art exception with one of the Arthur Clarke's best known quotes.
-keywords: stack-trace art stackTraceangelo
 tags: stack-trace-art step-by-step
 facebook:
   picture: 'clarkes-third-law-exception-step-by-step/clarkes-third-law-exception-stack-trace-art-on-view-detail.png'

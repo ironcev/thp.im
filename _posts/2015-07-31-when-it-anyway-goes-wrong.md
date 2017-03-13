@@ -2,7 +2,6 @@
 title: Wђen ǁt Anƴwaƴ Ǧoes Ɯrong
 subtitle: A strong impression that ƃugs are inevitaƃle
 description: This blog post reflects a strong impression that I had when an unexplainable bug appeared in Windows security prompt - bugs are inevitable.
-keywords: 
 tags: impression bug
 hasCode: false
 ---

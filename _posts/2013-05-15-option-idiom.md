@@ -2,7 +2,6 @@
 title: Option Idiom
 subtitle: What is the option idiom and how to implement it and use it in C#
 description: This blog post explains what is the Option Idiom and how to implement it and properly use it in C#.
-keywords: option idiom
 tags: csharp fsharp null swissknife
 facebook:
   picture: 'option-idiom/resharper-message-possible-system-nullreferenceexception.png'

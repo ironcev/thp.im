@@ -2,7 +2,6 @@
 title: His Majesty, Hangul the Filler
 subtitle: 'Revealing the secret behind the <a href="/stack-trace-art">Stack Trace Art</a>''s magic'
 description: The Hangul Filler character is what makes Stack Trace Art possible. This blog post explains how an artist wannabe discovered it and how that special Unicode character makes the Stack Trace Art both possible but at the same time very difficult to master.
-keywords: stack-trace art
 tags: stack-trace-art stacktraceangelo unicode
 twitter:
   text: 'His Majesty, Hangul the Filler! The story of making the #stacktraceart possible.'

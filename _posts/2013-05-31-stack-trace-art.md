@@ -1,7 +1,6 @@
 ---
 title: Stack Trace Art
-subtitle: An artist wannabe discovers his own art
-description: What is the Stack Trace Art and how one artist wannabe discovered it. Its origins and in addition some fresh pieces of the finest Stack Trace Art.
+subtitle: An artist wannabe discovers his own art - turning programming exception into beautiful drawings.
 tags: stack-trace-art stacktraceangelo fun
 twitter:
   text: 'A new art form is born - Stack Trace Art! #stacktraceart'

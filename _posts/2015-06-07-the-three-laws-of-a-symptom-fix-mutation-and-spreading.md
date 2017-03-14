@@ -1,7 +1,6 @@
 ---
 title: 'The Three Laws of a Symptom Fix - Mutation and Spreading'
-subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-second-law-a-symptom-fix-will-mutate-and-spread">Second Law of a Symptom Fix</a>, illustrated on a concrete example'
-description: This blog post illustrates The Second Law of a Symptom Fix on a concrete example.
+subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-second-law-a-symptom-fix-will-mutate-and-spread">Second Law of a Symptom Fix</a> explained on a concrete example.'
 tags: bug symptom-fix symptom-fix-series-part
 ---
 <p class='alert alert-info'>

@@ -1,14 +1,13 @@
 ---
 title: Task Modal Headaches
-subtitle: How to properly handle task-modal dialogs and message boxes in a WPF application
-description: How to properly handle task-modal dialogs and message boxes in a WPF application when all application windows run within the same process.
+subtitle: Properly handling task-modal dialogs and message boxes in a WPF application can really cause you headaches.
 tags: wpf winforms
 facebook:
   picture: 'task-modal-headaches/task-model-headaches-application-window.png'
 ---
 ##Mimicing Microsoft Word
 WPF application that I am working on right now mimics the behavior of Microsoft Word 2010 when it comes to windows handling. Mimic means both from implementation and end-user and perspective. From implementation perspective, **all application windows should run in the same process**. (Start several "instances" of Word and take a look at Windows Task Manager or [Process Explorer](http://technet.microsoft.com/en-US/sysinternals/bb896653). You will see that they all run within the same process.) From the end-user perspective, arbitrary number of independent top level application windows can be open. Still, the user knows that they "play together" and share certain features, like dialogs. **When the user opens a dialog in one of the application windows, all application windows get disabled**, not only the one that called the dialog.
-If you are not aware of this, try it on your own. Start several "instances" of Microsoft Word 2010 and open Save As dialog in one of it. You will not be able to select some other Word instance before you close the dialog. The same goes for the message boxes.
+If you are not aware of this, try it on your own. Start several "instances" of Microsoft Word 2010 and open Save As dialog in one of it. You will not be able to select some other Word instance before you close the dialog. The same goes for message boxes.
 
 ##Dissecting .NET Inconsistencies
 I thought that writing a WPF application that mimics the described behavior will be a trivial task. Creating a single instance application was [trivial indeed](http://www.switchonthecode.com/tutorials/wpf-writing-a-single-instance-application). But after digging deeper into WPF dialogs and message boxes I noticed some **inconsistencies** in their behavior **when it comes to modality**. Even bigger inconsistencies become obvious if we add WinForms to the whole story.

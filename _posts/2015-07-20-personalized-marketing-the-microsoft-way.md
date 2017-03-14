@@ -1,7 +1,6 @@
 ---
 title: 'Personalized Marketing, The Microsoft Way'
-subtitle: "Reverse engineering Microsoft's personalized marketing engine"
-description: "This blog post attempts to reverse engineer the Microsoft's personalized marketing engine. It is based on personalized ads served to me by Microsoft via Hotmail."
+subtitle: "Reverse engineering the Microsoft's personalized marketing engine."
 tags: marketing microsoft nonsense fun
 hasCode: false
 ---

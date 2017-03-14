@@ -1,7 +1,6 @@
 ---
 title: The Three Laws of a Symptom Fix - The Bug
-subtitle: 'An overture in the illustrations of <a href="/the-three-laws-of-a-symptom-fix">The Three Laws of a Symptom Fix</a>'
-description: This blog post explains the bug in the Split() extension method. The explanation is used in other posts to demonstrate The Three Laws of a Symptom Fix.
+subtitle: 'An overture in the illustrations of <a href="/the-three-laws-of-a-symptom-fix">The Three Laws of a Symptom Fix</a>.'
 tags: bug symptom-fix symptom-fix-series-part swissknife
 ---
 <p class='alert alert-info'>

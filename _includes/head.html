@@ -1,17 +1,24 @@
 <head>
-    <title>{{ page.title | strip_html }} | {{ site.title }}</title>
+    <title>{{ page.title | strip_html }}</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="{{ page.description }}">
-    <meta name="language" content="english">
-    <meta name="author" content="{{ page.author }}">
+    <meta http-equiv="Content-Type"     content="text/html; charset=utf-8">
+    <meta name="viewport"               content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta name="description"            content="{{ page.subtitle }}">
+    <meta name="author"                 content="{{ page.author }}">
+
+    {% if page.showSocialSharing %}
+    <meta property="og:url"                content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ page.title | strip_html }}" />
+    <meta property="og:description"        content="{{ page.subtitle }}" />
+    {% comment %} TODO-IG: <meta property="og:image"              content="TODO" /> {% endcomment %}
+    {% endif %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link href="/assets/css/site.min.css?v=2" type="text/css" rel="stylesheet">
     
-    {% comment %}TODO-IG: Find or define best Jekyll practices for handling different configurations (offline, debug). {% endcomment %}
+    {% comment %} TODO-IG: Find or define best Jekyll practices for handling different configurations (offline, debug). {% endcomment %}
     
     {% if site.offlineMode %}
     {% else %}

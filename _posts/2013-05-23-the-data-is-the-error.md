@@ -1,7 +1,6 @@
 ---
 title: The Data is the Error
-subtitle: IIS Express' words of wisdom on the topic of data and error
-description: IIS Express' words of wisdom on the topic of data and error. Nonsense in the first place.
+subtitle: IIS Express' words of wisdom on the topic of data and error.
 tags: iis nonsense fun quote
 hasCode: false
 facebook:

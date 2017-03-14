@@ -1,7 +1,6 @@
 ---
 title: "No More Hidden Allocations, Please!"
-subtitle: "A story of a terrible low level performance and badly designed API. With a happy end and a lot of IL instructions in between :-)"
-description: "This blog post shows several situations in which unintended allocation of objects can occur, harming the low level performance of the code: implicit type conversions, eager evaluations of not used method parameters, closures and boxing."
+subtitle: Implicit type conversions, eager evaluations, closures, boxing, and some other nasty things going on behind the scenes.
 tags: performance api-design il swissknife
 ---
 ##The `Argument` Class

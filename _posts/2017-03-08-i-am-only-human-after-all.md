@@ -1,7 +1,6 @@
 ---
 title: I Am Only Human After All
-subtitle: Thoughts and quotes on human-fault tolerance.
-description: 
+subtitle: Thoughts, quotes, and embarrassing personal story about human-fault tolerance.
 tags: software-architecture human-fault-tolerance
 ---
 ##The Car and the Bridge and the Human
@@ -45,13 +44,13 @@ There were three of us in that call. Me working from home and two younger collea
 
 Is there any better opportunity to demonstrate fearlessness and confidence in front of your colleagues then running update scripts on a production database in the middle of a working day? Running them, of course, right out of the SQL Server Management Studio with auto-commit set to *On*. If something goes wrong, there is no way back. But hey, what could possible go wrong? Am I not the Chief Master Hero &trade; of our small software shop? And besides, rollbacks are for cowards.
 
-I quickly wrote and run the first simple update script. The colleagues were looking at my shared desktop. And I knew what I was doing was a bad idea. That baaaad feeling in my gut. Very bad feeling. "This is not engineering" - a voice in my had was telling me. "This is [a high-wire walk between the Twin Towers on a windy day](https://en.wikipedia.org/wiki/Man_on_Wire)."
+I quickly wrote and run the first simple update script. The colleagues were looking at my shared desktop. And I knew what I was doing was a bad idea. That baaaad feeling in my gut. Very bad feeling. "This is not engineering", a voice in my had was telling me. "This is [a high-wire walk between the Twin Towers on a windy day](https://en.wikipedia.org/wiki/Man_on_Wire)."
 
 ![Man on Wire](/resources/i-am-only-human-after-all/man-on-wire.jpg)
 
 "I am maybe the Chief Master Hero &trade; of our small company, but [Philippe Petit](https://en.wikipedia.org/wiki/Philippe_Petit) I'm surely not."
 
-Still, I continued walking the high-wire. The update went well. I pretended ultimate calmness. "Hey, I do this every day." The second simple update script was also done, typed in a less then a minute. "This is a baaaad thing you are doing right now, Igor" - the voice was telling me. The colleagues were quiet. But I knew they were thinking the very same. "This will not end up well." Still they didn't dare to verbally oppose my overconfidence. I hid my doubts behind jokes and quoting [Sledge Hammer](https://en.wikipedia.org/wiki/Sledge_Hammer!).
+Still, I continued walking the high-wire. The update went well. I pretended ultimate calmness. "Hey, I do this every day." The second simple update script was also done, typed in a less then a minute. And then again that voice: "This is a baaaad thing you are doing right now, Igor!" The colleagues were quiet. But I knew they were thinking the very same. "This will not end up well." Still they didn't dare to verbally oppose my overconfidence. I hid my doubts behind jokes and quoting [Sledge Hammer](https://en.wikipedia.org/wiki/Sledge_Hammer!).
 
 ![Sledge Hammer - Trust me, I know what I'm doing](/resources/i-am-only-human-after-all/sledge-hammer-trust-me-i-know-what-i-am-doing.jpg)
 

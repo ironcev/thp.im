@@ -1,7 +1,6 @@
 ---
 title: The Three Laws of a Symptom Fix
-subtitle: Three inevitable consequences of fixing a symptom and not the cause of a bug
-description: This blog post presents three inevitable consequences of fixing a symptom and not the cause of a bug.
+subtitle: "Fixing a symptom of a bug and not its cause brings indeed some serious consequences ;-)"
 tags: bug symptom-fix symptom-fix-series-part blog-post-series
 ---
 <p class='alert alert-info'>
@@ -54,7 +53,7 @@ Let's explain *The Three Laws* shortly.
 
 Symptom fixes look alienated in the code. In one way or another, they always somehow stick out. They do not belong to the solution of the original problem that the code tries to solve. They are an artificial addition, put to the code to circumvent the situation that causes buggy behaviour. Out of my experience, they are too often not properly commented at all. No wonder that this is the case. The "proper" comment would sound like: "Don't remove this or everything will crash!" This kind of a comment would imply that the fix is actually a symptom fix, but the person who apply it usually do not consider it as such, and therefore omits the warning comment.
 
-Sooner or later some other programmer will start changing the same code and ask the obvious question "Why is this line of code here? It doesn't look that we need it." I was that other programmer several times. Once the fix is unintentionally removed it's merely a matter of luck how fast the bug will reappear again. If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honour to tell you that, well... your best intentions to clean-up the code have actually removed a symptom fix and reintroduced the bug.
+Sooner or later some other programmer will start changing the same code and ask the obvious question "Why is this line of code here? It doesn't look that we need it." I was that other programmer several times. Once the fix is unintentionally removed it's merely a matter of luck how fast the bug will reappear again. If you are lucky, your automated tests will fail or your application will crash immediately. If you are not, the users of your software will get the honor to tell you that, well... your best intentions to clean-up the code have actually removed a symptom fix and reintroduced the bug.
 
 ###The Second Law: A symptom fix will mutate and spread
 

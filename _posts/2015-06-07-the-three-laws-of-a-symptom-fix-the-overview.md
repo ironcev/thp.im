@@ -1,7 +1,6 @@
 ---
 title: The Three Laws of a Symptom Fix - The Overview
-subtitle:
-description: This blog post gives the overview of all the posts published under the "The Three Laws of a Symptom Fix" blog post series.
+subtitle: 'A short overview of ''The Three Laws of a Symptom Fix'' blog post series.'
 tags: bug symptom-fix symptom-fix-series-part
 hasCode: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: The Humble Programmer
+subtitle: The Humble Programmer
 ---
 <div class="contentList">
     <ul>

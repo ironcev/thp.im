@@ -1,7 +1,6 @@
 ---
 title: A 1 Second Delay
-subtitle: Three good reasons to focus on performance of you web pages over their presentation
-description: This blog post quotes three good reasons to focus on performance of you web pages over their presentation.
+subtitle: Three good reasons to focus on performance over presentation.
 tags: quote performance
 hasCode: false
 facebook:

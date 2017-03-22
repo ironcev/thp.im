@@ -1,8 +1,10 @@
 ---
 title: The Three Laws of a Symptom Fix - The Overview
-subtitle: 'A short overview of ''The Three Laws of a Symptom Fix'' blog post series.'
+subtitle: "A short overview of The Three Laws of a Symptom Fix blog post series."
 tags: bug symptom-fix symptom-fix-series-part
 hasCode: false
+image: "http://thehumbleprogrammer.com/resources/the-three-laws-of-a-symptom-fix/the-three-laws-of-a-symptom-fix.jpg"
+lastUpdatedOn: "2017-03-21T00:00:00+0100"
 ---
 **The Three Laws of a Symptom Fix represent three inevitable consequences of fixing a symptom and not the cause of a bug.** I formulated them based on my own experience with numerous symptom fixes that I either wrote myself or witnessed. I'm sure though, that any programmer who ever wrote or witnessed a symptom fix (and who of us didn't!) shares the very same experience.
 

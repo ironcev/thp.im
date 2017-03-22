@@ -2,6 +2,8 @@
 title: His Majesty, Hangul the Filler
 subtitle: 'Revealing the secret behind the <a href="/stack-trace-art">Stack Trace Art</a>''s magic.'
 tags: stack-trace-art stacktraceangelo unicode
+image: "his-majesty-hangul-the-filler.jpg"
+lastUpdatedOn: "2017-03-18T00:00:00+0100"
 twitter:
   text: 'His Majesty, Hangul the Filler! The story of making the #stacktraceart possible.'
 facebook:

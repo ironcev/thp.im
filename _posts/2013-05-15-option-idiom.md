@@ -1,9 +1,9 @@
 ---
 title: Option Idiom
-subtitle: What is the Option Idiom anyway? How to implement it and properly use it in C#?
-tags: csharp fsharp null option-idiom swissknife
-facebook:
-  picture: 'option-idiom/resharper-message-possible-system-nullreferenceexception.png'
+subtitle: "Looking for a good way to fight the <code>NullReferenceException</code>?"
+tags: option-idiom null exceptions csharp fsharp swissknife
+image: "option-idiom.png"
+lastUpdatedOn: "2017-03-15T00:00:00+0100"
 ---
 ##The Billion Dollar Mistake
 >I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.<br/><br/>

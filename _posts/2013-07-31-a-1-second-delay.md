@@ -3,6 +3,8 @@ title: A 1 Second Delay
 subtitle: Three good reasons to focus on performance over presentation.
 tags: quote performance
 hasCode: false
+image: "a-1-second-delay.jpg"
+lastUpdatedOn: "2017-03-18T00:00:00+0100"
 facebook:
   picture: 'a-1-second-delay/a-1-second-delay-by-aberdeen-group.png'
 ---

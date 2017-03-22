@@ -3,6 +3,8 @@ title: Null is a Mystical Guardian
 subtitle: 'When <code>null</code> reaches the surface.'
 tags: null fun
 hasCode: false
+image: "null-signs-in-minecraft.jpg"
+lastUpdatedOn: "2017-03-18T00:00:00+0100"
 twitter:
   text: 'Explore the mystical personality of ''null'''
 facebook:

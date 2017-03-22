@@ -1,7 +1,9 @@
 ---
 title: "No More Hidden Allocations, Please!"
-subtitle: Implicit type conversions, eager evaluations, closures, boxing, and some other nasty things going on behind the scenes.
+subtitle: "Implicit type conversions, eager evaluations, closures, boxing, and some other nasty things hiding below the water's surface."
 tags: performance api-design il swissknife
+image: "tip-of-the-iceberg.jpg"
+lastUpdatedOn: "2017-03-22T00:00:00+0100"
 ---
 ##The `Argument` Class
 The [`Argument`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Diagnostics/Contracts/Argument.cs) class was one of the first types I added to [SwissKnife](https://github.com/ironcev/swissknife). It turns the following cumbersome-to-write code:

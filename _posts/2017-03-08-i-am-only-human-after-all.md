@@ -1,7 +1,9 @@
 ---
 title: I Am Only Human After All
-subtitle: Thoughts, quotes, and embarrassing personal story about human-fault tolerance.
+subtitle: Human-fault tolerance. Thoughts, quotes, and an embarrassing personal story.
 tags: software-architecture human-fault-tolerance
+image: "arrival-movie-2016-i-am-human-scene-large.jpg"
+lastUpdatedOn: "2017-03-22T00:00:00+0100"
 ---
 ##The Car and the Bridge and the Human
 She crashed her car into the bridge. She watched. She let it burn.<br/>

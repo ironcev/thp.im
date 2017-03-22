@@ -1,7 +1,9 @@
 ---
 title: 'The Three Laws of a Symptom Fix - Mutation and Spreading'
-subtitle: 'The <a href="/the-three-laws-of-a-symptom-fix#the-second-law-a-symptom-fix-will-mutate-and-spread">Second Law of a Symptom Fix</a> explained on a concrete example.'
+subtitle: "Symptom fixes mutate and spread all over the code."
 tags: bug symptom-fix symptom-fix-series-part
+image: "can-you-tell-the-difference.jpg"
+lastUpdatedOn: "2017-03-21T00:00:00+0100"
 ---
 <p class='alert alert-info'>
 This is the fourth post in the blog post series called <em>The Three Laws of a Symptom Fix</em>. The series talks about the consequences of fixing a symptom and not the cause of a bug. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-the-overview %}">here</a>.

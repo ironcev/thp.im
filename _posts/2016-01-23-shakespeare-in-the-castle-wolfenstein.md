@@ -3,6 +3,8 @@ title: Shakespeare in the Castle Wolfenstein
 subtitle: "32 GB and 4 TB ought not to be enough for anyone. And it's all our fault."
 tags: impression performance
 hasCode: false
+image: "shakespeare-in-the-castle-wolfenstein.png"
+lastUpdatedOn: "2017-03-22T00:00:00+0100"
 ---
 >640 k ought to be enough for anyone.<br/><br/>
 >([Misattributed to](https://en.wikiquote.org/wiki/Bill_Gates#Misattributed)) Bill Gates, 1981

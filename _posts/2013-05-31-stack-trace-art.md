@@ -1,7 +1,9 @@
 ---
 title: Stack Trace Art
-subtitle: An artist wannabe discovers his own art - turning programming exception into beautiful drawings.
+subtitle: An artist wannabe discovers his own art. Turning programming exceptions into beautiful drawings.
 tags: stack-trace-art stacktraceangelo fun
+image: "lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png"
+lastUpdatedOn: "2017-03-18T00:00:00+0100"
 twitter:
   text: 'A new art form is born - Stack Trace Art! #stacktraceart'
 facebook:

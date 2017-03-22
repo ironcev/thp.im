@@ -3,6 +3,8 @@ title: Wђen ǁt Anƴwaƴ Ǧoes Ɯrong
 subtitle: Software is hard. And ƃugs are inevitaƃle.
 tags: impression bug
 hasCode: false
+image: "when-it-anyway-goes-wrong.jpg"
+lastUpdatedOn: "2017-03-22T00:00:00+0100"
 ---
 ##"No Way!" You Will Say
 > If anything simply cannot go wrong, it will anyway.

@@ -1,4 +1,4 @@
-<script src="/assets/scripts/all.min.js?v=1'" type="text/javascript"></script>
+<script src="/assets/scripts/all.min.js?v=1'"></script>
 {% if page.hasCode %}
 <script src="{{ '/assets/scripts/prettify.js' }}"></script>
 <script>
@@ -9,7 +9,7 @@
 </script>
 {% endif %}
 {% if page.showComments %}
-<script type="text/javascript">
+<script>
     window.disqus_shortname = '{{ site.disqusShortname }}';
     window.disqus_identifier = document.title || 'Home';
     window.disqus_developer = !!~document.location.href.indexOf("localhost") ? 1 : 0;
@@ -21,4 +21,7 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+{% if page.showSocialSharing %}
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-548d2e8a290fa5cd"></script>
 {% endif %}

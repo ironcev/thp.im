@@ -5,8 +5,6 @@ tags: quote performance
 hasCode: false
 image: "a-1-second-delay.jpg"
 lastUpdatedOn: "2017-03-18T00:00:00+0100"
-facebook:
-  picture: 'a-1-second-delay/a-1-second-delay-by-aberdeen-group.png'
 ---
 <a href="https://devcentral.f5.com/blogs/us/performance-versus-presentation"><img src="/resources/a-1-second-delay/a-1-second-delay-by-aberdeen-group.png" alt="A 1 Second Delay"></a>
 

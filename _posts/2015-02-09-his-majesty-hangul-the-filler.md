@@ -4,10 +4,6 @@ subtitle: 'Revealing the secret behind the <a href="/stack-trace-art">Stack Trac
 tags: stack-trace-art stacktraceangelo unicode
 image: "his-majesty-hangul-the-filler.jpg"
 lastUpdatedOn: "2017-03-18T00:00:00+0100"
-twitter:
-  text: 'His Majesty, Hangul the Filler! The story of making the #stacktraceart possible.'
-facebook:
-  picture: 'stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png'
 ---
 ![Лулу и как се прави дъга Exception](/resources/stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png)
 

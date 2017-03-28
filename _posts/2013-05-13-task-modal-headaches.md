@@ -1,6 +1,6 @@
 ---
 title: Task Modal Headaches
-subtitle: Handling task-modal message boxes and dialogs in a WPF application can really cause headaches.
+subtitle: Handling task-modal message boxes and dialogs in a WPF application can really cause you headaches.
 tags: wpf winforms
 image: "task-modal-headaches.jpg"
 lastUpdatedOn: "2017-03-15T00:00:00+0100"

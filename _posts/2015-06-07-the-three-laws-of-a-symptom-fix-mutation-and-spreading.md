@@ -1,6 +1,6 @@
 ---
 title: 'The Three Laws of a Symptom Fix - Mutation and Spreading'
-subtitle: "Symptom fixes mutate and spread all over the code."
+subtitle: "Symptom fixes will mutate and spread all over the code."
 tags: bug symptom-fix symptom-fix-series-part
 image: "can-you-tell-the-difference.jpg"
 lastUpdatedOn: "2017-03-21T00:00:00+0100"

@@ -2,8 +2,9 @@
 title: Mastering YAGNI
 subtitle: "Rare are the moments when I'm really proud of my self-control."
 tags: practices yagni
-image: "mastering-yagni-you-aint-gonna-need-it.jpg"
-lastUpdatedOn: "2017-03-21T00:00:00+0100"
+image: "mastering-yagni-you-aint-gonna-need-it-fb.jpg"
+publishedOn: "2015-06-12T012:00:00+0100"
+lastUpdatedOn: "2017-04-16T12:00:00+0100"
 ---
 > "You aren't gonna need it" (acronym: YAGNI) is a principle of extreme programming (XP) that states a programmer should not add functionality until deemed necessary.<br/>[...] "Always implement things when you actually **need** them, never when you just **foresee** that you need them."
 <br/>

@@ -3,8 +3,9 @@ title: Null is a Mystical Guardian
 subtitle: 'When <code>null</code> reaches the surface.'
 tags: null fun
 hasCode: false
-image: "null-signs-in-minecraft.jpg"
-lastUpdatedOn: "2017-03-18T00:00:00+0100"
+image: "null-is-a-mystical-guardian-fb.jpg"
+publishedOn: "2013-05-22T12:00:00+0100"
+lastUpdatedOn: "2017-04-16T12:00:00+0100"
 ---
 ##Willkommen Null
 "What is this – null?" my good friend Čazim asked me when I helped him to create his profile on the Austrian Labor Agency web site.

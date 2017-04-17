@@ -3,8 +3,9 @@ title: "Personalized Marketing, The Microsoft Way"
 subtitle: "Reverse engineering the Microsoft's personalized marketing engine."
 tags: marketing microsoft nonsense fun
 hasCode: false
-image: "personalized-marketing-the-microsoft-way.jpg"
-lastUpdatedOn: "2017-03-21T00:00:00+0100"
+image: "personalized-marketing-the-microsoft-way-fb.jpg"
+publishedOn: "2015-07-20T12:00:00+0100"
+lastUpdatedOn: "2017-04-16T12:00:00+0100"
 ---
 > In the quest to deliver outstanding brand experiences across channels, we believe that **personalisation offers the greatest opportunity to transform what customers currently get**.
 <br/>

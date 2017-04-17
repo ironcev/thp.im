@@ -2,8 +2,9 @@
 title: Stack Trace Art
 subtitle: An artist wannabe discovers his own art - turning programming exceptions into beautiful drawings.
 tags: stack-trace-art stacktraceangelo fun
-image: "lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png"
-lastUpdatedOn: "2017-03-18T00:00:00+0100"
+image: "stack-trace-art-fb.png"
+publishedOn: "2013-05-31T12:00:00+0100"
+lastUpdatedOn: "2017-04-16T12:00:00+0100"
 ---
 ##In Its Essence
 Stack Trace Art is, in its essence, the art of throwing an exception that creates a beautiful drawing on the caller's stack trace. Before you dive deeper into its origins and the question of its purpose, enjoy first some of the exceptions being thrown and their drawings being drawn.

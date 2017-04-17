@@ -2,8 +2,9 @@
 title: The Three Laws of a Symptom Fix
 subtitle: "Fixing a symptom of a bug and not its cause brings indeed some serious consequences ;-)"
 tags: bug symptom-fix symptom-fix-series-part blog-post-series
-image: "the-three-laws-of-a-symptom-fix.jpg"
-lastUpdatedOn: "2017-03-20T00:00:00+0100"
+image: "the-three-laws-of-a-symptom-fix-fb.jpg"
+publishedOn: "2015-04-17T12:00:00+0100"
+lastUpdatedOn: "2017-04-16T12:00:00+0100"
 ---
 <p class='alert alert-info'>
 This is the first post in the blog post series called <em>The Three Laws of a Symptom Fix</em>. The series talks about the consequences of fixing a symptom and not the cause of a bug. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-the-overview %}">here</a>.

@@ -3,7 +3,8 @@ title: I Am Only Human After All
 subtitle: Human-fault tolerance. Thoughts, quotes, and an embarrassing personal story.
 tags: software-architecture human-fault-tolerance
 image: "arrival-movie-2016-i-am-human-scene-large.jpg"
-lastUpdatedOn: "2017-03-22T00:00:00+0100"
+publishedOn: "2017-03-08T12:00:00+0100"
+lastUpdatedOn: "2017-04-17T02:20:00+0100"
 ---
 ##The Car and the Bridge and the Human
 She crashed her car into the bridge. She watched. She let it burn.<br/>
@@ -220,7 +221,7 @@ On of us humans mistakenly deleted two million rows from a table.
 
 <a href="http://dba.stackexchange.com/questions/995/how-do-i-get-back-some-deleted-records"><img src="/resources/i-am-only-human-after-all/i-mistakenly-deleted-around-2000000-records-from-a-remote-sql-server-2008-table.jpg" alt="I mistakenly deleted around 2,000,000 records from a remote SQL Server 2008 table."></a>
 
-We can argue that in the era of Big Data and Web Scale and Petabytes [million isn't exactly a big number](https://www.youtube.com/watch?v=jTmXHvGZiSY). But I'm sure my brother in arms was "*a little freaked out*", at least as much as I was and I appreciate [the general advice given to him](http://dba.stackexchange.com/a/996) in the answer to his question.
+One can argue that in the era of Big Data and Web Scale and Petabytes [million isn't exactly a big number](https://www.youtube.com/watch?v=jTmXHvGZiSY). But I'm sure my brother in arms was "*a little freaked out*", at least as much as I was and I appreciate [the general advice given to him](http://dba.stackexchange.com/a/996) in the answer to his question.
 
 ![If you think you've deleted 2 million records, you're probably a little freaked out right now](/resources/i-am-only-human-after-all/if-you-think-you-ve-deleted-2-million-records-you-re-probably-a-little-freaked-out-right-now.jpg)
 

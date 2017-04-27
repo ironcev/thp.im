@@ -7,6 +7,7 @@
     <meta name="description"            content="{{ page.subtitle | strip_html }}">
 
     {% if page.showSocialSharing %}
+    <meta name="twitter:card"               content="summary_large_image" />
     <meta property="og:url"                 content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
     <meta property="og:type"                content="article" />
     <meta property="og:title"               content="{{ page.title | strip_html }}" />

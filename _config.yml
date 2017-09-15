@@ -6,6 +6,7 @@ shorturl: "http://thehumbleprogrammer.com"
 permalink: /:title/
 offlineMode: false
 disqusShortname: thehumbleprogrammer
+exclude: [README.md, LICENSE.txt]
 
 # Build settings
 markdown: kramdown

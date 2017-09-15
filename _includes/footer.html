@@ -11,7 +11,11 @@
 {% if page.showComments %}
 <script>
     window.disqus_shortname = '{{ site.disqusShortname }}';
-    window.disqus_identifier = document.title || 'Home';
+    {% if page.disqusIdentifier %}
+        window.disqus_identifier = '{{ page.disqusIdentifier }}';
+    {% else %}
+        window.disqus_identifier = document.title;
+    {% endif %}
     window.disqus_developer = !!~document.location.href.indexOf("localhost") ? 1 : 0;
     window.disqus_url = document.location.href;
     (function () {

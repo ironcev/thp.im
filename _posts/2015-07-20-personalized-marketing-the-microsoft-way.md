@@ -73,7 +73,7 @@ I tried to reverse engineer its learning and decision making process, based on t
 
 ![Microsoft's SkyDrive ad on Hotmail, in Spanish](/resources/personalized-marketing-the-microsoft-way/microsoft-sky-drive-ad-on-hotmail-in-spanish.png)
 
-*Hmmmm. Something is wrong here. People are clicking like crazy on these photo syncing Spanish ads and only Igor doesn't! He is either blind, or... or... or... maaaaybeee he doesn't speak Spanish... Hmmmm. But what he speaks then!? Oh wait! I completely overlooked his name - Igor. Let me crawl my extensive database of human names. Sounds like Russian name. But IP says Europe. Only Belarusian can it be!*
+*Hmmmm. Something is wrong here. People are clicking like crazy on these photo syncing Spanish ads and only Igor doesn't! He is either blind, or... or... or... maaaaybeee he doesn't speak Spanish... Hmmmm. But what does he speak then!? Oh, wait! I completely overlooked his name - Igor. Let me crawl my extensive database of human names. Sounds like Russian name. But IP says Europe. Only Belarusian can it be!*
 
 ![Microsoft's SkyDrive ad on Hotmail, in Belrusian and Cyrillic script](/resources/personalized-marketing-the-microsoft-way/microsoft-sky-drive-ad-on-hotmail-in-belarusian-and-cyrillic-script.png)
 

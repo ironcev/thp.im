@@ -6,4 +6,4 @@ This is [my blog](http://thehumbleprogrammer.com). It's built using [Jekyll](htt
 
 # License
 
-All the source code is licensed under the [MIT license](LICENSE.txt). All the blog posts are licensed under the [Creative Commons CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+All the blog posts are licensed under the [Creative Commons CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).

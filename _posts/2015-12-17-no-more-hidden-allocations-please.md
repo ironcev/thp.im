@@ -1,7 +1,7 @@
 ---
 title: "No More Hidden Allocations, Please!"
 subtitle: "Implicit type conversions, eager evaluations, closures, boxing, and some other nasty things hiding below the water's surface."
-tags: performance api-design il swissknife
+tags: performance api-design il swissknife under-the-hood
 image: "tip-of-the-iceberg.jpg"
 publishedOn: "2015-12-17T12:00:00+0100"
 lastUpdatedOn: "2017-04-16T12:00:00+0100"

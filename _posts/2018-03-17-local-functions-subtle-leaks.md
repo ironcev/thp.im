@@ -517,3 +517,5 @@ Scary, if you ask me.
 
 ##The Moral of the Story
 Trust ReSharper :-) Or at least don't ignore its hints too quickly.
+
+{% hx_src LocalFunctionsSubtleLeaks %}

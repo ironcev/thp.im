@@ -23,10 +23,10 @@ To make the question less abstract and more concrete, let's pack the line into a
 
     class AwaitAsyncAsAsync
     {
-        void CanYouMakeMeCompilable()
-        {
-            var var = await async as async;
-        }
+      void CanYouMakeMeCompilable()
+      {
+        var var = await async as async;
+      }
     }
 
 Now we can precisely formulate the riddle. Is it possible to make the above code compileable under the following three conditions:
@@ -59,12 +59,12 @@ I guess you were looking for some super complex solution and missed the obvious 
 
     class AwaitAsyncAsAsync
     {
-        void CanYouMakeMeCompilable()
-        {
-            /*
-            var var = await async as async;
-            */
-        }
+      void CanYouMakeMeCompilable()
+      {
+        /*
+        var var = await async as async;
+        */
+      }
     }
 
 "Wait a minute! That's cheating!", I can hear you saying. Why? It perfectly satisfies all the three conditions and the code compiles ;-)
@@ -119,17 +119,17 @@ must, of course, be awaitable. Which, after a bit of acrobatics in our mind, lea
 
     class async : Task<int>
     {
-        public async() : base(() => 0) { }
+      public async() : base(() => 0) { }
     }
 
     class AwaitAsyncAsAsync
     {
-        async
-        void CanYouMakeMeCompilable()
-        {
-            Task<Task<int>> async = null;
-            var var = await async as async;
-        }
+      async
+      void CanYouMakeMeCompilable()
+      {
+        Task<Task<int>> async = null;
+        var var = await async as async;
+      }
     }
 
 The solution satisfies all the three conditions and compiles. I'll let you figure out on your own how it works. Trust me, it's straightforward to understand :-)
@@ -143,12 +143,12 @@ Robert Kurtanjek, a colleague of mine, sent me an another solution after I chall
 
     class AwaitAsyncAsAsync
     {
-        async
-        void CanYouMakeMeCompilable()
-        {
-            var async = new Task<Task>(() => new Task(() => { }));
-            var var = await async as async;
-        }
+      async
+      void CanYouMakeMeCompilable()
+      {
+        var async = new Task<Task>(() => new Task(() => { }));
+        var var = await async as async;
+      }
     }
 
 Again, being a valid C# identifier, *async* can be used in the `using` statement as done by Robert. The compiler then figures out the rest.

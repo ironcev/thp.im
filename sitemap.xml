@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    {% comment %} Few hardcoded pages at the top. No need to do anything sophisticated here. {% endcomment %}
+    <url>
+        <loc>{{ site.url }}/</loc>
+        <lastmod>2018-03-24T12:00:00+0100</lastmod>
+        <changefreq>weekly</changefreq>
+       </url>
+    <url>
+        <loc>{{ site.url }}/about/</loc>
+        <lastmod>2017-11-05T12:00:00+0100</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+       
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastUpdatedOn == null %}
+            <lastmod>{{ post.publishedOn | date_to_xmlschema }}</lastmod>
+        {% else %}
+            <lastmod>{{ post.lastUpdatedOn | date_to_xmlschema }}</lastmod>
+        {% endif %}
+        <changefreq>monthly</changefreq>
+    </url>
+    {% endfor %}
+
+</urlset>

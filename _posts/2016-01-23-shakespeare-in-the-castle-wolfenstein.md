@@ -4,8 +4,8 @@ subtitle: "32 GB and 4 TB ought not to be enough for anyone. And it's all our fa
 tags: impression performance
 hasCode: false
 image: "shakespeare-in-the-castle-wolfenstein-fb.png"
-publishedOn: "2016-01-23T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2016-01-23T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 >640 k ought to be enough for anyone.<br/><br/>
 >([Misattributed to](https://en.wikiquote.org/wiki/Bill_Gates#Misattributed)) Bill Gates, 1981

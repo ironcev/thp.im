@@ -4,8 +4,8 @@ subtitle: Software is hard. And ƃugs are inevitaƃle.
 tags: impression bug
 hasCode: false
 image: "when-it-anyway-goes-wrong-fb.jpg"
-publishedOn: "2015-07-31T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2015-07-31T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 ##"No Way!" You Will Say
 > If anything simply cannot go wrong, it will anyway.

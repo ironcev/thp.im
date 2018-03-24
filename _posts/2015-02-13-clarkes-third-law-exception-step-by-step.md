@@ -3,8 +3,8 @@ title: Clarke's Third Law Exception - Step by Step
 subtitle: "Turning the Clarke's Third Law into <a href='/stack-trace-art'>Stack Trace Art</a>. One step at the time."
 tags: stack-trace-art step-by-step
 image: "clarkes-third-law-exception-step-by-step-fb.jpg"
-publishedOn: "2015-02-13T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2015-02-13T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 ##Hand-making a Stack Trace Art Exception
 ![Clarke's First Law Stack Trace Art Exception](/resources/clarkes-third-law-exception-step-by-step/clarkes-third-law-exception-stack-trace-art-on-view-detail.png)

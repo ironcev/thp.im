@@ -3,8 +3,8 @@ title: His Majesty, Hangul the Filler
 subtitle: 'Revealing the secret behind the <a href="/stack-trace-art">Stack Trace Art</a>''s magic.'
 tags: stack-trace-art stacktraceangelo unicode
 image: "his-majesty-hangul-the-filler-fb.jpg"
-publishedOn: "2015-02-09T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2015-02-09T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 ![Лулу и как се прави дъга Exception](/resources/stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png)
 

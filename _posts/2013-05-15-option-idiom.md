@@ -3,8 +3,8 @@ title: Option Idiom
 subtitle: "Looking for a good way to fight the <code>NullReferenceException</code>?"
 tags: option-idiom null exceptions csharp fsharp swissknife
 image: "option-idiom-fb.png"
-publishedOn: "2013-05-15T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2013-05-15T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 disqusIdentifier: "Option Idiom | The Humble Programmer"
 ---
 ##The Billion Dollar Mistake

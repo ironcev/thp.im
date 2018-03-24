@@ -3,8 +3,8 @@ title: Stack Trace Art
 subtitle: An artist wannabe discovers his own art - turning programming exceptions into beautiful drawings.
 tags: stack-trace-art stacktraceangelo fun
 image: "stack-trace-art-fb.png"
-publishedOn: "2013-05-31T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2013-05-31T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 disqusIdentifier: "Stack Trace Art | The Humble Programmer"
 ---
 ##In Its Essence

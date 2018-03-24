@@ -3,8 +3,8 @@ title: Local Functions, Subtle Leaks
 subtitle: C# 7.0 local functions, leaking under the hood.
 tags: csharp csharp70 under-the-hood
 image: "csharp-70-local-functions-leaking-under-the-hood.jpg"
-publishedOn: "2018-03-17T12:00:00+0100"
-lastUpdatedOn: "2018-03-18T12:00:00+0100"
+publishedOn: "2018-03-17T12:00:00+01:00"
+lastUpdatedOn: "2018-03-18T12:00:00+01:00"
 ---
 ##Are You Sure?
 The two [local functions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions) surprised me at first. Nested at the top of an `if` statement, right after the condition, neatly formatted, they looked just like a regular method call, and not a local function definition. I took me a second or two to calibrate my eyes and recognize what the code was actually doing.

@@ -4,8 +4,8 @@ subtitle: On taking things with a grain of salt.
 tags: quote
 hasCode: false
 image: "shoot-yourself-in-the-foot-fb.jpg"
-publishedOn: "2015-02-14T12:00:00+0100"
-lastUpdatedOn: "2017-04-16T12:00:00+0100"
+publishedOn: "2015-02-14T12:00:00+01:00"
+lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 > [...] the MSDN Magazine [...] the developer's magazine full of exciting articles about all the different ways you can shoot yourself in the foot by using esoteric combinations of Microsoft products in your own software.
 <br/><br/>

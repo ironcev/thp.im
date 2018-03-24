@@ -11,7 +11,7 @@ The two [local functions](https://docs.microsoft.com/en-us/dotnet/csharp/program
 
 "Is it a good idea to use local functions here? They create [closures](http://csharpindepth.com/articles/chapter5/closures.aspx) in the background, don't they?" Stefan asked. Stefan is always careful when it comes to low level code performance. Unnecessary heap allocations are to be avoided unless we have a really good reason to tolerate them. And I agree.
 
-"Oh no", I reassured him. "Local functions do not create closures in the background. There is no need for that. The compiler turns them into private methods and passes the enclosing local variables as ref arguments. There are no [hidden heap allocations](http://thehumbleprogrammer.com/no-more-hidden-allocations-please/) here."
+"Oh no", I reassured him. "Local functions do not create closures in the background. There is no need for that. The compiler turns them into private methods and passes the enclosing local variables as ref arguments. There are no [hidden heap allocations]({% post_url 2015-12-17-no-more-hidden-allocations-please %}) here."
 
 "Are you sure?" Stefan asked me, a bit suspiciously.
 "Yes, I am sure." I answered, with a voice that didn't leave any place for additional doubts.

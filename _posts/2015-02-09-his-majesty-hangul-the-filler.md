@@ -12,11 +12,11 @@ lastUpdatedOn: "2017-04-16T12:00:00+0100"
 >Any sufficiently advanced technology is indistinguishable from magic.<br/><br/>
 Arthur C. Clarke, [Clarke's three laws](http://en.wikipedia.org/wiki/Clarke's_three_laws)
 
-Today I got a [comment on my original post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art/#comment-1843595743). The word *magic* occurs twice in it. That word represents so well the common feedback on Stack Trace Art I already got several times. "Wait a second! How did you do it? Do you rewrite the stack trace information somehow? These cannot be real method calls!"
+Today I got a [comment on my original post on Stack Trace Art]({% post_url 2013-05-31-stack-trace-art %}#comment-1843595743). The word *magic* occurs twice in it. That word represents so well the common feedback on Stack Trace Art I already got several times. "Wait a second! How did you do it? Do you rewrite the stack trace information somehow? These cannot be real method calls!"
 
 My answer usually produces question marks above the heads of my fellow .NET programmers: "No. This *is* a genuine .NET exception like any other. No tricks of any kind. Stack Trace Art isn't about tricks. It's about throwing a real exception that will create a drawing on the caller's stack trace. A beautiful drawing, please."
 
-[The comment](http://www.thehumbleprogrammer.com/stack-trace-art/#comment-1843595743) motivated me to finally explain how Stack Trace Art works. As you will shortly see there are no tricks or magic in it. As Clark's law says, it's just technology.
+[The comment]({% post_url 2013-05-31-stack-trace-art %}#comment-1843595743) motivated me to finally explain how Stack Trace Art works. As you will shortly see there are no tricks or magic in it. As Clark's law says, it's just technology.
 
 That "sufficiently advanced technology" that makes Stack Trace Art appear as magic is a combination of these two facts:
 

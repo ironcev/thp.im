@@ -8,7 +8,7 @@ lastUpdatedOn: "2017-09-24T12:00:00+0100"
 ---
 ## Without Context
 
-In [the previous blog post](http://thehumbleprogrammer.com/await-async-as-async/) we discussed how [C# contextual keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/index#contextual-keywords) make semantic analysis of C# code *very* difficult. It's time to discuss the *context itself* now. As you will soon see, the context can make semantic analysis even more difficult.
+In [the previous blog post]({% post_url 2018-03-22-await-async-as-async %}) we discussed how [C# contextual keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/index#contextual-keywords) make semantic analysis of C# code *very* difficult. It's time to discuss the *context itself* now. As you will soon see, the context can make semantic analysis even more difficult.
 
 To demonstrate the importance of understanding and knowing the context, I'll take a few sentences in English, Naški (that's my mother tongue :-)), and German and present them to you *without* the context. All of them are perfectly valid sentences in those languages, but still, it turned out that native speakers who attended [my talk on Roslyn](https://github.com/ironcev/public-talks/tree/master/SuperPowersAndTheCompiler) had some difficulties understanding their meanings.
 
@@ -38,13 +38,13 @@ And guess what, exactly as I expected, the audience had much less issues in inte
 
 ## Async Async Async Async Async
 
-Let's switch now to C# contextual keywords and the *context* in which they appear. Those of you who already read my [last blog post](http://thehumbleprogrammer.com/await-async-as-async/) can easily figure out what has to be done to make this C# method compileable:
+Let's switch now to C# contextual keywords and the *context* in which they appear. Those of you who already read my [last blog post]({% post_url 2018-03-22-await-async-as-async %}) can easily figure out what has to be done to make this C# method compileable:
 
     async async async(async async)
     {
     }
     
-Yes, we just have to apply [the Robert's trick](http://thehumbleprogrammer.com/await-async-as-async/#the-roberts-solution) and that's it:
+Yes, we just have to apply [the Robert's trick]({% post_url 2018-03-22-await-async-as-async %}#the-roberts-solution) and that's it:
 
     using async = System.Threading.Tasks.Task;
     
@@ -81,11 +81,11 @@ Well, it's quite obvious, you will say, isn't it? The first *dynamic* is the [`d
 
 Great! I see you've learned the contextual keywords lesson well :-)
 
-But... are you *sure*? Are you *100% sure* that the above interpretation of the method semantics is *the only one possible*? Let me rephrase the question, because it might be confusing. Can we have that same valid C# method in our code, but with different meanings of those *dynamic*s? Yes, [again](http://thehumbleprogrammer.com/await-async-as-async/) a riddle :-)
+But... are you *sure*? Are you *100% sure* that the above interpretation of the method semantics is *the only one possible*? Let me rephrase the question, because it might be confusing. Can we have that same valid C# method in our code, but with different meanings of those *dynamic*s? Yes, [again]({% post_url 2018-03-22-await-async-as-async %}) a riddle :-)
 
 ## The Riddle
 
-As with [all the riddles on The Humble Programmer](http://thehumbleprogrammer.com/tags/riddle/), try to solve it on your own. Don't rush, give it a try. Think of it. Don't give up to early :-)
+As with [all the riddles on The Humble Programmer](/tags/riddle/), try to solve it on your own. Don't rush, give it a try. Think of it. Don't give up to early :-)
 
 Again, is it possible to write a piece of code that gives us a  *different semantics* for  this method:
 
@@ -108,13 +108,13 @@ What will happen if we declare a class called *dynamic* like in the code given b
       dynamic dynamic(dynamic dynamic) => dynamic;
     }
 
-Here is where [the story about the contextual keywords](http://thehumbleprogrammer.com/await-async-as-async/#contextual-keywords) comes in play. The keyword `dynamic` appeared for the first time in the [C# 4.0](https://en.wikipedia.org/wiki/C_Sharp_4.0). And before that happened, it might be that we had classes in the existing C# code that were called *dynamic*. In order not to change the semantic of the existing code the compiler will in such cases give precedence to that class over the keyword `dynamic`. Which brings us to the following conclusion.
+Here is where [the story about the contextual keywords]({% post_url 2018-03-22-await-async-as-async %}#contextual-keywords) comes in play. The keyword `dynamic` appeared for the first time in the [C# 4.0](https://en.wikipedia.org/wiki/C_Sharp_4.0). And before that happened, it might be that we had classes in the existing C# code that were called *dynamic*. In order not to change the semantic of the existing code the compiler will in such cases give precedence to that class over the keyword `dynamic`. Which brings us to the following conclusion.
 
 The first and the third *dynamic*s do not represent any more the `dynamic` keyword. Rather, they are occurrences of the class *dynamic*. And that, of course, suddenly gives a completely different meaning to our original line of code!
 
 ## Context Matters
 
-Let me [re-quote](http://thehumbleprogrammer.com/await-async-as-async/#an-extremely-difficult-endeavor) Jason Bock and *controlflow*.
+Let me [re-quote]({% post_url 2018-03-22-await-async-as-async %}#an-extremely-difficult-endeavor) Jason Bock and *controlflow*.
 
 > The compiler needs to figure out semantics for these tokens based on the rules of the C# language, and if you've ever read the C# specification, you know that this can be an **extremely difficult endeavor**.<br/><br/>[Jason Bock](https://twitter.com/jasonbock), [.NET Development Using the Compiler API](https://www.apress.com/gb/book/9781484221105) (emphasized by me)
 
@@ -132,6 +132,6 @@ Which again brings me to the awesomeness of Roslyn.
 
 Being able to see C# code through the eyes of the C# compiler "for free" is, in my opinion, one of the greatest gifts we got from the C# compiler team. In [my talk on Roslyn](https://github.com/ironcev/public-talks/tree/master/SuperPowersAndTheCompiler) I discuss how to utilize this generous gift to increase the code quality of our own code. But that's a whole other topic, way out of the scope of this blog post.
 
-I hope that my [posts on Roslyn](http://thehumbleprogrammer.com/tags/roslyn/) will make you curious and motivate you to try Roslyn on your own :-)
+I hope that my [posts on Roslyn](/tags/roslyn/) will make you curious and motivate you to try Roslyn on your own :-)
 
 {% hx_src BuffaloBuffaloBuffaloBuffaloBuffaloBuffaloBuffaloBuffalo %}

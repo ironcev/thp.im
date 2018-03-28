@@ -3,8 +3,8 @@ title: Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo
 subtitle: Context matters. And creates headaches to C# semantic analyzers.
 tags: csharp riddle roslyn csharp40 csharp50 contextual-keywords
 image: "buffalo-buffalo-buffalo-buffalo-buffalo-buffalo-buffalo-buffalo.jpg"
-publishedOn: "2017-09-24T12:00:00+01:00"
-lastUpdatedOn: "2017-09-24T12:00:00+01:00"
+publishedOn: "2018-03-24T12:00:00+01:00"
+lastUpdatedOn: "2018-03-24T12:00:00+01:00"
 ---
 ## Without Context
 

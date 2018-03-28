@@ -3,8 +3,8 @@ title: Await Async As Async
 subtitle: A C# riddle. Challenging both you and the C# compiler ;-)
 tags: csharp riddle roslyn resharper csharp30 csharp50 contextual-keywords
 image: "await-async-as-async.jpg"
-publishedOn: "2017-09-22T12:00:00+01:00"
-lastUpdatedOn: "2017-09-22T12:00:00+01:00"
+publishedOn: "2018-03-22T12:00:00+01:00"
+lastUpdatedOn: "2018-03-24T12:00:00+01:00"
 ---
 ##The Riddle
 Are you ready for a nice C# riddle? It's not an easy one ;-) so be sure to take a deep breath before jumping on it. Ready? Yes. Great! Take a good look at this line of code (thanks for [taking the photo](https://www.meetup.com/de-DE/NET-Stammtisch-Linz/events/247045584/) Georg!):

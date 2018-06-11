@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      "<p class='alert alert-info'>All the source code used in this post is available on GitHub. Download it <a href='https://github.com/ironcev/HumbleXamples/tree/master/#{@source}'>here</a>.</p>"
+      "<p class='alert alert-info'>The source code used in this blog post is available on GitHub. Download it <a href='https://github.com/ironcev/HumbleXamples/tree/master/#{@source}'>here</a>.</p>"
     end
   end
 end

@@ -4,6 +4,9 @@ layout: default
 <div class="contentBox">
     <div class="intro">
         <h1>{{ page.title }}</h1>
+        {% if page.showSubtitle %}
+        <p>{{ page.subtitle }}</p>
+        {% endif %}
     </div>
     <div class="content">
         {{ content }}

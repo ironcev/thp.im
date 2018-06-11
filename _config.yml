@@ -1,10 +1,9 @@
-# Site settings
+﻿# Site settings
 title: The Humble Programmer
 email: ironcev@hotmail.com
 url: "http://thehumbleprogrammer.com"
 shorturl: "http://thehumbleprogrammer.com"
 permalink: /:title/
-offlineMode: false
 disqusShortname: thehumbleprogrammer
 exclude: [README.md, LICENSE.txt]
 
@@ -33,6 +32,7 @@ defaults:
       showComments: false
       showSocialSharing: false
       hasCode: false
+      showSubtitle: false
 
 #Compress HTML
 compress_html:

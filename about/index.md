@@ -15,7 +15,7 @@ People have asked me many times why I love programming. It is simple. In it, I f
 ##Díåcritîçs
 My name is Igor Rončević.
 
-Those two marks above the "c"-s in my last name *are not accents*. They denote two full blown letters of the [Croatian alphabet](http://en.wikipedia.org/wiki/Croatian_alphabet): "[č](http://en.wikipedia.org/wiki/Č)" and "[ć](http://en.wikipedia.org/wiki/Ć)". Back in the 90s when I was starting my programming endeavor, "č" and "ć" (along with other Croatian diacritics) were probably the major cause of sick leaves among software developers. Displaying them properly on the screen required programming skills, patience, and nerves of steel. Printing them out was considered to be mission impossible. It looks like [they still occasionally cause headaches](http://stackoverflow.com/questions/1516259/croatian-diacritic-signs-in-mysql-db-utf-8).
+Those two marks above the "c"-s in my last name *are not accents*. They denote two full blown letters of the [Croatian alphabet](http://en.wikipedia.org/wiki/Croatian_alphabet): "[č](http://en.wikipedia.org/wiki/Č)" and "[ć](http://en.wikipedia.org/wiki/Ć)". Back in the 90s when I was starting my programming endeavor "č" and "ć", along with other Croatian diacritics, were the major cause of sick leaves among software developers. Displaying them properly on the screen required programming skills, patience, and nerves of steel. Printing them out was considered to be mission impossible.
 
 ##Me
 

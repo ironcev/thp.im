@@ -100,6 +100,6 @@ By confuses I mean the following:
 
 ReSharper marks a perfectly valid C# code as invalid proving [once again]({% post_url 2018-03-22-await-async-as-async %}#facing-the-difficulty) that writing a bullet-proof C# parser/analyzer is [an extremely difficult endeavor]({% post_url 2018-03-22-await-async-as-async %}#an-extremely-difficult-endeavor). I blogged about that in a very detail in [the last chapter of my blog post "Await Async as Async"]({% post_url 2018-03-22-await-async-as-async %}#facing-the-difficulty).
 
-Although there is no need to repeat myself here and now, there is one thing I can't repeat often enough - [Roslyn](https://en.wikipedia.org/wiki/.NET_Compiler_Platform) is awesome :-) 
+Although there is no need to repeat myself here and now, there is one thing I can't repeat often enough - [Roslyn is awesome](https://github.com/ironcev/awesome-roslyn) :-) 
 
 {% hx_src TheVariformVar %}

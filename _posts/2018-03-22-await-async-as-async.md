@@ -193,6 +193,6 @@ I liked his statement so much that I called my talk on Roslyn "Super-powers and 
 
 ![Super-powers and the compiler](/resources/await-async-as-async/super-powers-and-the-compiler.jpg)
 
-Let's stop here for a while. I plan more posts on Roslyn awesomeness in the future. Meanwhile, feel free to invite me to give [my talk on Roslyn](https://github.com/ironcev/public-talks/tree/master/SuperPowersAndTheCompiler) at your Meetup,  user group or conference :-)
+Let's stop here for a while. I plan more posts on [Roslyn awesomeness](https://github.com/ironcev/awesome-roslyn) in the future. Meanwhile, feel free to invite me to give [my talk on Roslyn](https://github.com/ironcev/public-talks/tree/master/SuperPowersAndTheCompiler) at your Meetup,  user group or conference :-)
 
 {% hx_src AwaitAsyncAsAsync %}

@@ -128,7 +128,7 @@ I hope you agree with me when I say that contextual keywords are a good example 
 
 Moreover, anyone who wants to write any kind of C# code semantic analysis on its own has to be aware of the overall context as well. And not only of the overall context but also of a myriad of other subtleties described in the [not so exactly up-to-date C# specification](https://github.com/dotnet/csharplang/tree/master/spec).
 
-Which again brings me to the awesomeness of Roslyn.
+Which again brings me to the [Roslyn awesomeness](https://github.com/ironcev/awesome-roslyn).
 
 Being able to see C# code through the eyes of the C# compiler "for free" is, in my opinion, one of the greatest gifts we got from the C# compiler team. In [my talk on Roslyn](https://github.com/ironcev/public-talks/tree/master/SuperPowersAndTheCompiler) I discuss how to utilize this generous gift to increase the code quality of our own code. But that's a whole other topic, way out of the scope of this blog post.
 

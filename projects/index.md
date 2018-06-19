@@ -28,7 +28,7 @@ A Visual Studio extension that intelligently introduces new C# features into you
 <p align="center">
 A curated list of awesome Roslyn books, tutorials, open source projects, analyzers, code fixes, and refactorings.
 </p>
-<p align="center"><a href="https://github.com/ironcev/awesome-roslyn">Experience Roslyn awesomeness</a></p>
+<p align="center"><a href="https://github.com/ironcev/awesome-roslyn">Learn Roslyn</a></p>
 
 &nbsp;
 

@@ -4,7 +4,7 @@ subtitle: An artist wannabe discovers his own art - turning programming exceptio
 tags: stack-trace-art stacktraceangelo fun
 image: "stack-trace-art-fb.png"
 publishedOn: "2013-05-31T12:00:00+01:00"
-lastUpdatedOn: "2017-04-16T12:00:00+01:00"
+lastUpdatedOn: "2018-06-20T12:00:00+01:00"
 disqusIdentifier: "Stack Trace Art | The Humble Programmer"
 ---
 ##In Its Essence
@@ -41,7 +41,7 @@ Friday was it, 12th of April 2013. A colleague was struggling with some legacy w
 
 Suddenly from a mere joke, this whole stack trace thing turned into a vision in my head; a voilà; a new art form was born. Drawings made from method calls. Having an exception in the stack trace that would look like a piece of art. My dear colleague laughed when I told him about the vision. He thought that I was kidding once again. Apparently, I wasn't.
 
-Next day afternoon [stackTraceangelo](https://github.com/ironcev/stackTraceangelo), the first Stack Trace Art editor known to me, was born.
+Next day afternoon [stackTraceangelo](https://github.com/ironcev/stack-trace-art), the first Stack Trace Art editor known to me, was born.
 Using it I quickly turned [this ASCII art](http://asciiworld.com/-Cats-.html):
 <pre>
               a          a
@@ -84,7 +84,7 @@ Still, I don't insist on keeping it fully purposeless. You can use it, for examp
 
 ![Space Invaders Exception](/resources/stack-trace-art/space-invaders-exception-stack-trace-art.png)
 
-Like every other art, the Stack Trace Art can be used to convey feelings. Injecting the burning heart of desire into the code of that French girl is a good way to show what you feel about her:
+Like every other art, the Stack Trace Art can be used to convey feelings. Injecting the burning heart of desire into the code of the girl you like is a good way to show what you feel about her:
 
 ![The Burning Heart of Desire Exception](/resources/stack-trace-art/the-burning-heart-of-desire-exception-stack-trace-art.png)
 
@@ -95,11 +95,11 @@ The Stack Trace Art can be used to convey opinions and preferences. What stops y
 In plain and simple words, Stack Trace Art is all about expressing and communicating yourself to other programmers in a very unique way, which only another programmer can understand.
 
 ##Rekindling Your Artistic Soul
-A freelance programmer, whom I once met wanted to get the legal status of a free artist. "Well, what qualifies you as artist?" I asked. "All programmers are actually artists." he replied. "No one understands what we are doing and yet we are all underpaid for it. This surely qualifies us as artists." If you feel the same, then don't be afraid for what you really are, an artist. Rekindle your artistic soul! Download [stackTraceangelo](https://github.com/ironcev/stackTraceangelo) and create some cool pieces of Stack Trace Art! Inject it into other programmer's code!
+A freelance programmer, whom I once met wanted to get the legal status of a free artist. "Well, what qualifies you as artist?" I asked. "All programmers are actually artists." he replied. "No one understands what we are doing and yet we are all underpaid for it. This surely qualifies us as artists." If you feel the same, then don't be afraid for what you really are, an artist. Rekindle your artistic soul! Download [stackTraceangelo](https://github.com/ironcev/stack-trace-art) and create some cool pieces of Stack Trace Art! Inject it into other programmer's code!
 
 After you do so, please don't forget to share your Stack Trace Art with the rest of the world or at least with me. I'll be so happy to see it!
 
-But what if you belong to that rare minority of programmers who are both understood and well paid? According to the above definition (questionable I must say), then you do not qualify as an artist. But still, do not despair; [stackTraceangelo](https://github.com/ironcev/stackTraceangelo) comes with its own [art gallery](https://github.com/ironcev/stackTraceangelo/tree/master/Source/ArtGallery/ArtGallery.md). Just reference the gallery in your project and surprise your colleagues with a nice piece of the finest Stack Trace Art.
+But what if you belong to that rare minority of programmers who are both understood and well paid? According to the above definition (questionable I must say), then you do not qualify as an artist. But still, do not despair; [stackTraceangelo](https://github.com/ironcev/stack-trace-art) comes with its own [art gallery](https://github.com/ironcev/stack-trace-art/tree/master/Source/ArtGallery). Just reference the gallery in your project and surprise your colleagues with a nice piece of the finest Stack Trace Art.
 
 ##There Are Real Artists Though
 Although often misunderstood, I can't say that I'm underpaid which makes me (still) only an artist wannabe. All jokes aside, I don't have the right skills necessary to create from scratch the art depicted above. The cat, space invader, heart and the poem are adaptations of the work of real artists, which were created for entirely different purpose. My adaptations are done having [fair use](http://www.ascii-art.de/info/copyright/#fair) in mind.

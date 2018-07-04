@@ -15,6 +15,7 @@ layout: default
     </div>
     <div class="content">
         {{ content }}
+        {% include newsletter.html %}
     </div>
     <div class="publish">Published on {{ page.date | date:"%B %d, %Y" }}</div>
     {% if page.showComments %}

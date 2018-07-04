@@ -13,3 +13,5 @@ disqusIdentifier: "A 1 Second Delay | The Humble Programmer"
 > [...] at some point it becomes more valuable to focus on performance over presentation.
 <br/><br/>
 >Lori MacVittie, [Performance versus Presentation](https://devcentral.f5.com/blogs/us/performance-versus-presentation)
+
+&nbsp;

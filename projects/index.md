@@ -1,24 +1,24 @@
 ---
 title: Projects
-subtitle: "My open source projects worth taking a look at."
+subtitle: "Some of my open source projects."
 permalink: /projects/
 showSubtitle: true
 ---
-##Sharpen
+## Sharpen
 
 <p align="center">
-    <a href="http://sharpen.rocks">
+    <a href="https://github.com/sharpenrocks/Sharpen">
     <img src="https://raw.githubusercontent.com/sharpenrocks/Sharpen/master/images/logo1200x1200.png" alt="Sharpen" style="max-width:60%;">
     </a>
 </p>
 <p align="center">
-A Visual Studio extension that intelligently introduces new C# features into your existing code base.
+Visual Studio extension that intelligently introduces new C# features into your existing codebase.
 </p>
-<p align="center"><a href="http://sharpen.rocks">Start sharpening your C# code</a></p>
+<p align="center"><a href="https://github.com/sharpenrocks/Sharpen">Learn more</a></p>
 
 &nbsp;
 
-##Awesome Roslyn
+## Awesome Roslyn
 
 <p align="center">
     <a href="https://github.com/ironcev/awesome-roslyn">
@@ -26,25 +26,25 @@ A Visual Studio extension that intelligently introduces new C# features into you
     </a>
 </p>
 <p align="center">
-A curated list of awesome Roslyn books, tutorials, open source projects, analyzers, code fixes, and refactorings.
+Curated list of awesome Roslyn books, tutorials, open-source projects, analyzers, code fixes, refactorings, and source generators.
 </p>
-<p align="center"><a href="https://github.com/ironcev/awesome-roslyn">Learn Roslyn</a></p>
+<p align="center"><a href="https://github.com/ironcev/awesome-roslyn">Learn more</a></p>
 
 &nbsp;
 
-##Without Guns for Visual Studio Code
+## Without Guns for Visual Studio Code
 <p align="center">
     <a href="https://github.com/ironcev/without-guns-for-vs-code">
     <img src="https://raw.githubusercontent.com/ironcev/without-guns-for-vs-code/master/images/logo1200x1200.png" alt="Without Guns for Visual Studio Code" style="max-width:60%;">
     </a>
 </p>
 <p align="center">
-A Visual Studio Code extension that teaches you mindful programming.
+Visual Studio Code extension that teaches you mindful programming.
 </p>
-<p align="center"><a href="https://github.com/ironcev/without-guns-for-vs-code">Learn mindful programming</a></p>
+<p align="center"><a href="https://github.com/ironcev/without-guns-for-vs-code">Learn more</a></p>
 &nbsp;
 
-##Stack Trace Art
+## Stack Trace Art
 
 <p align="center">
     <a href="https://github.com/ironcev/stack-trace-art">
@@ -52,6 +52,6 @@ A Visual Studio Code extension that teaches you mindful programming.
     </a>
 </p>
 <p align="center">
-The art of throwing exceptions that turn stack traces into beautiful images.
+Turning programming exceptions into art.
 </p>
-<p align="center"><a href="https://github.com/ironcev/stack-trace-art">Turn your exceptions into art</a></p>
+<p align="center"><a href="https://github.com/ironcev/stack-trace-art">Learn more</a></p>

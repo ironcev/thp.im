@@ -6,11 +6,11 @@ image: "task-modal-headaches-fb.jpg"
 publishedOn: "2013-05-13T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
-##Mimicing Microsoft Word
+## Mimicing Microsoft Word
 WPF application that I am working on right now mimics the behavior of Microsoft Word 2010 when it comes to windows handling. Mimic means both from implementation and end-user and perspective. From implementation perspective, **all application windows should run in the same process**. (Start several "instances" of Word and take a look at Windows Task Manager or [Process Explorer](http://technet.microsoft.com/en-US/sysinternals/bb896653). You will see that they all run within the same process.) From the end-user perspective, arbitrary number of independent top level application windows can be open. Still, the user knows that they "play together" and share certain features, like dialogs. **When the user opens a dialog in one of the application windows, all application windows get disabled**, not only the one that called the dialog.
 If you are not aware of this, try it on your own. Start several "instances" of Microsoft Word 2010 and open Save As dialog in one of it. You will not be able to select some other Word instance before you close the dialog. The same goes for message boxes.
 
-##Dissecting .NET Inconsistencies
+## Dissecting .NET Inconsistencies
 I thought that writing a WPF application that mimics the described behavior will be a trivial task. Creating a single instance application was [trivial indeed](http://www.switchonthecode.com/tutorials/wpf-writing-a-single-instance-application). But after digging deeper into WPF dialogs and message boxes I noticed some **inconsistencies** in their behavior **when it comes to modality**. Even bigger inconsistencies become obvious if we add WinForms to the whole story.
 I've created a [sample project](https://github.com/ironcev/HumbleXamples/tree/master/TaskModalHeadaches) to demonstrate these inconsistencies. [Download the project](/resources/task-modal-headaches/TaskModalHeadaches.zip) and build it using the *#Build.bat* file. Running the *A_01_OpenApplicationWindows.bat* will open five application windows in the same process, each of them looking like this:
 
@@ -52,7 +52,7 @@ I tried to be smart and to do the following, hoping that WPF Team forgot to prop
 
 It didn't work. The line above throws [InvalidEnumArgumentException](http://msdn.microsoft.com/en-us/library/system.componentmodel.invalidenumargumentexception.aspx). However, trying the same hack with the WinForms message box went well pointing out **another inconsistency in the .NET framework**.
 
-##A Pragmatic Solution
+## A Pragmatic Solution
 Knowing all the facts listed above helped me to choose a pragmatic solution for task-modal dialogs and message boxes:
 
 - Use WPF for modal windows. (We have to do this anyway. After all, we are developing WPF application.)
@@ -61,7 +61,7 @@ Knowing all the facts listed above helped me to choose a pragmatic solution for 
 
 Although I can think of a pure WPF solution it would require additional programming time. On the other side, this pragmatic approach uses existing .NET features without any additional effort. Both WinForms and WPF standard Windows dialogs and message boxes are just two different wrappers around exactly the same things. Besides, we already mix WinForms and WPF in certain parts of the application. Therefore, insisting on a pure WPF solution is not necessary.
 
-##Huston, We (Still) Have a Problem
+## Huston, We (Still) Have a Problem
 The "without any additional effort" part of the pragmatic solution is not hundred percent true. We still have to cover one special case. To see what it is about, start the *A_01_OpenApplicationWindows.bat* again and open any of the dialogs which are task-modal (e.g. WPF modal dialog). Now start an additional window using *A_02_OpenAdditionalApplicationWindow.bat*. You can already guess, that **the previously opened modal dialog will not be modal for the newly opened window**.
 
 I was curious how Word covers this case. Try it on your own. Start one or more instances of Word and open Save As dialog in one of it. Now try to open an additional instance by using Windows Start Menu. The new instance will not open. The already opened modal dialog will be brought to front. However, if you try to open some existing document by double-clicking on it you will get the following message:
@@ -116,7 +116,7 @@ In addition, usage of the `TaskModalMessageBox` class (available in the same pro
 
 ![New application window cannot be open because a dialog box is open](/resources/task-modal-headaches/new-application-window-cannot-be-open-because-a-dialog-box-is-open.png)
 
-##Open Questions
+## Open Questions
 The pragmatic solution based on the centralized handling of modal dialogs and message boxes is a good starting point toward Word-like behavior. A few questions nevertheless remain open. They should be addressed carefully before using this approach I discussed. The questions are:
 
 - How much effort would it be to develop pure WPF solution?   

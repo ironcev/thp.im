@@ -10,7 +10,7 @@ lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 >640 k ought to be enough for anyone.<br/><br/>
 >([Misattributed to](https://en.wikiquote.org/wiki/Bill_Gates#Misattributed)) Bill Gates, 1981
 
-##Wolfenstein 3D
+## Wolfenstein 3D
 If you need to know, [Wolfenstein 3D](https://en.wikipedia.org/wiki/Wolfenstein_3D) is a 24-year-old game that pioneered a genre nowadays known as first-person-shooters. I installed it last weekend, triggered by a high dose of nostalgia caused by reading [The Masters of Doom](https://en.wikipedia.org/wiki/Masters_of_Doom). (Thanks for the book recommendation, Robert!) 
 
 The [zipped shareware version](http://www.bestoldgames.net/stare-hry/wolfenstein-3d.php) of the game has size of *692,526 bytes*. Yes, *bytes*! Roughly *676 kilobytes*. Unzipped, the game takes double that size, *1,409,981 bytes*. Roughly **1.34 megabytes**.
@@ -59,7 +59,7 @@ Not to mention hidden treasures.
 
 And all that consuming **exactly *1,409,981 bytes* on my hard drive** and **roughly *one megabyte* of RAM**.
 
-##Atom
+## Atom
 It happened that I recently installed [Atom](https://atom.io) as well.
 
 Atom is a text editor.
@@ -101,7 +101,7 @@ I couldn't stop wondering how many more enemy soldiers and walls and vast empty 
 > Mmm.
 
 
-##Shakespeare
+## Shakespeare
 It happened also that I recently downloaded [The Complete Works of William Shakespeare](http://www.gutenberg.org/ebooks/100).
 
 There is *a lot* in Shakespeare.
@@ -122,7 +122,7 @@ All those "a lot"s combined together, downloaded from [Project Gutenberg](http:/
 
 Let me stress this fact once again. **The Complete Works of William Shakespeare takes only 5.5 megabytes in plain text.**
 
-##OneNote
+## OneNote
 Recently I was forced to install the newest Windows update. And like after each update I ran out of space on my C drive. Corporate laptop, corporate C drive. I have very less control over it. This time it reached - literally - 0 kilobytes free.
 
 ![0 kilobytes free on the C drive](/resources/shakespeare-in-the-castle-wolfenstein/0-k-free-on-the-C-drive.png)
@@ -138,7 +138,7 @@ To quote Carmack again:
 
 >Mmm.
 
-##Back to the "Bill's" Quote
+## Back to the "Bill's" Quote
 > I've said some stupid things and some wrong things, but not that. No one involved in computers would ever say that a certain amount of memory is enough for all time. [...] Meanwhile, I keep bumping into that silly quotation attributed to me that says 640K of memory is enough. There's never a citation; the quotation just floats like a rumor, repeated again and again.<br/><br/>
 > Bill Gates, [Did Gates Really Say 640K is Enough For Anyone?](http://www.wired.com/1997/01/did-gates-really-say-640k-is-enough-for-anyone/)
 
@@ -146,5 +146,5 @@ C'mon Bill, even if you did say it - so what? It's neither stupid, nor wrong, no
 
 My strong impression is telling me that we, as programmers, can do a much better job in keeping all those gigabytes of RAM and terabytes of hard drives sufficient enough for the time being.
 
-##Afterthought
+## Afterthought
 Despite the mentioned 150 MB I like [Atom](https://atom.io/). And [Brackets](http://brackets.io/) even more. And I'm looking forward finding some time for trying out [Light Table](http://lighttable.com/). But for some strange reason, I always write my blog posts in the only editor that "is trying to reduce the world carbon dioxide emissions". The good old [Notepad++](https://notepad-plus-plus.org/) :-)

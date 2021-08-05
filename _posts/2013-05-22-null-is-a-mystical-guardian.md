@@ -8,7 +8,7 @@ publishedOn: "2013-05-22T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 disqusIdentifier: "Null is a Mystical Guardian | The Humble Programmer"
 ---
-##Willkommen Null
+## Willkommen Null
 "What is this – null?" my good friend Čazim asked me when I helped him to create his profile on the Austrian Labor Agency web site.
 
 ![Willkommen null on the Austrian Labor Agency (AMS) Web Site](/resources/null-is-a-mystical-guardian/willkommen-null-on-the-austrian-labor-agency-ams-web-site.jpg)
@@ -19,7 +19,7 @@ disqusIdentifier: "Null is a Mystical Guardian | The Humble Programmer"
 
 ![Willkommen firstName - Bug on the iTunes download page](/resources/null-is-a-mystical-guardian/willkommen-firstname-bug-on-the-itunes-download-page.png)
 
-##Hunted by Null
+## Hunted by Null
 Explaining null to someone who just got his first computer is not an easy task. Here is [the best definition I found so far](http://runescape.wikia.com/wiki/Null):
 
 > Null is a mystical guardian who protects you when you enter new areas. He is a passive and benevolent force, and as such his combat level never rises above 1.

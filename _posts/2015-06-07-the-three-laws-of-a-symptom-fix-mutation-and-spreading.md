@@ -10,15 +10,15 @@ lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 This is the fourth post in the blog post series called <em>The Three Laws of a Symptom Fix</em>. The series talks about the consequences of fixing a symptom and not the cause of a bug. The overview of the whole series can be found <a href="{% post_url 2015-06-07-the-three-laws-of-a-symptom-fix-the-overview %}">here</a>.
 </p>
 
-##The Second Law of a Symptom Fix
+## The Second Law of a Symptom Fix
 > A symptom fix will mutate and spread.
 
-###Spreading
+### Spreading
 Spreading of a symptom fix is a natural consequence of the fact that the root cause of the bug is not removed. Because of that, the probability is high that the bug will appear in other places that use the buggy code. How often this will happen depends on many factors. The most relevant one is, of course, on how many places the buggy code is called, directly or indirectly.
 
 Spreading simply means introducing new symptom fixes for the same bug in different places in code. As simple as that.
 
-###Mutation
+### Mutation
 Mutation is a more interesting phenomenon. Once a symptom fix starts spreading, there is no guarantee that all symptom fixes for the same bug will actually look the same. Depending on the nature of the underlying bug, they could come in various forms and could significantly differ from each other.
 
 Let's take [our sample bug]( {% post_url 2015-04-18-the-three-laws-of-a-symptom-fix-the-bug %}) as an example.
@@ -131,10 +131,10 @@ Below are three out of *many* possible solutions:
 
 If the replacement of the `Split<T>()` method with one of those "monster" solutions is not backed by a comment saying that the `Split<T>()` cannot be used with `products`, it would be almost impossible to correlate any of those mutations with our initial simple symptom fix.
 
-##The Consequence
+## The Consequence
 *The Second Law of a Symptom Fix* has its consequence. **Symptom fixes will often remain in code even after the root cause bug is fixed.** Spreading and mutations are obvious reasons for that. The removal of eventual symptom fixes can be done by the person who fixes the root bug or by those who are aware that the root bug is fixed. Depending how widespread the symptom fixes are, it can be that they will be "out of reach" of those who are aware that they can be removed. E.g. if the bug is in a public library, the creators of the library cannot know all the usages of the fixed code. But even if the root bug appears in proprietary code, uncommented mutations like those three shown above make it impossible to detect all of the symptom fixes.
 
 In our concrete example, if someone aware of the bug fix in the `Split<T>()` method tries to remove the introduced symptom fixes, she will easily remove the first two kinds of mutations. This can be done simply by searching for the usage of the `Split<T>()` method. The other three mutations on the other hand can be discovered only through cumbersome and time demanding manual analysis of the code, which often does not pay off.
 
-##To Be Continued...
+## To Be Continued...
 I hope that the example was illustrative enough. In my next post I'll use the same bug to demonstrate *The Third Law of a Symptom Fix*.

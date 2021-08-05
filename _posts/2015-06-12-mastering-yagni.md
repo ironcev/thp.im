@@ -11,12 +11,12 @@ lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 <br/>
 Wikipedia, [You aren't gonna need it](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it)
 
-##The Need
+## The Need
 His email was short and almost grammarless - "hey, need a function for exporting opt-in subscribers Thnx". No addressing, no fullstops, no nothing. Just that one singe line. But still a perfect feature specification.
 
 The implementation was a minute to write. Put an "Export" button on the page. Fetch the emails. Dump them into a file. Done.
 
-##The Foreseen
+## The Foreseen
 *The sun was very near the water, sliding off to the north, the boat no more than flotsam: and then I remembered the causeway and the tide.* Newsletter subscribers are just one of many entities in our domain. We have browse pages for all the entities, ([aggregate roots](http://martinfowler.com/bliki/DDD_Aggregate.html) to be more precise), where we display their projections.
 
 *I ran down the island and my heart leaped when I saw the concrete walkway washed by white water, surging up from the right.* **Why not** have the export functionality on all of the browse pages for all the aggregate roots? Why would the subscribers browse page be so special?
@@ -51,7 +51,7 @@ The implementation was a minute to write. Put an "Export" button on the page. Fe
 
 *After a time I lit the candle and set it on the dash.* It would give us **tremendous flexibility**.
 
-##Epilogue
+## Epilogue
 *The car was still rocking in the wind, and the candle flame danced and trembled on its wick.* And then that typical mistake - that saving only to a file on the local disc will be acceptable for our users.
 
 *All the black shadows in the car shivered too, synchronized perfectly with the flame.* Saving directly to Google Drive, Dropbox, OneDrive, or any similar provider is de facto standard nowadays.
@@ -87,7 +87,7 @@ The implementation was a minute to write. Put an "Export" button on the page. Fe
 
 *Outside it was dark, and the wind howled.*
 
-##Behind The Scenes Featurette
+## Behind The Scenes Featurette
 The *storm scenery* comes from the last few paragraphs of [Kim Stanley Robinson](http://en.wikipedia.org/wiki/Kim_Stanley_Robinson)'s novel - ["A History of the Twentieth Century, with Illustrations"](http://www.infinityplus.co.uk/stories/history.htm). It's one of my favorite science fiction novels.
 
 The scenery fits perfectly to the storm I head in my head when I read that short grammarless email. I walked my room for at least twenty minutes sketching that perfect, generic, pluggable whatever exporting system. I lied to myself that I need not more than one hour to implement it. Maybe two. Three at most, testing included.
@@ -96,7 +96,7 @@ And the turn at the very end of the novel fits equally perfectly with my turn at
 
 I won over myself.
 
-##Deleted Scenes From The Cutting Room Floor
+## Deleted Scenes From The Cutting Room Floor
 [Martin Fowler](http://martinfowler.com/aboutMe.html) wrote a [good article on YAGNI](http://martinfowler.com/bliki/Yagni.html).
 
 [You Arent Gonna Need It](http://c2.com/cgi/wiki?YouArentGonnaNeedIt) on [c2.com](http://c2.com) is a perfect place to get some more information and views, as well as links to numerous related topics.

@@ -15,7 +15,7 @@ Digital channels in particular allow us to use everything we know about a custom
 <br/>
 Ashley Friedlein @ Econsultancy, [Introducing the Modern Marketing Manifesto](https://econsultancy.com/blog/62574-introducing-the-modern-marketing-manifesto)
 
-##Hello Mr Yakamoto!
+## Hello Mr Yakamoto!
 Remeber the Gap scene from [Minority Report](https://en.wikipedia.org/wiki/Minority_Report_%28film%29)?
 
 <iframe class="youtube" src="https://www.youtube.com/embed/ITjsb22-EwQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -26,7 +26,7 @@ A short eye scan and in a fraction of a second you know your customer. You know 
 
 Personalized marketing on its highest level. The Holy Grail of marketing.
 
-##Taking It Seriously
+## Taking It Seriously
 A few years ago [*The Telegraph* reported](http://www.telegraph.co.uk/technology/news/7920057/Minority-Report-style-advertising-billboards-to-target-consumers.html) that IBM tries to make [another one *Minority Report* scene](https://www.youtube.com/watch?v=7bXJ_obaiYQ) a reality.
 
 > Advertising billboards similar to those seen in the film Minority Report, which can recognise passers-by, target them with customised adverts and even use their names, are being developed by computer engineers. 
@@ -51,7 +51,7 @@ How comes that they failed so miserably to get even a small portion of the marke
 
 I tried to reverse engineer its learning and decision making process, based on the personalized ads I was getting from Microsoft, back then, when they served them daily via Hotmail.
 
-##Reverse Engineering It
+## Reverse Engineering It
 > Digital channels in particular allow us to use everything we know about a customer to inform and optimise each interaction. 
 <br/>
 <br/>

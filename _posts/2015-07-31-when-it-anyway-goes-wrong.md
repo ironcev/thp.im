@@ -7,7 +7,7 @@ image: "when-it-anyway-goes-wrong-fb.jpg"
 publishedOn: "2015-07-31T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
-##"No Way!" You Will Say
+## "No Way!" You Will Say
 > If anything simply cannot go wrong, it will anyway.
 <br/>
 <br/>
@@ -33,7 +33,7 @@ Here is how it looked like, with a bit of <span style="color:red">red</span> add
 
 ![A bug in the Windows security prompt](/resources/when-it-anyway-goes-wrong/a-bug-in-the-windows-security-prompt.png)
 
-##The Impression
+## The Impression
 Somewhere something happened. Somewhere on their way from Active Directory to the surface of my screen two simple ASCII characters have been turned into `¶` and `ᅥ`. Apparently without any particular or better to say *any possible* reason.
 
 My colleagues tried to guess how that trap, into which the poor ASCII fellows have been fallen, could look like. Non of the hypothesis they gave sounded convincing to me.
@@ -46,7 +46,7 @@ It is almost scary when you think that despite our best programming practices, d
 
 It seams like **bugs are inevitable in complex systems**. No matter how careful we are, there will always be a constellation of software and hardware components on our machines that will, at certain point, cause that "ǁnevitaƃle Ɓug".
 
-##Granny's Old Fashioned "ǁnevitaƃle Ɓug" Recipe
+## Granny's Old Fashioned "ǁnevitaƃle Ɓug" Recipe
 So, you want to taste that single most common dessert at programmer's table - the delicious "ǁnevitaƃle Ɓug"? 
 
 There are numerous recipes out there, all tasting better than the other. Here is an old fashioned one. A granny's recipe that sometimes produces an "ǁnevitaƃle Ɓug" of the richest flavor.
@@ -67,7 +67,7 @@ As [Donlad Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) once said
 
 It is hard, indeed.
 
-##Afterthought
+## Afterthought
 In the middle of writing the above lines, I witnessed a nicely growing startup moving from a simple deployment architecture:
 
 ![A simple deployment architecture](/resources/when-it-anyway-goes-wrong/simple-deployment-architecture.png)

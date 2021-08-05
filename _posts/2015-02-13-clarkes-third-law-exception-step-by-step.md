@@ -6,7 +6,7 @@ image: "clarkes-third-law-exception-step-by-step-fb.jpg"
 publishedOn: "2015-02-13T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
-##Hand-making a Stack Trace Art Exception
+## Hand-making a Stack Trace Art Exception
 ![Clarke's First Law Stack Trace Art Exception](/resources/clarkes-third-law-exception-step-by-step/clarkes-third-law-exception-stack-trace-art-on-view-detail.png)
 
 In my [previous post](/his-majesty-hangul-the-filler) I revealed the secret behind the [Stack Trace Art](/stack-trace-art)'s magic. It is the existence of the [Hangul Filler](http://www.fileformat.info/info/unicode/char/3164/index.htm) that makes Stack Trace Art possible. Hangul Filler is that magical Unicode character, at the same time valid in C# identifiers and 'invisible' in the same way spaces or tabs are 'invisible'. The Hangul Filler allows us to write perfectly valid C# code that looks all but valid at the first sight. The following code compiles without errors or warnings on any C# compiler! Try it on your own if you don't believe me :-)
@@ -61,7 +61,7 @@ Awesome! Our quote appears on the stack trace indeed (underlined in green, so th
 
 The following changes in our Stack Trace Art class will give Clarke's quote much more beauty and visibility on the client's stack trace.
 
-###Step 1: Make the Class Name Invisible
+### Step 1: Make the Class Name Invisible
 It is easier as it sounds. We simply have to move the class out of any namespaces and give it a name that will be - the Hangul itself, what else :-) Here is the source code:
 
     public class ㅤ
@@ -81,7 +81,7 @@ The clients code will look a bit strange, but that's how it is when invisibility
 
     new ㅤ().ArthurㅤCㅤClarkeㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
 
-###Step 2: Remove the Lines and Line Numbers
+### Step 2: Remove the Lines and Line Numbers
 A simple preprocessor trick will help us here. Simply put the `#line 1 ""` preprocessor directive above every line of code that actually does something. This will remove the lines and put the line number everywhere to 1. Hmmm, at the same time this move will make every decent C# compiler suspicious. You will get plenty of CS1709 compiler warnings - Filename specified for preprocessor directive is empty. In order to calm our compiler down, we will simply silence this compiler warning by adding `#pragma warning disable 1709`.
 
     #pragma warning disable 1709
@@ -115,7 +115,7 @@ Not bad at all. Our quote is much better visible now. Actually it sticks out so 
 
 Let's fix that.
 
-###Step 3: Add Some Margin
+### Step 3: Add Some Margin
 Adding margin is straightforward. We just have to prefix each method with few Hanguls and add a few empty lines between the rest of the stack trace and the top of the stack trace. Empty lines are, as you already guess, methods having only Hanguls in their names. The `() in :line 1`s also have to be moved a bit to some acceptable distance. How far will you you push them or in general, how big the margins are depends on the drawing and your personal taste, of course.
 
 Here is the final Stack Trace Art class, the one that produces the exception shown at the top of this post.
@@ -173,7 +173,7 @@ And here is the calling code. It looks weird doesn't it?
 
 Essentially what it does is calling the last method in the class which than calls the one above it. The call chain continues all the way to the first method which finally throws the exception.
 
-##A Bit of Honesty
+## A Bit of Honesty
 To be very honest with you, this is the first Stack Trace Art class that I manually wrote. As I [explained in my previous post](/his-majesty-hangul-the-filler#putting-it-all-together), as soon as I discovered the Hangul Filler I wrote a prototype version of the first Stack Trace Art Editor, called [stackTraceangelo](https://github.com/ironcev/stackTraceangelo). It is primitive and bad written (yeah, all those "Intentionally Bad Code" warnings are there with a good reason!) but it [helped me to create those first pieces of the Stack Trace Art](/stack-trace-art) and to have a lot of fun and joy while creating them.
 
 I plan to write a post on how *stackTraceangelo* works and how to use it to create your own Stack Trace Art. Stay tuned :-)

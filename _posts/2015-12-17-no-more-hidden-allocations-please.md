@@ -6,7 +6,7 @@ image: "tip-of-the-iceberg.jpg"
 publishedOn: "2015-12-17T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
-##The `Argument` Class
+## The `Argument` Class
 The [`Argument`](https://github.com/ironcev/SwissKnife/blob/master/Source/SwissKnife/Diagnostics/Contracts/Argument.cs) class was one of the first types I added to [SwissKnife](https://github.com/ironcev/swissknife). It turns the following cumbersome-to-write code:
 
     void SomeMethod(string key, object value, string fileName)
@@ -45,7 +45,7 @@ Concretely speaking:
 
 You will see a lot of [IL](https://en.wikipedia.org/wiki/Common_Intermediate_Language) code snippets in this post. Do not worry though if your are not familiar with IL. C# equivalents are added next to each IL code snippet, to visualize what IL is doing in the background.
 
-##The Acceptable Cost
+## The Acceptable Cost
 The second code snippet above is much shorter and much more expressive. It offers another one advantage as well, which is out of the topic so far.
 
 **The cost for that shortness, expressiveness and unspoken third advantage is *exactly one* additional method call.** Or at least it should be exactly one additional method call ;-)
@@ -58,7 +58,7 @@ After two years of daily usage of the `Argument` class **it turned out that the 
 
 **It turned out as well that the expressiveness is not that good either**, at least on some of the check methods.
 
-##The Hidden Cost
+## The Hidden Cost
 Let's start analysing the real cost of a check method call. Here is the implementation of the `IsNotNull()` method. All other methods have similar, straightforward and totally trivial implementations.
 
 <pre><code>public static void IsNotNull(object parameterValue, <strong>Option&lt;string&gt;</strong> parameterName)
@@ -75,7 +75,7 @@ In this case, we are talking about the "[Accept Option&lt;T&gt; as a Method Para
 
 While being very noble in its intention, this attempt to enforce option idiom brought a hidden cost.
 
-###Hidden Type Conversions and Instance Allocations
+### Hidden Type Conversions and Instance Allocations
 Let's take a look what happens behind the scene when we call `IsNotNull()` in its most usual form (actually, the only form that makes sense).
 
     Argument.IsNotNull(value, "value");
@@ -112,7 +112,7 @@ And therefore I decided to introduce a hardly noticeable breaking change in Swis
 
 Nice :-)
 
-##The Obvious Non-Wanted Cost
+## The Obvious Non-Wanted Cost
 So far you've learned that I'm a proponent of method preconditions checking and zealotic follower of the option idiom. Here it comes another one charming side of my personality.
 
 I *love* oh I love well written exception messages. Yes, those with punctuation, capital letters where needed and without typos. Exception messages that strive for being as helpful and descriptive as possible and, most of all, (relevant) information-rich.
@@ -148,13 +148,13 @@ Plus, there is a usability issue here as well. This standard and very often usag
 
 Let's fix those issues.
 
-###Eager Evaluation
+### Eager Evaluation
 The first one is a typical case of *eager evaluation*. **The building of the information-rich error message should happen *only* if the `condition` is false.**
 But it happens always. The solution is, of course to implement somehow what is called *lazy evaluation*.
 
 A typical implementation of lazy evaluation in C# uses lambda expressions.
 
-####Lazy Evaluation Using Lambda Expressions
+#### Lazy Evaluation Using Lambda Expressions
 It simple and straightforward. We just have to declare the `IsValid()` as
 
 <pre><code>void IsValid(bool condition, <strong>Func&lt;string&gt;</strong> exceptionMessage, string parameterName)
@@ -236,7 +236,7 @@ For our discussion, this whole trickery narrows down to the fact that **we have 
 
 **Out of all the possible solutions to the problem, I find this one with lambdas to be the worst.**
 
-####Lazy Evaluation Using Parameter Arrays
+#### Lazy Evaluation Using Parameter Arrays
 Which other options do we have than? One rather obvious would be to use parameter arrays (`params` in C# or `ParamArray`s in VB.NET).
 
 <pre><code>void IsValid(bool condition, string parameterName,
@@ -271,7 +271,7 @@ The above IL code creates a new array (`newarr`) and populates it with the param
 
 In other words, another one hidden object allocation :-(
 
-####Fixed Number of Object Arguments
+#### Fixed Number of Object Arguments
 Let us not despair! We still have one option to consider. Why not take the same approach used in `string.Format()` itself, or for example `Console.WriteLine()`?
 
 Knowing that no one will call `IsValid()` with 20 arguments we can safely overload it and allow passing up to few arguments as `System.Object`s. The overload with two arguments that fits to our example would than look like this
@@ -291,7 +291,7 @@ Finally! No more hidden object allocations :-) Just a plain function call.
 
 But wait! Before opening the champaign bottle let's consider one more case.
 
-###Boxing
+### Boxing
 What happens if our `something` in the `SomeMethod()` is of a [value type](https://msdn.microsoft.com/en-us/library/s1ax56ch.aspx). Let's take `int` for example:
 
 <pre><code>void SomeMethod(string directory, <strong>int</strong> something)</code></pre>
@@ -313,7 +313,7 @@ In other words, **we again got a hidden object allocation** :-(
 If you slowly started being frustrated asking yourself if this will ever end, again, do not despair.
 Yes, there is a way out of this hidden object allocations. It goes over two parallel bridges - [.NET generic methods and type inference](https://msdn.microsoft.com/en-us/library/twcad0zb.aspx).
 
-##And the Winner is...
+## And the Winner is...
 If we make our `IsValid()` overrides generic:
 
 <pre><code>void IsValid<strong>&lt;TArg0, TArg1&gt;</strong>(bool condition, string parameterName,
@@ -333,7 +333,7 @@ Since there is no such thing as free lunch, our winner also comes with a slight 
 CLR will have to generate native code for several different `IsValid()` methods during runtime.
 But since those methods do almost nothing and have very less instructions in them, this is an overhead we can surely live with.
 
-##Wait, We Are Not Done Yet!
+## Wait, We Are Not Done Yet!
 Not done yet? What else is left to say on the topic after a post this long?! We are resecting a trivial static method here, whose implementation consists only of a single statement! C'mon!
 
 Defining a public API is not an easy task. **Behind each well-crafted type or method there is a tons of questions to be answered and trade-offs to be considered.**
@@ -341,7 +341,7 @@ Performance is just one of them.
 
 Below are few questions to consider that come to my mind.
 
-###Dynamic Arguments
+### Dynamic Arguments
 This innocently-looking piece of code:
 
 <pre><code>void SomeMethod(dynamic argument)
@@ -422,7 +422,7 @@ will compile to the following IL. Have fun reading it :-) And don't forget to sc
 
 So much about the word *hidden*. Do we want to consider this case as well? Or simply ignore it?
 
-###Eagerly Evaluated Format Arguments
+### Eagerly Evaluated Format Arguments
 Consider this case, taken out of a real-life code:
 
 <pre><code>Argument.IsValid(solution.Projects.Contains(project),
@@ -440,15 +440,15 @@ And all of them are eagerly evaluated because our "winner" does not consider laz
 
 But should it consider it all? Or we should simply leave it as it is right now?
 
-###Code Contracts Support
+### Code Contracts Support
 Currently, some of the methods in the `Argument` class are attributed with the [`ContractArgumentValidatorAttribute`](https://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contractargumentvalidatorattribute(v=vs.110).aspx). They call [`Contract.EndContractBlock()`](https://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.endcontractblock(v=vs.110).aspx) as well. But some are not marked as `ContractArgumentValidator`s. Do we want the `Argument` to support code contracts or not? What are the pluses and what are the minuses of supporting them?
 
-###Aggressive Inlining
+### Aggressive Inlining
 Why bothering at all with the side effects of `Argument` method calls when we can simply inline all of them? Few well placed [`MethodImplOptions.AggressiveInlining`](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimploptions(v=vs.110).aspx)s and we are done.
 
 Is it really that easy? Especially if we want to support code contracts as well? Will the `ContractArgumentValidatorAttribute` and `MethodImplAttribute` work together?
 
-###IsWellNamed()
+### IsWellNamed()
 `IsValid` sounds as a bad name to me. It sticks out in a negative way. All other methods found in the `Attribute` class are very specific. `IsNotNull()`, `IsInRange()`, `IsGreaterThanZero()`, etc. `IsValid()` is used as a generic check, which is fine. But should its name be so generic and expressionless? Over time, I realized that I really don't like it. But I don't have a better one either :-(
 
 `Fulfills()` maybe? Like

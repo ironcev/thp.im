@@ -6,7 +6,7 @@ image: "await-async-as-async.jpg"
 publishedOn: "2018-03-22T12:00:00+01:00"
 lastUpdatedOn: "2018-03-24T12:00:00+01:00"
 ---
-##The Riddle
+## The Riddle
 Are you ready for a nice C# riddle? It's not an easy one ;-) so be sure to take a deep breath before jumping on it. Ready? Yes. Great! Take a good look at this line of code (thanks for [taking the photo](https://www.meetup.com/de-DE/NET-Stammtisch-Linz/events/247045584/) Georg!):
 
 ![Await async as async](/resources/await-async-as-async/await-async-as-async.jpg)
@@ -53,7 +53,7 @@ Think. Don't scroll down.
 
 Still thinking? Good.
 
-##The not so Obvious Obvious Solution
+## The not so Obvious Obvious Solution
 
 I guess you were looking for some super complex solution and missed the obvious one. I mean this one:
 
@@ -109,7 +109,7 @@ part perfectly valid. The same is with the `async` keyword. The word *async* is 
 
 Back to our riddle. Equipped with the knowledge of contextual keywords, we can now formulate our first non-trivial solution.
 
-##A Non-Trivial Solution
+## A Non-Trivial Solution
 
 So, the "`var` *var* =" part simply declares and initializes a variable called *var*. What about the right side of the assignment? Obviously, we need a variable called *async* and a class called *async* with a single requirement. In order to use `await` the expression:
 
@@ -171,7 +171,7 @@ C# was a much simpler language at that time. The good, old version 2.0. No lambd
 
 Luckily, our higher management killed the project before we were forced to face this unpleasant questions rooted in our bold decision to write a C# code analyzer on our own.
 
-##Facing the Difficulty
+## Facing the Difficulty
 
 Still, there are those who are brave enough and skilled enough to face this *extreme difficulty*. The ReSharper team is a great example. Since 2004 ReSharper developers closely follow the evolution of C# and  develop its own parser and analyzer in order to build an awesome product on top of them. Even now, when it appears that Roslyn made their efforts obsolete, ReSharper developers will continue to write their own C# parser and analyzer. And they have [a plenty of good reasons](https://blog.jetbrains.com/dotnet/2014/04/10/resharper-and-roslyn-qa/) for that. No, please do not dare to ask them (again!) if they are maybe still considering to change their mind. Here is the reaction you are going to provoke.
 

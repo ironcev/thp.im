@@ -6,7 +6,7 @@ image: "arrival-movie-2016-i-am-human-scene-large.jpg"
 publishedOn: "2017-03-08T12:00:00+01:00"
 lastUpdatedOn: "2017-04-17T02:20:00+0100"
 ---
-##The Car and the Bridge and the Human
+## The Car and the Bridge and the Human
 She crashed her car into the bridge. She watched. She let it burn.<br/>
 She crashed her car into the bridge. She watched. She let it burn.<br/>
 She crashed her car into the bridge. She watched. She let it burn.
@@ -91,7 +91,7 @@ Our customers lost six hours of their work that day. No one tried to put the bla
 
 Rather make sure your architecture is human-fault tolerant ;-) Which is exactly the topic of the following chapter :-)
 
-##Nathan Marz on Human-fault Tolerance
+## Nathan Marz on Human-fault Tolerance
 Those long minutes between pressing F5 and getting back the six-hour-old but still consistent data thought me forever the importance of the human-fault tolerance (beside the obvious lesson in serious lack of professionalism!).
 
 *I'm only human after all.* Same as my colleagues and millions of other developers worldwide. We do mistakes. We deploy bugs into production. Sometimes we do obviously stupid things.
@@ -202,7 +202,7 @@ The solution Nathan proposes and promotes in his [Lambda Architecture](https://e
 
 If any of this sounds exaggerated and unconvincing at first sight, I strongly recommend to you to read the Nathan's book ["Big Data - Principles and best practices of scalable real-time data systems"](https://www.manning.com/books/big-data). And other way around, even if his reasoning sounds logical and clear, the book is anyway a great read.
 
-##Brothers In Arms
+## Brothers In Arms
 "Human", [said Dr. Louise in Arrival](https://www.youtube.com/watch?v=PkYh9e-fvbA). "I'm human. I'm hu..."
 
 ![Arrival (2016) - I'm human](/resources/i-am-only-human-after-all/arrival-movie-2016-i-am-human-scene.jpg)

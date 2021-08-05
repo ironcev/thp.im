@@ -20,7 +20,7 @@ That *var* can *var*y, that we already know. But that it can *var*y so much that
 
 The *var*iable *var* is of type *var*. Which brings us to our riddle.
 
-##The Riddle
+## The Riddle
 
 Unlike [some other riddles on The Humble Programmer](/tags/riddle/) whose formulation spanned over several sentences and examples, this one can be easily formulated in a single sentence. Write a C# program that contains the above line of code such that the *var* *var*iable is of type *var*, whatever the type *var* is. As simple as that :-)
 
@@ -90,7 +90,7 @@ So here is an easy homework for you, my eager learners. Extend the below example
 
 ![Dynamic dynamic dynamic](/resources/the-variform-var/dynamic-dynamic-dynamic.png)
 
-##Confusion and Awesomeness
+## Confusion and Awesomeness
 
 "The homework is trivial" I can hear you saying. "Just take the previous piece of code, replace all occurrences of *var* with *dynamic* and that's it." Yes, I agree. The solutions are identical and rely on the same C# language features. Still, those of you who did the homework and at the same time have a [ReSharper](https://www.jetbrains.com/resharper/) running, probably noticed that the second example confuses ReSharper.
 

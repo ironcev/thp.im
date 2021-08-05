@@ -6,7 +6,7 @@ image: "csharp-70-local-functions-leaking-under-the-hood.jpg"
 publishedOn: "2018-03-17T12:00:00+01:00"
 lastUpdatedOn: "2018-03-18T12:00:00+01:00"
 ---
-##Are You Sure?
+## Are You Sure?
 The two [local functions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions) surprised me at first. Nested at the top of an `if` statement, right after the condition, neatly formatted, they looked just like a regular method call, and not a local function definition. I took me a second or two to calibrate my eyes and recognize what the code was actually doing.
 
 "Is it a good idea to use local functions here? They create [closures](http://csharpindepth.com/articles/chapter5/closures.aspx) in the background, don't they?" Stefan asked. Stefan is always careful when it comes to low level code performance. Unnecessary heap allocations are to be avoided unless we have a really good reason to tolerate them. And I agree.
@@ -24,10 +24,10 @@ Sorry Stefan!
 
 My path to redemption is given below. In small and detailed steps, so that it's easy to follow. The path goes all the way down to a subtle memory leak one could get when approaching local functions naively as I did.
 
-##C# 7.0 Local Functions Under The Hood
+## C# 7.0 Local Functions Under The Hood
 [SharpLab](https://sharplab.io/) is arguably the best and easiest way to peek under the hood and see what kind of code C# compiler generates in the background. The compiler uses cryptic, hard-to-read identifiers for the generated code. In the examples given below I made them human-readable. That way it is much easier to grasp what's really going on in the code. After each example I also provide a link to SharpLab so that you can try the code samples on your own and see what exactly gets generated. Let's start :-)
 
-###Local Functions That do not Use Local Variables and Class Instance Members
+### Local Functions That do not Use Local Variables and Class Instance Members
 The first `LocalFunction` on our path cannot be any simpler than it is. It does not use any of the local variables of its enclosing `Method` and does not access any of the class instance members:
 
     void Method()
@@ -64,7 +64,7 @@ The code that the compiler generates for it is straightforward and (almost ;-)) 
 
 Our `LocalFunction` simply turns into an `internal static` method. I expected the method to be `private` and frankly saying I don't see a reason why it is `internal` and not `private`, but that's a slight detail. Important for our story is the following fact: **there are no any kind of closures involved and there is a zero performance penalty of any kind** compared to the code we would write manually. I was right so far. Let's walk further. 
 
-###Local Functions That Use Local Variables
+### Local Functions That Use Local Variables
 In our second step, the `LocalFunction` uses the local variables of its enclosing `Method`:
 
     void Method()
@@ -190,7 +190,7 @@ the compiler will generate the following:
 
 Notice that the `localVariable` is indeed contained within the `CapturedVariables`, but the `otherLocalVariable` isn't.
 
-###Local Functions That Use Class Instance Members
+### Local Functions That Use Class Instance Members
 Ready for the third step? Away from local variables! Our `LocalFunction` , for the moment, uses only class instance members:
 
     void Method()
@@ -307,7 +307,7 @@ Strictly speaking, this produces a slight overhead of having the `Method`'s `thi
 
 Anyhow, aside of this slight issue with `this` up to now we didn't see that local variables produce any additional burden when it comes to memory allocation. And most of all, there were no closure classes involved at all. Third step, and my conscience is still clear.
 
-###Local Functions That Use Local Variables And Are Used in Lambda Expressions
+### Local Functions That Use Local Variables And Are Used in Lambda Expressions
 But will it stay clear during the fourth step? On my way home, as I said, I was playing in my had with the code Stefan was writing. Was ReSharper really confused as we thought? Or was there indeed something going in the background that we weren't aware of?
 
 The right answer came to me immediately after I realized that *the local function we had in the code was being called later on in a lambda expression*! The code we had was conceptually similar to this one:
@@ -363,7 +363,7 @@ There is nothing surprising in that code. It's just a regular way how lambdas an
 
 The whole story motivated me to dig a bit deeper and double check my assumptions on background mechanics of local functions. Below is the case, our fifth step, that struck me bit.
 
-###Local Functions That Use Local Variables Different Than Those Used in a Lambda Expression
+### Local Functions That Use Local Variables Different Than Those Used in a Lambda Expression
 I pictured a few cases in my head where local functions and lambdas were playing together. If they share local variables, those for sure have to be captured within a closure, that's clear - the lambda's need wins, so to say. But what about the case when we encounter a lambda expression and a local function in code, and they both access local variables, but *different ones*:
 
     void Method()
@@ -460,7 +460,7 @@ To me personally, this breaks the [principle of least surprise](https://en.wikip
 
 Which brings us to a subtle memory leak I mentioned couple of page-ups above.
 
-##The Subtle Memory Leak
+## The Subtle Memory Leak
 Since usually I would not expect that a local variable used in a local function is captured within the closure created by lambda that do not use that variable ;-) I would consider this code to be perfectly safe and free of memory leaks:
 
     Action Method()
@@ -515,7 +515,7 @@ The `resourceDemandingObject` is not used anywhere else after the `LocalFunction
 
 Scary, if you ask me.
 
-##The Moral of the Story
+## The Moral of the Story
 Trust ReSharper :-) Or at least don't ignore its hints too quickly.
 
 {% hx_src LocalFunctionsSubtleLeaks %}

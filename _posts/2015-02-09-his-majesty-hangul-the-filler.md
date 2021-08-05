@@ -8,7 +8,7 @@ lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---
 ![Лулу и как се прави дъга Exception](/resources/stack-trace-art/lulu-i-kak-se-pravi-daga-exception-stack-trace-art.png)
 
-##The Magic
+## The Magic
 >Any sufficiently advanced technology is indistinguishable from magic.<br/><br/>
 Arthur C. Clarke, [Clarke's three laws](http://en.wikipedia.org/wiki/Clarke's_three_laws)
 
@@ -25,9 +25,9 @@ That "sufficiently advanced technology" that makes Stack Trace Art appear as mag
 
 Ladies and gentlemen, prepare to meet His Majesty, Hangul the Filler.
 
-##The Magic Revealed
+## The Magic Revealed
 
-###C# Identifiers and Unicode
+### C# Identifiers and Unicode
 I'm not sure what the majority of C# programmers out there would say if confronted with the following question: "Will the below code compile?"
 
     public class Cvrči_cvrči_cvrčak_na_čvoru_crne_smrče
@@ -71,7 +71,7 @@ if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
 }
 </script>
 
-###The Quest for *The Invisible Character*
+### The Quest for *The Invisible Character*
 I crossed my fingers hoping that such character exists and quickly turned the [C# Identifier documentation](https://msdn.microsoft.com/en-us/library/aa664670(v=vs.71).aspx) into the (roughly) following piece of code:
 
     UnicodeCategory[] validCharacterCategories = 
@@ -133,7 +133,7 @@ And here they are in all their glory. **The four Hangul Filler kings!**
     '\u3164'    Hangul Filler
     '\uFFA0'    Halfwidth Hangul Filler
 
-##Putting it All Together
+## Putting it All Together
 Finding *The Invisible Character* was the necessary precondition for the Stack Trace Art. The next step was to create a prototype of a usable Stack Trace Art editor. Such an editor was supposed to help me in turning my creative ideas into what I called "Unicode art". In "Unicode art", unlike ASCII art, spaces and tabs are forbidden. They are replaced with Hangul Fillers.
 
 Once my ideas are turned into that "Unicode art", the editor should assist me again and generate the code in the targeted programming language - the code that will actually throw a Stack Trace Art exception at runtime.
@@ -142,7 +142,7 @@ I've created such editor and called it [stackTraceangelo](https://github.com/iro
 
 In one of my upcoming posts I'll explain how *stackTraceangelo* works.
 
-##Contribute!
+## Contribute!
 If you like the Stack Trace Art and believe that it is the best thing in the history of art since van Gogh's [Almond blossom](https://www.google.com/culturalinstitute/asset-viewer/almond-blossom/dAFXSL9sZ1ulDw?projectId=art-project) - than contribue to it! There are a plenty of things that you can do. Add a support for another target language to stackTraceangelo. Contribute to [the gallery](https://github.com/ironcev/stackTraceangelo/tree/master/Source/ArtGallery) by creating your own Stack Trace Art. Or simply [star the project on GitHub](https://github.com/ironcev/stackTraceangelo) to show your support. Thanks!
 
 {% hx_src HisMajestyHangulTheFiller %}

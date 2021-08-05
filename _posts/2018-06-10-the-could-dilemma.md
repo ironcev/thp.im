@@ -115,7 +115,7 @@ In our example of dependency property declarations, I came up with a simple algo
 
 That's roughly how I deal with The *Could* Dilemma at the moment. Did you ever experience The *Could* Dilemma on your own? If yes, what are your approaches for solving it?
 
-##All the Code in the World
+## All the Code in the World
 
 A bit off-topic, but still worth mentioning. Google [indexed all the open source code on GitHub](https://cloud.google.com/bigquery/public-data/github) and made it queryable via its [BigQuery](https://cloud.google.com/bigquery/). Why am I mentioning this?
 

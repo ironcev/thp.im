@@ -1,6 +1,6 @@
 # The Humble Programmer
 
-This is [my blog](https://thehumbleprogrammer.com). It's built using [Jekyll](https://jekyllrb.com/). To run it locally you just have to [install Jekyll](https://jekyllrb.com/docs/installation/) and run:
+This is [my programming blog](https://thehumbleprogrammer.com). It's built using [Jekyll](https://jekyllrb.com/). To run it locally, [install Jekyll](https://jekyllrb.com/docs/installation/) and run:
 
     jekyll serve
 

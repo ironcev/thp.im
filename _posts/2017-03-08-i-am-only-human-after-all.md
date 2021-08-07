@@ -4,7 +4,7 @@ subtitle: Human-fault tolerance. Thoughts, quotes, and an embarrassing personal 
 tags: software-architecture human-fault-tolerance
 image: "arrival-movie-2016-i-am-human-scene-large.jpg"
 publishedOn: "2017-03-08T12:00:00+01:00"
-lastUpdatedOn: "2017-04-17T02:20:00+0100"
+lastUpdatedOn: "2017-04-17T02:20:00+01:00"
 ---
 ## The Car and the Bridge and the Human
 She crashed her car into the bridge. She watched. She let it burn.<br/>

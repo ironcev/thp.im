@@ -3,7 +3,7 @@ title: The Three Laws of a Symptom Fix - The Overview
 subtitle: "A short overview of The Three Laws of a Symptom Fix blog post series."
 tags: bug symptom-fix symptom-fix-series-part
 hasCode: false
-image: "http://thehumbleprogrammer.com/resources/the-three-laws-of-a-symptom-fix/the-three-laws-of-a-symptom-fix-fb.jpg"
+image: "https://thp.im/resources/the-three-laws-of-a-symptom-fix/the-three-laws-of-a-symptom-fix-fb.jpg"
 publishedOn: "2015-06-07T12:00:00+01:00"
 lastUpdatedOn: "2017-04-16T12:00:00+01:00"
 ---

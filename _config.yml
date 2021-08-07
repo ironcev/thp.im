@@ -1,8 +1,8 @@
 ﻿# Site settings
 title: The Humble Programmer
 email: ironcev@hotmail.com
-url: "http://thehumbleprogrammer.com"
-shorturl: "http://thehumbleprogrammer.com"
+url: "https://thp.im"
+shorturl: "https://thp.im"
 permalink: /:title/
 disqusShortname: thehumbleprogrammer
 exclude: [README.md, LICENSE.txt]

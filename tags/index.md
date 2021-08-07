@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-description: List of tags used in blog posts on The Humble Programmer blog. Each tag links to the posts marked with that tag.
+description: Tags used in The Humble Programmer blog posts. Each tag links to the posts marked with that tag.
 ---
 <div class="tags-list">
     {% capture allTags %}
